@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ciclo DoWhile en JavaScript</title>
+  <script>
+    let contador = 0;
+    function ejecutarBucle() {
+      let valorInput = document.getElementById("miInput").value;
+      let resultado = "";
+      do {
+        resultado += "El contador es: " + contador + "<br>";
+        contador++;
+      } while (contador < valorInput);
+      document.getElementById("miResultado").innerHTML = resultado;
+    }
+  </script>
+</head>
+<body>
+  <p> DARIO WALTER CARRIZO</p>
+  <h1> Ciclo DoWhile en JavaScript</h1>
+  <p>Ingresa un número:</p>
+  <input type="number" id="miInput">
+  <button onclick="ejecutarBucle()">Ejecutar</button>
+  <div id="miResultado"></div>
+  </body>
+</html>
