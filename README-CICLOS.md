@@ -2,7 +2,7 @@
 
 # Proyecto Ciclo en Java Script - presentado en HTML
 
-*Grupo No-Code* 
+***Grupo No-Code*** 
 Integrantes.
 Abel, Pierna.
 Lucas, Salinas.
@@ -26,7 +26,9 @@ de html (index.html) los ciclos:
 *Palabra reservada: Continue*
 
 
--> HTML: en el siguiente archivo encontrara una estructura simple que tendra en su interior
+# HTML:
+
+en el siguiente archivo encontrara una estructura simple que tendra en su interior
 una configuracion basica y dentro de su body encontraremos la etiqueta Script la cual 
 contendra codigo en JavaScript y este se encargara a traves de prompts preguntarle al 
 usuario de la web, cuantas repeticiones de algunos ciclos, quiere que se ejecuten, y a
@@ -41,7 +43,7 @@ de las palabras reservadas por el lenguaje, explicadas por cada integrante del
 grupo *No-Code*.
 
 
-# -------->  USO DE LAS SENTENCIAS -PROMPT- y -ALERT- <---
+#  USO DE LAS SENTENCIAS -PROMPT- y -ALERT- 
 
 Las sentencias prompt y alert son dos funciones integradas en JavaScript que permiten interactuar con los usuarios a través de ventanas emergentes.
 
