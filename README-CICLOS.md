@@ -39,7 +39,8 @@ Aqui se mostrara la informacion relacionada acomo funciona cada ciclo de JavaScr
 de las palabras reservadas por el lenguaje, explicadas por cada integrante del 
 grupo *No-Code*.
 
-Uso de las sentencias Prompt y Alert
+
+->  Uso de las sentencias Prompt y Alert
 
 Las sentencias prompt y alert son dos funciones integradas en JavaScript que permiten interactuar con los usuarios a través de ventanas emergentes.
 
@@ -52,12 +53,13 @@ En este ejemplo, la sentencia prompt solicita al usuario que ingrese su nombre y
 
 Por otro lado, la sentencia alert se utiliza para mostrar un mensaje al usuario en una ventana emergente. Aquí hay un ejemplo de cómo se puede usar la sentencia alert en JavaScript:
 
-javascript
-Copy code
 alert("Bienvenido al sitio web");
+
 En este ejemplo, la sentencia alert muestra un mensaje de bienvenida en una ventana emergente al usuario cuando visita el sitio web.
 
 En resumen, la sentencia prompt se utiliza para solicitar información al usuario y la sentencia alert se utiliza para mostrar mensajes al usuario en una ventana emergente. Ambas sentencias son útiles para interactuar con los usuarios y mejorar la experiencia del usuario en una aplicación web.
+
+
 
 Ciclo While:......rellenar
 
