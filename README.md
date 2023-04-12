@@ -1,4 +1,4 @@
-`#0969DA` ***Aplicación del Metodo Scrum en Github***
+`#0969DA` ***Aplicación del Metodo Scrum en Github***`#0969DA`
 
 Scrum es un marco de trabajo ágil para la gestión de proyectos de software. Se utiliza para organizar equipos de desarrollo de software y mejorar la eficiencia en la entrega de proyectos de software. Aquí hay un resumen de cómo se usa el método Scrum en programación:
 
