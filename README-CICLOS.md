@@ -1,4 +1,4 @@
-# _LABORATORIO III*_
+# _LABORATORIO III_
 
 # Proyecto Ciclo en Java Script - presentado en HTML
 
