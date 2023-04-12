@@ -7,6 +7,7 @@ Integrantes.
 Abel, Pierna.
 Lucas, Salinas.
 Franco, Lara.
+Jeremias Riquero.
 Dario, Carrizo.
 Ezequiel, Mariscal.
 Andres, Winkler.
