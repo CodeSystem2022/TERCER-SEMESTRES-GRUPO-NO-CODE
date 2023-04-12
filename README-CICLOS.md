@@ -1,6 +1,6 @@
-_LABORATORIO III*_
+# _LABORATORIO III*_
 
-Proyecto Ciclo en Java Script - presentado en HTML
+# Proyecto Ciclo en Java Script - presentado en HTML
 
 *Grupo No-Code* 
 Integrantes.
@@ -34,14 +34,14 @@ traves de mensajes de Alert se le mostrara el resultado en cada operacion, y al 
 dicha ejecucion se accedera a la pagina web donde se mostrara el Titulo del proyecto y 
 los resultados obtenidos en algunos de los casos presentados y los integrantes del mismo.
 
--> JAVASCRIPT:
+# JAVASCRIPT:
 
 Aqui se mostrara la informacion relacionada acomo funciona cada ciclo de JavaScript y
 de las palabras reservadas por el lenguaje, explicadas por cada integrante del 
 grupo *No-Code*.
 
 
--------->  USO DE LAS SENTENCIAS -PROMPT- y -ALERT- <---
+# -------->  USO DE LAS SENTENCIAS -PROMPT- y -ALERT- <---
 
 Las sentencias prompt y alert son dos funciones integradas en JavaScript que permiten interactuar con los usuarios a través de ventanas emergentes.
 
