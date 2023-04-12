@@ -12,7 +12,7 @@ Ezequiel, Mariscal.
 Andres, Winkler.
 Dante, Martinez.
 
-<sub>
+
 El siguiente proyecto se creo con la intencion de mostrar de una manera practica, donde
 el usuario pueda ingresar datos y recibir una respuesta por parte de los codigos realizados 
 por los integrantes del grupo, en este caso se representara por medio de un simple archivo 
@@ -23,7 +23,7 @@ de html (index.html) los ciclos:
 *Ciclo For*
 *Palabra reservada: Break*
 *Palabra reservada: Continue*
-</sub>
+
 
 HTML: en el siguiente archivo encontrara una estructura simple que tendra en su interior
 una configuracion basica y dentro de su body encontraremos la etiqueta Script la cual 
@@ -40,7 +40,7 @@ de las palabras reservadas por el lenguaje, explicadas por cada integrante del
 grupo *No-Code*.
 
 
-->  Uso de las sentencias Prompt y Alert
+->  USO DE LAS SENTENCIAS -PROMPT- y -ALERT-
 
 Las sentencias prompt y alert son dos funciones integradas en JavaScript que permiten interactuar con los usuarios a través de ventanas emergentes.
 
