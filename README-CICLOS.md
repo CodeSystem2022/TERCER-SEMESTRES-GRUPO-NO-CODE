@@ -25,7 +25,7 @@ de html (index.html) los ciclos:
 *Palabra reservada: Continue*
 
 
-HTML: en el siguiente archivo encontrara una estructura simple que tendra en su interior
+-> HTML: en el siguiente archivo encontrara una estructura simple que tendra en su interior
 una configuracion basica y dentro de su body encontraremos la etiqueta Script la cual 
 contendra codigo en JavaScript y este se encargara a traves de prompts preguntarle al 
 usuario de la web, cuantas repeticiones de algunos ciclos, quiere que se ejecuten, y a
@@ -33,14 +33,14 @@ traves de mensajes de Alert se le mostrara el resultado en cada operacion, y al 
 dicha ejecucion se accedera a la pagina web donde se mostrara el Titulo del proyecto y 
 los resultados obtenidos en algunos de los casos presentados y los integrantes del mismo.
 
-JAVASCRIPT:
+-> JAVASCRIPT:
 
 Aqui se mostrara la informacion relacionada acomo funciona cada ciclo de JavaScript y
 de las palabras reservadas por el lenguaje, explicadas por cada integrante del 
 grupo *No-Code*.
 
 
-->  USO DE LAS SENTENCIAS -PROMPT- y -ALERT-
+-------->  USO DE LAS SENTENCIAS -PROMPT- y -ALERT- <---
 
 Las sentencias prompt y alert son dos funciones integradas en JavaScript que permiten interactuar con los usuarios a través de ventanas emergentes.
 
