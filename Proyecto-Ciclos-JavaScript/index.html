@@ -124,7 +124,25 @@
 						alert('El programa a finalizado')
 						break;
 					case 7:
-						alert('Ejercicio 8 (Lucas Salinas)')
+						alert('Ejercicio 8 con Ciclo While utilizando la etiqueta labels (Lucas Salinas)\nCalculo del promedio de 5 notas')
+						let iteradorD = 0, promedio = 0, menorNota = 9999, calificacion
+						inicio:
+						while (iteradorD <= 4) {
+							calificacion = Number(prompt((iteradorD + 1) + '. Ingrese una calificiacion'))
+							if (calificacion < 0) {
+								alert('El parametro ingresado no es valido porende el programa va a finalizar')
+								alert('El programa a finalizado')
+								inicio
+							} else {
+								promedio += calificacion
+								if (calificacion < menorNota) {
+									menorNota = calificacion
+								}
+								iteradorD++;
+							}
+						}
+						promedio /= 5;
+						alert('Programa a finalizado\nEl promedio de las calificaciones es: ' + promedio + '\nLa calificación menor es: ' + menorNota)
 						break;
 				}
 			}
