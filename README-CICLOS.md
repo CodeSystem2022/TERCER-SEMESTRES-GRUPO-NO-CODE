@@ -39,8 +39,10 @@ Con HTML, se pueden crear sitios web y documentos web complejos, incluyendo form
 En resumen, HTML es el lenguaje principal utilizado para crear contenido web y estructurar el contenido de una página web. Sin HTML, no habría una forma estandarizada de crear páginas web que se puedan visualizar en cualquier navegador web.
 
 # CSS
-![](https://media.giphy.com/media/8PpFJcG4y8HqsxQumz/giphy.gif)
+
 ![Css-5.pnf](https://www.solucionex.com/sites/default/files/posts/imagen/css_blog.png)
+
+![](https://media.giphy.com/media/8PpFJcG4y8HqsxQumz/giphy.gif)
 
 CSS, o Cascading Style Sheets, se utiliza para dar estilo y formato a páginas web escritas en lenguaje HTML. Con CSS, puedes controlar la apariencia de todos los elementos HTML en una página, incluyendo el tamaño, la fuente, el color, el diseño y la posición.
 
