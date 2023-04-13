@@ -1,4 +1,5 @@
 ![java](https://www.canalgif.net/Gifs-animados/Informatica/Java/Imagen-animada-Java-02.gif)
+![](https://files.codingninjas.in/article_images/java-developers-application-settings-1-1660983825.jpg)
 
 # Java 
 Es un lenguaje de programación de alto nivel, orientado a objetos y diseñado para ser portátil, lo que significa que puede ser ejecutado en diferentes plataformas sin necesidad de cambiar el código. Fue creado por James Gosling y su equipo en Sun Microsystems en la década de 1990.
