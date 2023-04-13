@@ -93,6 +93,28 @@
 						alert("La suma de los numeros desde el 1 hasta el " + numfinal + " es " + sumanum)
 						alert('Programa finalizado')
 						break;
+					case 4:
+						alert('Ejercicio 5 con Ciclo for con la palabra Break(Jeremias Riquero)\nContador de números negativos y positivos (el programa se detendra cuando ingrese el numero 0 o cuando ingrese los 10 números)')
+						for (let numeros, contadorPositivos = 0, contadorNegativos = 0, iteradorC = 0; iteradorC <= 9; iteradorC++) {
+							numeros = Number(prompt((iteradorC + 1) + '. Ingrese un número:'))
+							if (numeros >= 1) {
+								contadorPositivos++;
+							}
+							if (numeros <= -1) {
+								contadorNegativos++;
+							}
+							if (numeros == 0) {
+								alert('El programa a sido interrumpido al ingresar el 0\n' + 'La cantidad de números positivos es de: ' + contadorPositivos + '\nLa cantidad de números negativos es de: ' + contadorNegativos)
+								break
+							}
+
+							if (iteradorC == 9) {
+								alert('La cantidad de números positivos es de: ' + contadorPositivos + '\nLa cantidad de números negativos es de: ' + contadorNegativos)
+
+							}
+						}
+						alert('El programa a finalizado')
+						break;
 					default:
 
 						break;
