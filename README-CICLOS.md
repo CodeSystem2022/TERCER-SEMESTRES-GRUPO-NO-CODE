@@ -1,4 +1,5 @@
 # _LABORATORIO III_
+![Ejemplo de GIF](https://media.giphy.com/media/example.gif)
 
 # Proyecto Ciclo en Java Script - presentado en HTML
 
