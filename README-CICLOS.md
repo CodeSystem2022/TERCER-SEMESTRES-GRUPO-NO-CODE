@@ -38,7 +38,7 @@ dicha ejecucion se accedera a la pagina web donde se mostrara el Titulo del proy
 los resultados obtenidos en algunos de los casos presentados y los integrantes del mismo.
 
 # CSS
-[![Css-5.pnf](https://www.solucionex.com/sites/default/files/posts/imagen/css_blog.png)
+![Css-5.pnf](https://www.solucionex.com/sites/default/files/posts/imagen/css_blog.png)
 # JAVASCRIPT:
 [![Javascript-5.jpg](https://i.postimg.cc/fyBNJGn8/Javascript-5.jpg)](https://postimg.cc/SY25PtK9)
 
