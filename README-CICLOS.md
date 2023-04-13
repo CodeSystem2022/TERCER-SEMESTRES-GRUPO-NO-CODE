@@ -38,6 +38,7 @@ dicha ejecucion se accedera a la pagina web donde se mostrara el Titulo del proy
 los resultados obtenidos en algunos de los casos presentados y los integrantes del mismo.
 
 # JAVASCRIPT:
+[![Javascript-5.jpg](https://i.postimg.cc/fyBNJGn8/Javascript-5.jpg)](https://postimg.cc/SY25PtK9)
 
 Aqui se mostrara la informacion relacionada acomo funciona cada ciclo de JavaScript y
 de las palabras reservadas por el lenguaje, explicadas por cada integrante del 
