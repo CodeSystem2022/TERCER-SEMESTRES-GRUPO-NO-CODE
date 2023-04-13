@@ -39,6 +39,13 @@ los resultados obtenidos en algunos de los casos presentados y los integrantes d
 
 # CSS
 ![Css-5.pnf](https://www.solucionex.com/sites/default/files/posts/imagen/css_blog.png)
+
+CSS, o Cascading Style Sheets, se utiliza para dar estilo y formato a páginas web escritas en lenguaje HTML. Con CSS, puedes controlar la apariencia de todos los elementos HTML en una página, incluyendo el tamaño, la fuente, el color, el diseño y la posición.
+
+En lugar de aplicar estilos directamente en el HTML, el CSS permite separar el diseño y la presentación del contenido de la página, lo que facilita la creación de sitios web con diseños coherentes y flexibles. Además, al utilizar hojas de estilo en cascada, los estilos pueden ser heredados y aplicados de manera eficiente a múltiples elementos HTML.
+
+CSS también es muy útil para la creación de diseños responsivos, ya que permite ajustar la presentación de una página web en función del tamaño de la pantalla del dispositivo que se esté utilizando para acceder al sitio.
+
 # JAVASCRIPT:
 [![Javascript-5.jpg](https://i.postimg.cc/fyBNJGn8/Javascript-5.jpg)](https://postimg.cc/SY25PtK9)
 
