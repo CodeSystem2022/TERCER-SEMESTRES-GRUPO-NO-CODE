@@ -11,7 +11,14 @@
     <h2>Grupo No-Code</h2>
     
 	<script>
-		//Aqui va el codigo........................JavaScript!
+		let selectorEjercicios;
+        alert('Este es un programa en JS que contiene todos los ejercisios de Ciclos hecho por el grupo No_Code')
+        do {
+        selectorEjercicios = Number(prompt('Seleccione una opción:\nSi quiere ver todos los ejercios ingrese [1]\nSi quiere elegir un ejercicio en especifico ingrese[2]'))
+        if (selectorEjercicios != 1 && selectorEjercicios != 2) {
+            alert('El número no es valido, vuelva a intentarlo')
+        }
+        } while (selectorEjercicios != 1 && selectorEjercicios != 2);
 	</script>
 
 <h3> Integrantes: </h3>
