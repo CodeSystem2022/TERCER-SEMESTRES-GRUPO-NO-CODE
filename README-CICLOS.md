@@ -14,7 +14,7 @@ Ezequiel, Mariscal.
 Andres, Winkler.
 Dante, Martinez.
 
-![](https://media.giphy.com/media/l3vRfNA1p0rvhMSvS/giphy.gif)
+
 
 
 El siguiente proyecto se creo con la intencion de mostrar de una manera practica, donde
@@ -30,7 +30,7 @@ de html (index.html) los ciclos:
 
 
 # HTML:
-[![html-head.webp](https://i.postimg.cc/T3xVRB2z/html-head.webp)](https://postimg.cc/PP6py3wy)
+![](https://media.giphy.com/media/l3vRfNA1p0rvhMSvS/giphy.gif)
 
 HTML, o Hypertext Markup Language, se utiliza para crear páginas web y otros documentos web que se pueden ver a través de un navegador web. HTML proporciona la estructura básica de una página web, permitiendo al usuario crear títulos, párrafos, listas, enlaces, imágenes y otros elementos que se muestran en la página.
 
