@@ -32,22 +32,8 @@
 			for (let iteradorEjercicios = 0; iteradorEjercicios < 8; iteradorEjercicios++) {
 				switch (iteradorEjercicios) {
 					case 0:
-						alert(
-							"Ejercicio 1 con Ciclo DoWhile (Dante Martinez)\nEl programa itera tantos números como indique el usuario."
-						);
-						let contador = 0;
-
-						let valorInput = Number(prompt("Ingrese un número"));
-						let resultado = "";
-						do {
-							resultado += "El contador es: " + contador + "\n";
-							contador++;
-						} while (contador < valorInput);
-						alert(resultado);
-						break;
-					case 1:
-						alert(
-							"Ejercicio 2 con Ciclo While(Abel Pierna)\nComprueba si el año ingresado es biciesto"
+					alert(
+							"Ejercicio 1 con Ciclo While (Abel Pierna)\nComprueba si el año ingresado es biciesto"
 						);
 						let num,
 							opcion = 0;
@@ -73,17 +59,9 @@
 						}
 						alert("El programa a finalizado");
 						break;
-					case 2:
-						alert('Ejercicio 3 con Ciclo For(Dario Carrizo)\nEl programa itera tantos números como indique el usuario con un ciclo for.')
-						var cantidad = prompt("Por favor, ingrese la cantidad de veces que desea recorrer el ciclo:");
-
-						for (var i = 0; i < cantidad; i++) {
-							alert("Esta es la repetición número " + (i + 1));
-						}
-						alert('Programa finalizado')
-						break;
-					case 3:
-						alert('Ejercicio 4 con Ciclo for utilizando "prompt" y "alert"(Adendres Winckler)\nSuma todos números hasta el que ingresa el usuario partiendo del 1.')
+						
+					case 1:
+					alert('Ejercicio 2 con Ciclo for utilizando "prompt" y "alert" (Adendres Winckler)\nSuma todos números hasta el que ingresa el usuario partiendo del 1.')
 						let numfinal = 0
 						let sumanum = 0
 						numfinal = Number(prompt("Se sumaran los números desde el 1 hasta el que ingrese a continuación: "))
@@ -93,8 +71,38 @@
 						alert("La suma de los numeros desde el 1 hasta el " + numfinal + " es " + sumanum)
 						alert('Programa finalizado')
 						break;
+					case 2:
+						alert('Ejercicio 3 con Ciclo For (Dario Carrizo)\nEl programa itera tantos números como indique el usuario con un ciclo for.')
+						var cantidad = prompt("Por favor, ingrese la cantidad de veces que desea recorrer el ciclo:");
+
+						for (var i = 0; i < cantidad; i++) {
+							alert("Esta es la repetición número " + (i + 1));
+						}
+						alert('Programa finalizado')
+						break;
+					case 3:
+					alert(
+							"Ejercicio 4 con Ciclo DoWhile (Dante Martinez)\nEl programa itera tantos números como indique el usuario."
+						);
+						let contador = 0;
+
+						let valorInput = Number(prompt("Ingrese un número"));
+						let resultado = "";
+						do {
+							resultado += "El contador es: " + contador + "\n";
+							contador++;
+						} while (contador < valorInput);
+						alert(resultado);
+						alert('Programa finalizado')
+						break;
 					case 4:
-						alert('Ejercicio 5 con Ciclo for con la palabra Break(Jeremias Riquero)\nContador de números negativos y positivos (el programa se detendra cuando ingrese el numero 0 o cuando ingrese los 10 números)')
+						alert('Ejercicio 5 (Ezequiel Mariscal)')
+						break;
+					case 5:
+						alert('Ejercicio 6 (Franco Lara)')
+						break;
+					case 6:
+					alert('Ejercicio 7 con Ciclo for con la palabra Break (Jeremias Riquero)\nContador de números negativos y positivos (el programa se detendra cuando ingrese el numero 0 o cuando ingrese los 10 números)')
 						for (let numeros, contadorPositivos = 0, contadorNegativos = 0, iteradorC = 0; iteradorC <= 9; iteradorC++) {
 							numeros = Number(prompt((iteradorC + 1) + '. Ingrese un número:'))
 							if (numeros >= 1) {
@@ -115,15 +123,14 @@
 						}
 						alert('El programa a finalizado')
 						break;
-					default:
-
+					case 7:
+						alert('Ejercicio 8 (Lucas Salinas)')
 						break;
 				}
 			}
 		} else if (selectorOpciones == 2) {
 		}
-		{
-		}
+		
 	</script>
 	<h3> Integrantes: </h3>
 	<h4>Abel, Pierna.</h4>
