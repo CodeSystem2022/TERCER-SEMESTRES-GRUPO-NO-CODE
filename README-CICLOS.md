@@ -1,5 +1,5 @@
 # _LABORATORIO III_
-![Ejemplo de GIF](https://tenor.com/es/view/kroppa-digital-socialmedia-mothersday-developer-gif-21768300)
+![](http://i.imgur.com/OUkLi.gif)
 
 # Proyecto Ciclo en Java Script - presentado en HTML
 
