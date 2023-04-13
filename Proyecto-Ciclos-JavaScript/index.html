@@ -19,6 +19,36 @@
             alert('El número no es valido, vuelva a intentarlo')
         }
         } while (selectorEjercicios != 1 && selectorEjercicios != 2);
+        if (selectorOpciones == 1) {
+            for (let iteradorEjercicios = 0; iteradorEjercicios < 8; iteradorEjercicios++) {
+
+                switch (iteradorEjercicios) {
+                    case 0:
+                        alert('Ejercicio 1 con Ciclo DoWhile (Dante Martinez)')
+                        let contador = 0;
+                        
+                            let valorInput = Number(prompt('Ingrese un número'));
+                            let resultado = "";
+                            do {
+                                resultado += "El contador es: " + contador  +"\n";
+                                contador++;
+                            } while (contador < valorInput);
+                            alert(resultado)
+                    case 1:
+                        alert('Ejercicio 2')
+                    default:
+                        break;
+                }
+            }
+
+
+        } else if (selectorOpciones == 2) {
+
+        } {
+
+        }
+
+
 	</script>
 
 <h3> Integrantes: </h3>
