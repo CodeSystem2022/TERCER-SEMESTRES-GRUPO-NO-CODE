@@ -1,90 +1,109 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto Ciclos - Java Script</title>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="autor" content="No_Code" />
+	<title>Proyecto Ciclos - Java Script</title>
 </head>
+
 <body>
-    <h1>Proyecto Ciclos - Java Script </h1>
-    <h2>Grupo No-Code</h2>
-    
+	<h1>Proyecto Ciclos - Java Script</h1>
+	<h2>Grupo No-Code</h2>
+
 	<script>
-		let selectorEjercicios;
-        alert('Este es un programa en JS que contiene todos los ejercisios de Ciclos hecho por el grupo No_Code')
-        do {
-        selectorEjercicios = Number(prompt('Seleccione una opción:\nSi quiere ver todos los ejercios ingrese [1]\nSi quiere elegir un ejercicio en especifico ingrese[2]'))
-        if (selectorEjercicios != 1 && selectorEjercicios != 2) {
-            alert('El número no es valido, vuelva a intentarlo')
-        }
-        } while (selectorEjercicios != 1 && selectorEjercicios != 2);
-        if (selectorOpciones == 1) {
-            for (let iteradorEjercicios = 0; iteradorEjercicios < 8; iteradorEjercicios++) {
-
-                switch (iteradorEjercicios) {
-                    case 0:
-                        alert('Ejercicio 1 con Ciclo DoWhile (Dante Martinez)')
-                        let contador = 0;
-                        
-                            let valorInput = Number(prompt('Ingrese un número'));
-                            let resultado = "";
-                            do {
-                                resultado += "El contador es: " + contador  +"\n";
-                                contador++;
-                            } while (contador < valorInput);
-                            alert(resultado)
-			break;
-                    case 1:
-                        alert("Ejercicio 2 con Ciclo While(Abel Pierna)\nComprueba si el año ingresado es biciesto");
-			let num, opcion = 0;
-			while (opcion != 1) {
-				num = Number(prompt("Compruebe si el año es biciesto:"));
-				if ((num % 4 == 0 && num % 100 != 0) || num % 400 == 0) {
-					alert("El Año ingresado es biciesto.");
-				} else {
-					alert("El Año ingresado no es biciesto.");
-				}
-				do {
-					opcion = Number(prompt("Si desea continuar con el programa ingrese [0]\nSi desea finalizar el programa ingrese [1]"));
-					if (opcion != 0 && opcion != 1) {
-						alert("El valor ingresado no es compatible, vuelva a intentarlo");
-					}
-				} while (opcion != 0 && opcion != 1);
+		let selectorOpciones;
+		alert(
+			"Este es un programa en JS que contiene todos los ejercisios de Ciclos hecho por el grupo No_Code"
+		);
+		do {
+			selectorOpciones = Number(
+				prompt(
+					"Seleccione una opción:\nSi quiere ver todos los ejercios ingrese [1]\nSi quiere elegir un ejercicio en especifico ingrese[2]"
+				)
+			);
+			if (selectorOpciones != 1 && selectorOpciones != 2) {
+				alert("El número no es valido, vuelva a intentarlo");
 			}
-			alert("El programa a finalizado");
-			break;
-                    default:
-                        break; 
-                }
-            }
+		} while (selectorOpciones != 1 && selectorOpciones != 2);
+		if (selectorOpciones == 1) {
+			for (let iteradorEjercicios = 0; iteradorEjercicios < 8; iteradorEjercicios++) {
+				switch (iteradorEjercicios) {
+					case 0:
+						alert(
+							"Ejercicio 1 con Ciclo DoWhile (Dante Martinez)\nEl programa itera tantos números como indique el usuario."
+						);
+						let contador = 0;
 
+						let valorInput = Number(prompt("Ingrese un número"));
+						let resultado = "";
+						do {
+							resultado += "El contador es: " + contador + "\n";
+							contador++;
+						} while (contador < valorInput);
+						alert(resultado);
+						break;
+					case 1:
+						alert(
+							"Ejercicio 2 con Ciclo While(Abel Pierna)\nComprueba si el año ingresado es biciesto"
+						);
+						let num,
+							opcion = 0;
+						while (opcion != 1) {
+							num = Number(prompt("Compruebe si el año es biciesto:"));
+							if ((num % 4 == 0 && num % 100 != 0) || num % 400 == 0) {
+								alert("El Año ingresado es biciesto.");
+							} else {
+								alert("El Año ingresado no es biciesto.");
+							}
+							do {
+								opcion = Number(
+									prompt(
+										"Si desea continuar con el programa ingrese [0]\nSi desea finalizar el programa ingrese [1]"
+									)
+								);
+								if (opcion != 0 && opcion != 1) {
+									alert(
+										"El valor ingresado no es compatible, vuelva a intentarlo"
+									);
+								}
+							} while (opcion != 0 && opcion != 1);
+						}
+						alert("El programa a finalizado");
+						break;
+					case 2:
+						alert('Ejercicio 3 con Ciclo For(Dario Carrizo)\nEl programa itera tantos números como indique el usuario con un ciclo for.')
+						var cantidad = prompt("Por favor, ingrese la cantidad de veces que desea recorrer el ciclo:");
 
-        } else if (selectorOpciones == 2) {
+						for (var i = 0; i < cantidad; i++) {
+							alert("Esta es la repetición número " + (i + 1));
+						}
+						alert('Programa finalizado')
+						break;
+					case 3:
+						alert('Ejercicio 4')
+						break;
+					default:
 
-        } {
-
-        }
-
-
+						break;
+				}
+			}
+		} else if (selectorOpciones == 2) {
+		}
+		{
+		}
 	</script>
-
-<h3> Integrantes: </h4>
-<h4>Abel, Pierna.</h4>
-<h4>Andres, Winckler.</h4>
-<h4>Dario, Carrizo.</h4>
-<h4>Dante, Martinez.</h4>
-<h4>Ezequiel, Mariscal</h4>
-<h4>Franco, Lara.</h4>
-<h4>Jeremias, Riquero.</h4>
-<h4>Lucas, Salinas.</h4>
-
-
-    
-    
-    
-    
-    
-   
+	<h3> Integrantes: </h3>
+	<h4>Abel, Pierna.</h4>
+	<h4>Andres, Winckler.</h4>
+	<h4>Dario, Carrizo.</h4>
+	<h4>Dante, Martinez.</h4>
+	<h4>Ezequiel, Mariscal</h4>
+	<h4>Franco, Lara.</h4>
+	<h4>Jeremias, Riquero.</h4>
+	<h4>Lucas, Salinas.</h4>
 </body>
+
 </html>
