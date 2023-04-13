@@ -56,6 +56,8 @@ Break: ........rellenar
 
 Continue: .......rellenar
 
+Etiqueta labels en JavaScript: ......relenar
+
 #  USO DE LAS SENTENCIAS -PROMPT- y -ALERT- 
 
 Las sentencias prompt y alert son dos funciones integradas en JavaScript que permiten interactuar con los usuarios a través de ventanas emergentes.
