@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="autor" content="Lucas Salinas">
+    <title>Lucas Salinas</title>
+    <script>
+       
+        let i = 0, promedio = 0, menorNota = 9999, calificacion
+        alert('Calculo del promedio de 5 notas')
+        inicio:
+       while (i <= 4) {
+            calificacion = Number(prompt((i + 1) + '. Ingrese una calificiacion'))
+            if (calificacion < 0) {
+                alert('El parametro ingresado no es valido porende el programa va a finalizar')
+                inicio
+            } else {
+                promedio += calificacion
+                if (calificacion < menorNota) {
+                    menorNota = calificacion
+                }
+                i++;
+            }
+        }
+        promedio /= 5;
+        alert('Programa finalizado\nEl promedio de las calificaciones es: ' + promedio + '\nLa calificación menor es: ' + menorNota)
+
+    </script>
+</head>
+
+<body>
+    <style>
+        *{
+            margin:  0;
+            padding: 0;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100vh;
+            background: #fdff8f;
+        }
+        .contained{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+            width: 30%;
+            height: auto;
+            padding: 3rem;
+            background: #c7ca0e;
+            box-shadow: 3px 3px 10px #000;
+        }
+    </style>
+    <div class="contained">
+        <h1>Laboratorio 3</h1>
+        <h2>No_Code?</h2>
+        <h3>Lucas Salinas</h3>
+        <h4>Ciclos en Java Script</h4>
+        <p>Uso de la Etiqueta labels<p>
+    </div>
+
+</body>
+
+</html>
