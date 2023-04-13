@@ -1,5 +1,5 @@
 # _LABORATORIO III_
-![](https://tenor.com/es/view/kroppa-digital-socialmedia-mothersday-developer-gif-21768300)
+![](https://tenor.com/bk6w1.gif)
 
 # Proyecto Ciclo en Java Script - presentado en HTML
 
@@ -14,7 +14,7 @@ Ezequiel, Mariscal.
 Andres, Winkler.
 Dante, Martinez.
 
-![programacion](https://tenor.com/es/view/web-developer-mycrxn-javascript-php-css-react-wordpress-mongo-db-html-bootsrap-gif-21308149)
+![](https://tenor.com/es/view/web-developer-mycrxn-javascript-php-css-react-wordpress-mongo-db-html-bootsrap-gif-21308149)
 
 
 El siguiente proyecto se creo con la intencion de mostrar de una manera practica, donde
