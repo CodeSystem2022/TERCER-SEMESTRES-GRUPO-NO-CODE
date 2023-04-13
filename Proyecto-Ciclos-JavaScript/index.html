@@ -35,7 +35,32 @@
                             } while (contador < valorInput);
                             alert(resultado)
                     case 1:
-                        alert('Ejercicio 2')
+                        alert(
+                "Ejercicio 2 con Ciclo While(Abel Pierna)\nComprueba si el año ingresado es biciesto"
+              );
+              let num,
+                opcion = 0;
+              while (opcion != 1) {
+                num = Number(prompt("Compruebe si el año es biciesto:"));
+                if ((num % 4 == 0 && num % 100 != 0) || num % 400 == 0) {
+                  alert("El Año ingresado es biciesto.");
+                } else {
+                  alert("El Año ingresado no es biciesto.");
+                }
+                do {
+                  opcion = Number(
+                    prompt(
+                      "Si desea continuar con el programa ingrese [0]\nSi desea finalizar el programa ingrese [1]"
+                    )
+                  );
+                  if (opcion != 0 && opcion != 1) {
+                    alert(
+                      "El valor ingresado no es compatible, vuelva a intentarlo"
+                    );
+                  }
+                } while (opcion != 0 && opcion != 1);
+              }
+              alert("El programa a finalizado");
                     default:
                         break; 
                 }
