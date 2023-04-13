@@ -51,7 +51,7 @@ En lugar de aplicar estilos directamente en el HTML, el CSS permite separar el d
 CSS también es muy útil para la creación de diseños responsivos, ya que permite ajustar la presentación de una página web en función del tamaño de la pantalla del dispositivo que se esté utilizando para acceder al sitio.
 
 # JAVASCRIPT:
-[![Javascript-5.jpg](https://i.postimg.cc/fyBNJGn8/Javascript-5.jpg)](https://postimg.cc/SY25PtK9)
+![](https://media.giphy.com/media/SvFocn0wNMx0iv2rYz/giphy.gif)
 
 JavaScript (JS) se utiliza principalmente para crear interactividad y dinamismo en una página web. JS es un lenguaje de programación de alto nivel que se ejecuta en el navegador web del usuario y permite a los desarrolladores crear efectos visuales y de animación, validar formularios, manipular el contenido de la página y responder a las acciones del usuario.
 
