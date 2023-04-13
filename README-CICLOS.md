@@ -14,7 +14,7 @@ Ezequiel, Mariscal.
 Andres, Winkler.
 Dante, Martinez.
 
-![](https://tenor.com/es/view/web-developer-mycrxn-javascript-php-css-react-wordpress-mongo-db-html-bootsrap-gif-21308149)
+![](https://media.giphy.com/media/l3vRfNA1p0rvhMSvS/giphy.gif)
 
 
 El siguiente proyecto se creo con la intencion de mostrar de una manera practica, donde
