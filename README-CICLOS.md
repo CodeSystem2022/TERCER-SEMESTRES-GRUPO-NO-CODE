@@ -27,6 +27,7 @@ de html (index.html) los ciclos:
 
 
 # HTML:
+[![html-head.webp](https://i.postimg.cc/T3xVRB2z/html-head.webp)](https://postimg.cc/PP6py3wy)
 
 en el siguiente archivo encontrara una estructura simple que tendra en su interior
 una configuracion basica y dentro de su body encontraremos la etiqueta Script la cual 
