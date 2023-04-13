@@ -11,273 +11,273 @@
 
 <body>
 	<script>
-			let selectorOpciones, opcionEjercicio = 0, seguir = 0;
-			alert(
-				"Este es un programa en JS que contiene todos los ejercisios de Ciclos hecho por el grupo No_Code"
+		let selectorOpciones, opcionEjercicio = 0, seguir = 0;
+		alert(
+			"Este es un programa en JS que contiene todos los ejercisios de Ciclos hecho por el grupo No_Code"
+		);
+		do {
+			selectorOpciones = Number(
+				prompt(
+					"Seleccione una opción:\nSi quiere ver todos los ejercios ingrese [1]\nSi quiere elegir un ejercicio en especifico ingrese[2]"
+				)
 			);
-			do {
-				selectorOpciones = Number(
-					prompt(
-						"Seleccione una opción:\nSi quiere ver todos los ejercios ingrese [1]\nSi quiere elegir un ejercicio en especifico ingrese[2]"
-					)
-				);
-				if (selectorOpciones != 1 && selectorOpciones != 2) {
-					alert("El número no es valido, vuelva a intentarlo");
-				}
-			} while (selectorOpciones != 1 && selectorOpciones != 2);
-			if (selectorOpciones == 1) {
-				for (let iteradorEjercicios = 0; iteradorEjercicios < 8; iteradorEjercicios++) {
-					switch (iteradorEjercicios) {
-						case 0:
+			if (selectorOpciones != 1 && selectorOpciones != 2) {
+				alert("El número no es valido, vuelva a intentarlo");
+			}
+		} while (selectorOpciones != 1 && selectorOpciones != 2);
+		if (selectorOpciones == 1) {
+			for (let iteradorEjercicios = 0; iteradorEjercicios < 8; iteradorEjercicios++) {
+				switch (iteradorEjercicios) {
+					case 0:
 						alert(
-								"Ejercicio 1 con Ciclo While (Abel Pierna)\nComprueba si el año ingresado es biciesto"
-							);
-							let num,
-								opcion = 0;
-							while (opcion != 1) {
-								num = Number(prompt("Compruebe si el año es biciesto:"));
-								if ((num % 4 == 0 && num % 100 != 0) || num % 400 == 0) {
-									alert("El Año ingresado es biciesto.");
-								} else {
-									alert("El Año ingresado no es biciesto.");
-								}
-								do {
-									opcion = Number(
-										prompt(
-											"Si desea continuar con el programa ingrese [0]\nSi desea finalizar el programa ingrese [1]"
-										)
-									);
-									if (opcion != 0 && opcion != 1) {
-										alert(
-											"El valor ingresado no es compatible, vuelva a intentarlo"
-										);
-									}
-								} while (opcion != 0 && opcion != 1);
+							"Ejercicio 1 con Ciclo While (Abel Pierna)\nComprueba si el año ingresado es biciesto"
+						);
+						let num,
+							opcion = 0;
+						while (opcion != 1) {
+							num = Number(prompt("Compruebe si el año es biciesto:"));
+							if ((num % 4 == 0 && num % 100 != 0) || num % 400 == 0) {
+								alert("El Año ingresado es biciesto.");
+							} else {
+								alert("El Año ingresado no es biciesto.");
 							}
-							alert("El programa a finalizado");
-							break;
-							
-						case 1:
-						alert('Ejercicio 2 con Ciclo for utilizando "prompt" y "alert" (Adendres Winckler)\nSuma todos números hasta el que ingresa el usuario partiendo del 1.')
-							let numfinal = 0
-							let sumanum = 0
-							numfinal = Number(prompt("Se sumaran los números desde el 1 hasta el que ingrese a continuación: "))
-							for (let iteradorB = 1; iteradorB <= numfinal; iteradorB++) {
-								sumanum = sumanum + iteradorB;
-							}
-							alert("La suma de los numeros desde el 1 hasta el " + numfinal + " es " + sumanum)
-							alert('Programa finalizado')
-							break;
-						case 2:
-							alert('Ejercicio 3 con Ciclo For (Dario Carrizo)\nEl programa itera tantos números como indique el usuario con un ciclo for.')
-							var cantidad = prompt("Por favor, ingrese la cantidad de veces que desea recorrer el ciclo:");
-	
-							for (var i = 0; i < cantidad; i++) {
-								alert("Esta es la repetición número " + (i + 1));
-							}
-							alert('Programa finalizado')
-							break;
-						case 3:
-						alert(
-								"Ejercicio 4 con Ciclo DoWhile (Dante Martinez)\nEl programa itera tantos números como indique el usuario."
-							);
-							let contador = 0;
-	
-							let valorInput = Number(prompt("Ingrese un número"));
-							let resultado = "";
 							do {
-								resultado += "El contador es: " + contador + "\n";
-								contador++;
-							} while (contador < valorInput);
-							alert(resultado);
-							alert('Programa finalizado')
-							break;
-						case 4:
-							alert('Ejercicio 5 (Ezequiel Mariscal)')
-							break;
-						case 5:
-							alert('Ejercicio 6 (Franco Lara)')
-							break;
-						case 6:
-						alert('Ejercicio 7 con Ciclo for con la palabra Break (Jeremias Riquero)\nContador de números negativos y positivos (el programa se detendra cuando ingrese el numero 0 o cuando ingrese los 10 números)')
-							for (let numeros, contadorPositivos = 0, contadorNegativos = 0, iteradorC = 0; iteradorC <= 9; iteradorC++) {
-								numeros = Number(prompt((iteradorC + 1) + '. Ingrese un número:'))
-								if (numeros >= 1) {
-									contadorPositivos++;
-								}
-								if (numeros <= -1) {
-									contadorNegativos++;
-								}
-								if (numeros == 0) {
-									alert('El programa a sido interrumpido al ingresar el 0\n' + 'La cantidad de números positivos es de: ' + contadorPositivos + '\nLa cantidad de números negativos es de: ' + contadorNegativos)
-									break
-								}
-	
-								if (iteradorC == 9) {
-									alert('La cantidad de números positivos es de: ' + contadorPositivos + '\nLa cantidad de números negativos es de: ' + contadorNegativos)
-	
-								}
-							}
-							alert('El programa a finalizado')
-							break;
-						case 7:
-						alert('Ejercicio 8 con Ciclo While utilizando la etiqueta labels (Lucas Salinas)\nCalculo del promedio de 5 notas')
-							let iteradorD = 0, promedio = 0, menorNota = 9999, calificacion
-							inicio:
-							while (iteradorD <= 4) {
-								calificacion = Number(prompt((iteradorD + 1) + '. Ingrese una calificiacion'))
-								if (calificacion < 0) {
-									alert('El parametro ingresado no es valido porende el programa va a finalizar')
-									alert('El programa a finalizado')
-									inicio
-								} else {
-									promedio += calificacion
-									if (calificacion < menorNota) {
-										menorNota = calificacion
-									}
-									iteradorD++;
-								}
-							}
-							promedio /= 5;
-							alert('Programa a finalizado\nEl promedio de las calificaciones es: ' + promedio + '\nLa calificación menor es: ' + menorNota)
-							break;
-					}
-				}
-			} else if (selectorOpciones == 2) {
-				
-				while(opcionEjercicio < 1 || opcionEjercicio > 8 || seguir == 1 ) {
-					seguir = 0
-					opcionEjercicio = Number(prompt('Ingrese el numero del ejercicio que desea abrir:\nEjercicio 1 con Ciclo While (Abel Pierna) [1]\nEjercicio 2 con Ciclo for utilizando "prompt" y "alert" (Adendres Winckler) [2]\nEjercicio 3 con Ciclo For (Dario Carrizo) [3]\nEjercicio 4 con Ciclo DoWhile (Dante Martinez) [4]\nEjercicio 5 (Ezequiel Mariscal) [5]\nEjercicio 6 (Franco Lara) [6]\nEjercicio 7 con Ciclo for con la palabra Break (Jeremias Riquero) [7]\nEjercicio 8 (Lucas Salina) [8] '))
-					if (opcionEjercicio < 1 || opcionEjercicio > 8) {
-						alert('El número ingresado esta fuera de rango, digite un nuevo número.')
-					}
-					switch (opcionEjercicio) {
-						case 1:
-						alert(
-								"Ejercicio 1 con Ciclo While (Abel Pierna)\nComprueba si el año ingresado es biciesto"
-							);
-							let num,
-								opcion = 0;
-							while (opcion != 1) {
-								num = Number(prompt("Compruebe si el año es biciesto:"));
-								if ((num % 4 == 0 && num % 100 != 0) || num % 400 == 0) {
-									alert("El Año ingresado es biciesto.");
-								} else {
-									alert("El Año ingresado no es biciesto.");
-								}
-								do {
-									opcion = Number(
-										prompt(
-											"Si desea continuar con el programa ingrese [0]\nSi desea finalizar el programa ingrese [1]"
-										)
+								opcion = Number(
+									prompt(
+										"Si desea continuar con el programa ingrese [0]\nSi desea finalizar el programa ingrese [1]"
+									)
+								);
+								if (opcion != 0 && opcion != 1) {
+									alert(
+										"El valor ingresado no es compatible, vuelva a intentarlo"
 									);
-									if (opcion != 0 && opcion != 1) {
-										alert(
-											"El valor ingresado no es compatible, vuelva a intentarlo"
-										);
-									}
-								} while (opcion != 0 && opcion != 1);
-							}
-							alert("El programa a finalizado");
-							break;
-							
-						case 2:
-						alert('Ejercicio 2 con Ciclo for utilizando "prompt" y "alert" (Adendres Winckler)\nSuma todos números hasta el que ingresa el usuario partiendo del 1.')
-							let numfinal = 0
-							let sumanum = 0
-							numfinal = Number(prompt("Se sumaran los números desde el 1 hasta el que ingrese a continuación: "))
-							for (let iteradorB = 1; iteradorB <= numfinal; iteradorB++) {
-								sumanum = sumanum + iteradorB;
-							}
-							alert("La suma de los numeros desde el 1 hasta el " + numfinal + " es " + sumanum)
-							alert('Programa finalizado')
-							break;
-						case 3:
-							alert('Ejercicio 3 con Ciclo For (Dario Carrizo)\nEl programa itera tantos números como indique el usuario con un ciclo for.')
-							var cantidad = prompt("Por favor, ingrese la cantidad de veces que desea recorrer el ciclo:");
-	
-							for (var i = 0; i < cantidad; i++) {
-								alert("Esta es la repetición número " + (i + 1));
-							}
-							alert('Programa finalizado')
-							break;
-						case 4:
-						alert("Ejercicio 4 con Ciclo DoWhile (Dante Martinez)\nEl programa itera tantos números como indique el usuario.");
-							let contador = 0;
-	
-							let valorInput = Number(prompt("Ingrese un número"));
-							let resultado = "";
-							do {
-								resultado += "El contador es: " + contador + "\n";
-								contador++;
-							} while (contador < valorInput);
-							alert(resultado);
-							alert('Programa finalizado')
-							break;
-						case 5:
-							alert('Ejercicio 5 (Ezequiel Mariscal)')
-							break;
-						case 6:
-							alert('Ejercicio 6 (Franco Lara)')
-							break;
-						case 7:
-						alert('Ejercicio 7 con Ciclo for con la palabra Break (Jeremias Riquero)\nContador de números negativos y positivos (el programa se detendra cuando ingrese el numero 0 o cuando ingrese los 10 números)')
-							for (let numeros, contadorPositivos = 0, contadorNegativos = 0, iteradorC = 0; iteradorC <= 9; iteradorC++) {
-								numeros = Number(prompt((iteradorC + 1) + '. Ingrese un número:'))
-								if (numeros >= 1) {
-									contadorPositivos++;
 								}
-								if (numeros <= -1) {
-									contadorNegativos++;
-								}
-								if (numeros == 0) {
-									alert('El programa a sido interrumpido al ingresar el 0\n' + 'La cantidad de números positivos es de: ' + contadorPositivos + '\nLa cantidad de números negativos es de: ' + contadorNegativos)
-									break
-								}
-	
-								if (iteradorC == 9) {
-									alert('La cantidad de números positivos es de: ' + contadorPositivos + '\nLa cantidad de números negativos es de: ' + contadorNegativos)
-	
-								}
-							}
-							alert('El programa a finalizado')
-							break;
-						case 8:
-						alert('Ejercicio 8 con Ciclo While utilizando la etiqueta labels (Lucas Salinas)\nCalculo del promedio de 5 notas')
-							let iteradorD = 0, promedio = 0, menorNota = 9999, calificacion
-							inicio:
-							while (iteradorD <= 4) {
-								calificacion = Number(prompt((iteradorD + 1) + '. Ingrese una calificiacion'))
-								if (calificacion < 0) {
-									alert('El parametro ingresado no es valido porende el programa va a finalizar')
-									alert('El programa a finalizado')
-									inicio
-								} else {
-									promedio += calificacion
-									if (calificacion < menorNota) {
-										menorNota = calificacion
-									}
-									iteradorD++;
-								}
-							}
-							promedio /= 5;
-							alert('Programa a finalizado\nEl promedio de las calificaciones es: ' + promedio + '\nLa calificación menor es: ' + menorNota)
-							break;
-	
-					}
-					while (seguir < 1 || seguir > 2) {
-						seguir = Number(prompt('¿Desea volver al menu principal y ver otro ejercicio?\nSi[1]\nNo[2]'))
-						if (seguir < 1 || seguir > 2) {
-							alert('El parametro ingresado no es valido, vuelva a intentarlo.')
+							} while (opcion != 0 && opcion != 1);
 						}
+						alert("El programa a finalizado");
+						break;
+
+					case 1:
+						alert('Ejercicio 2 con Ciclo for utilizando "prompt" y "alert" (Adendres Winckler)\nSuma todos números hasta el que ingresa el usuario partiendo del 1.')
+						let numfinal = 0
+						let sumanum = 0
+						numfinal = Number(prompt("Se sumaran los números desde el 1 hasta el que ingrese a continuación: "))
+						for (let iteradorB = 1; iteradorB <= numfinal; iteradorB++) {
+							sumanum = sumanum + iteradorB;
+						}
+						alert("La suma de los numeros desde el 1 hasta el " + numfinal + " es " + sumanum)
+						alert('Programa finalizado')
+						break;
+					case 2:
+						alert('Ejercicio 3 con Ciclo For (Dario Carrizo)\nEl programa itera tantos números como indique el usuario con un ciclo for.')
+						var cantidad = prompt("Por favor, ingrese la cantidad de veces que desea recorrer el ciclo:");
+
+						for (var i = 0; i < cantidad; i++) {
+							alert("Esta es la repetición número " + (i + 1));
+						}
+						alert('Programa finalizado')
+						break;
+					case 3:
+						alert(
+							"Ejercicio 4 con Ciclo DoWhile (Dante Martinez)\nEl programa itera tantos números como indique el usuario."
+						);
+						let contador = 0;
+
+						let valorInput = Number(prompt("Ingrese un número"));
+						let resultado = "";
+						do {
+							resultado += "El contador es: " + contador + "\n";
+							contador++;
+						} while (contador < valorInput);
+						alert(resultado);
+						alert('Programa finalizado')
+						break;
+					case 4:
+						alert('Ejercicio 5 (Ezequiel Mariscal)')
+						break;
+					case 5:
+						alert('Ejercicio 6 (Franco Lara)')
+						break;
+					case 6:
+						alert('Ejercicio 7 con Ciclo for con la palabra Break (Jeremias Riquero)\nContador de números negativos y positivos (el programa se detendra cuando ingrese el numero 0 o cuando ingrese los 10 números)')
+						for (let numeros, contadorPositivos = 0, contadorNegativos = 0, iteradorC = 0; iteradorC <= 9; iteradorC++) {
+							numeros = Number(prompt((iteradorC + 1) + '. Ingrese un número:'))
+							if (numeros >= 1) {
+								contadorPositivos++;
+							}
+							if (numeros <= -1) {
+								contadorNegativos++;
+							}
+							if (numeros == 0) {
+								alert('El programa a sido interrumpido al ingresar el 0\n' + 'La cantidad de números positivos es de: ' + contadorPositivos + '\nLa cantidad de números negativos es de: ' + contadorNegativos)
+								break
+							}
+
+							if (iteradorC == 9) {
+								alert('La cantidad de números positivos es de: ' + contadorPositivos + '\nLa cantidad de números negativos es de: ' + contadorNegativos)
+
+							}
+						}
+						alert('El programa a finalizado')
+						break;
+					case 7:
+						alert('Ejercicio 8 con Ciclo While utilizando la etiqueta labels (Lucas Salinas)\nCalculo del promedio de 5 notas')
+						let iteradorD = 0, promedio = 0, menorNota = 9999, calificacion
+						inicio:
+						while (iteradorD <= 4) {
+							calificacion = Number(prompt((iteradorD + 1) + '. Ingrese una calificiacion'))
+							if (calificacion < 0) {
+								alert('El parametro ingresado no es valido porende el programa va a finalizar')
+								alert('El programa a finalizado')
+								inicio
+							} else {
+								promedio += calificacion
+								if (calificacion < menorNota) {
+									menorNota = calificacion
+								}
+								iteradorD++;
+							}
+						}
+						promedio /= 5;
+						alert('Programa a finalizado\nEl promedio de las calificaciones es: ' + promedio + '\nLa calificación menor es: ' + menorNota)
+						break;
+				}
+			}
+		} else if (selectorOpciones == 2) {
+
+			while (opcionEjercicio < 1 || opcionEjercicio > 8 || seguir == 1) {
+				seguir = 0
+				opcionEjercicio = Number(prompt('Ingrese el numero del ejercicio que desea abrir:\nEjercicio 1 con Ciclo While (Abel Pierna) [1]\nEjercicio 2 con Ciclo for utilizando "prompt" y "alert" (Adendres Winckler) [2]\nEjercicio 3 con Ciclo For (Dario Carrizo) [3]\nEjercicio 4 con Ciclo DoWhile (Dante Martinez) [4]\nEjercicio 5 (Ezequiel Mariscal) [5]\nEjercicio 6 (Franco Lara) [6]\nEjercicio 7 con Ciclo for con la palabra Break (Jeremias Riquero) [7]\nEjercicio 8 (Lucas Salina) [8] '))
+				if (opcionEjercicio < 1 || opcionEjercicio > 8) {
+					alert('El número ingresado esta fuera de rango, digite un nuevo número.')
+				}
+				switch (opcionEjercicio) {
+					case 1:
+						alert(
+							"Ejercicio 1 con Ciclo While (Abel Pierna)\nComprueba si el año ingresado es biciesto"
+						);
+						let num,
+							opcion = 0;
+						while (opcion != 1) {
+							num = Number(prompt("Compruebe si el año es biciesto:"));
+							if ((num % 4 == 0 && num % 100 != 0) || num % 400 == 0) {
+								alert("El Año ingresado es biciesto.");
+							} else {
+								alert("El Año ingresado no es biciesto.");
+							}
+							do {
+								opcion = Number(
+									prompt(
+										"Si desea continuar con el programa ingrese [0]\nSi desea finalizar el programa ingrese [1]"
+									)
+								);
+								if (opcion != 0 && opcion != 1) {
+									alert(
+										"El valor ingresado no es compatible, vuelva a intentarlo"
+									);
+								}
+							} while (opcion != 0 && opcion != 1);
+						}
+						alert("El programa a finalizado");
+						break;
+
+					case 2:
+						alert('Ejercicio 2 con Ciclo for utilizando "prompt" y "alert" (Adendres Winckler)\nSuma todos números hasta el que ingresa el usuario partiendo del 1.')
+						let numfinal = 0
+						let sumanum = 0
+						numfinal = Number(prompt("Se sumaran los números desde el 1 hasta el que ingrese a continuación: "))
+						for (let iteradorB = 1; iteradorB <= numfinal; iteradorB++) {
+							sumanum = sumanum + iteradorB;
+						}
+						alert("La suma de los numeros desde el 1 hasta el " + numfinal + " es " + sumanum)
+						alert('Programa finalizado')
+						break;
+					case 3:
+						alert('Ejercicio 3 con Ciclo For (Dario Carrizo)\nEl programa itera tantos números como indique el usuario con un ciclo for.')
+						var cantidad = prompt("Por favor, ingrese la cantidad de veces que desea recorrer el ciclo:");
+
+						for (var i = 0; i < cantidad; i++) {
+							alert("Esta es la repetición número " + (i + 1));
+						}
+						alert('Programa finalizado')
+						break;
+					case 4:
+						alert("Ejercicio 4 con Ciclo DoWhile (Dante Martinez)\nEl programa itera tantos números como indique el usuario.");
+						let contador = 0;
+
+						let valorInput = Number(prompt("Ingrese un número"));
+						let resultado = "";
+						do {
+							resultado += "El contador es: " + contador + "\n";
+							contador++;
+						} while (contador < valorInput);
+						alert(resultado);
+						alert('Programa finalizado')
+						break;
+					case 5:
+						alert('Ejercicio 5 (Ezequiel Mariscal)')
+						break;
+					case 6:
+						alert('Ejercicio 6 (Franco Lara)')
+						break;
+					case 7:
+						alert('Ejercicio 7 con Ciclo for con la palabra Break (Jeremias Riquero)\nContador de números negativos y positivos (el programa se detendra cuando ingrese el numero 0 o cuando ingrese los 10 números)')
+						for (let numeros, contadorPositivos = 0, contadorNegativos = 0, iteradorC = 0; iteradorC <= 9; iteradorC++) {
+							numeros = Number(prompt((iteradorC + 1) + '. Ingrese un número:'))
+							if (numeros >= 1) {
+								contadorPositivos++;
+							}
+							if (numeros <= -1) {
+								contadorNegativos++;
+							}
+							if (numeros == 0) {
+								alert('El programa a sido interrumpido al ingresar el 0\n' + 'La cantidad de números positivos es de: ' + contadorPositivos + '\nLa cantidad de números negativos es de: ' + contadorNegativos)
+								break
+							}
+
+							if (iteradorC == 9) {
+								alert('La cantidad de números positivos es de: ' + contadorPositivos + '\nLa cantidad de números negativos es de: ' + contadorNegativos)
+
+							}
+						}
+						alert('El programa a finalizado')
+						break;
+					case 8:
+						alert('Ejercicio 8 con Ciclo While utilizando la etiqueta labels (Lucas Salinas)\nCalculo del promedio de 5 notas')
+						let iteradorD = 0, promedio = 0, menorNota = 9999, calificacion
+						inicio:
+						while (iteradorD <= 4) {
+							calificacion = Number(prompt((iteradorD + 1) + '. Ingrese una calificiacion'))
+							if (calificacion < 0) {
+								alert('El parametro ingresado no es valido porende el programa va a finalizar')
+								alert('El programa a finalizado')
+								inicio
+							} else {
+								promedio += calificacion
+								if (calificacion < menorNota) {
+									menorNota = calificacion
+								}
+								iteradorD++;
+							}
+						}
+						promedio /= 5;
+						alert('Programa a finalizado\nEl promedio de las calificaciones es: ' + promedio + '\nLa calificación menor es: ' + menorNota)
+						break;
+
+				}
+				while (seguir < 1 || seguir > 2) {
+					seguir = Number(prompt('¿Desea volver al menu principal y ver otro ejercicio?\nSi[1]\nNo[2]'))
+					if (seguir < 1 || seguir > 2) {
+						alert('El parametro ingresado no es valido, vuelva a intentarlo.')
 					}
-					
-	
-				} 
-				
+				}
+
+
 			}
-			{
-			}
+
+		}
+		{
+		}
 	</script>
 
 	<div class="contendorAsideMain">
@@ -300,49 +300,57 @@
 		</aside>
 
 	</div>
-		<main>
-			<section class="titulos">
-				<h1>Proyecto Ciclos - Java Script</h1>
-				<h2>Grupo No-Code</h2>
-			</section>
-			<div class="imagen_Codigo">
-				<div class="contenedor_imagen">
-					<h5>Ejercicio 1 (Abel Pierna)</h5>
-				</div>
-				<div class="contenedor_imagen">
-					<h5>Ejercicio 2 (Andres Winckler)</h5>
-				</div>
-				<div class="contenedor_imagen">
-					<h5>Ejercicio 3 (Dario Carrizo)</h5>
-				</div>
-				<div class="contenedor_imagen">
-					<h5>Ejercicio 4 (Dante Martinez)</h5>
-				</div>
-				<div class="contenedor_imagen">
-					<h5>Ejercicio 5 (Ezequiel Mariscal)</h5>
-				</div>
-				<div class="contenedor_imagen">
-					<h5>Ejercicio 6 (Franco Lara)</h5>
-				</div>
-				<div class="contenedor_imagen">
-					<h5>Ejercicio 7 (Jeremias Riquero)</h5>
-				</div>
-				<div class="contenedor_imagen">
-					<h5>Ejercicio 8 (Lucas Salinas)</h5>
-				</div>
-				
-				
-				
-				
-				
-				
-				
-				
-
+	<main>
+		<section class="titulos">
+			<h1>Proyecto Ciclos - Java Script</h1>
+			<h2>Grupo No-Code</h2>
+		</section>
+		<div class="imagen_Codigo">
+			<div class="contenedor_imagen">
+				<h5>Ejercicio 1 (Abel Pierna)</h5>
+				<img src="./multimedia/1-While abel.jpeg" alt="Ejercicio 1">
+			</div>
+			<div class="contenedor_imagen">
+				<h5>Ejercicio 2 (Andres Winckler)</h5>
+				<img src="./multimedia/2-ciclofor.jpeg" alt="Ejercicio 2">
+			</div>
+			<div class="contenedor_imagen">
+				<h5>Ejercicio 3 (Dario Carrizo)</h5>
+				<img src="./multimedia/03-for dario.jpeg" alt="Ejercicio 3">
+			</div>
+			<div class="contenedor_imagen">
+				<h5>Ejercicio 4 (Dante Martinez)</h5>
+				<img src="./multimedia/04-dowhile-dante.jpeg" alt="Ejercicio 4">
+			</div>
+			<div class="contenedor_imagen">
+				<h5>Ejercicio 5 (Ezequiel Mariscal)</h5>
+				<img src="" alt="Ejercicio 5">
+			</div>
+			<div class="contenedor_imagen">
+				<h5>Ejercicio 6 (Franco Lara)</h5>
+				<img src="" alt="Ejercicio 6">
+			</div>
+			<div class="contenedor_imagen">
+				<h5>Ejercicio 7 (Jeremias Riquero)</h5>
+				<img src="./multimedia/07-forconbreak jeremias.jpeg" alt="Ejercicio 7">
+			</div>
+			<div class="contenedor_imagen">
+				<h5>Ejercicio 8 (Lucas Salinas)</h5>
+				<img src="./multimedia/08-while-lucas.jpeg" alt="Ejercicio 8">
 			</div>
 
 
-		</main>
+
+
+
+
+
+
+
+		</div>
+
+
+	</main>
 </body>
 <style>
 	* {
@@ -357,7 +365,7 @@
 		width: 100%;
 		height: auto;
 		flex-direction: column;
-		background: radial-gradient(circle, rgba(69,69,69,1) 0%, rgba(20,21,22,1) 78%, rgba(0,0,0,1) 100%);
+		background: radial-gradient(circle, rgba(69, 69, 69, 1) 0%, rgba(20, 21, 22, 1) 78%, rgba(0, 0, 0, 1) 100%);
 
 	}
 
@@ -384,39 +392,45 @@
 		width: 100%;
 		height: 100%;
 	}
-	.contendorAsideMain{
+
+	.contendorAsideMain {
 		display: flex;
 
 		flex-direction: row;
-		
+
 	}
+
 	aside {
 		display: flex;
 		padding: 1.5%;
 		flex-direction: column;
 		width: 20%;
 		height: 80vh;
-		background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(55,54,53,1) 100%);
+		background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(55, 54, 53, 1) 100%);
 		box-shadow: 4px 4px 6px#000;
 		z-index: 90;
 		position: fixed;
 		margin-top: 20vh;
 
 	}
-	aside h3{
+
+	aside h3 {
 		color: #f5c526;
 		font-size: 1.6rem;
 		text-shadow: 2px 2px 15px #fcd248;
 		margin-bottom: 6%;
 	}
-	aside h4{
+
+	aside h4 {
 		margin: 4%;
 	}
-	aside a{
+
+	aside a {
 		text-decoration: none;
 		color: #b89627;
 	}
-	aside a:hover{
+
+	aside a:hover {
 		color: #f5c526;
 		text-shadow: 2px 2px 5px #fcd248;
 	}
@@ -431,7 +445,8 @@
 		align-items: center;
 		flex-direction: column;
 	}
-	.titulos{
+
+	.titulos {
 		width: 60%;
 		height: auto;
 		display: flex;
@@ -447,16 +462,19 @@
 		margin-bottom: 5rem;
 
 	}
-	.titulos h1{
+
+	.titulos h1 {
 		color: #f5c526;
 		text-shadow: 2px 2px 50px #fcd248;
 		font-size: 2.5rem;
 		padding-bottom: 1rem;
 	}
-	.titulos h2{
+
+	.titulos h2 {
 		color: #b89627;
 	}
-	.imagen_Codigo{
+
+	.imagen_Codigo {
 		display: flex;
 		width: 100%;
 		height: auto;
@@ -464,23 +482,33 @@
 		flex-direction: column;
 		align-items: center;
 	}
-	.contenedor_imagen{
-		width: 60%;
+
+	.contenedor_imagen {
+		width: 95%;
 		height: auto;
 		display: flex;
 		justify-content: center;
+		text-align: center;
 		background-color: #1f1e1e;
 		box-shadow: 3px 3px 15px #000;
 		margin-bottom: 4rem;
 		border-radius: .3rem;
+		overflow: none;
+		flex-direction: column;
 
 	}
-	.contenedor_imagen h5{
+
+	.contenedor_imagen h5 {
 		color: #f5c526;
 		font-size: 1.3rem;
 		padding: 1rem;
 	}
+	.contenedor_imagen img{
+		display: flex;
+		width: 100%;
+		height: 100%;
 
+	}
 </style>
 
 </html>
