@@ -44,7 +44,7 @@ Aqui se mostrara la informacion relacionada acomo funciona cada ciclo de JavaScr
 de las palabras reservadas por el lenguaje, explicadas por cada integrante del 
 grupo *No-Code*.
 
-Ciclo While:......rellenar
+Ciclo While: El ciclo while en JavaScript se utiliza para repetir una sección de código mientras se cumpla una determinada condición. 
 
 Ciclo do While:....rellenar
 
