@@ -42,6 +42,17 @@ Aqui se mostrara la informacion relacionada acomo funciona cada ciclo de JavaScr
 de las palabras reservadas por el lenguaje, explicadas por cada integrante del 
 grupo *No-Code*.
 
+Ciclo While:......rellenar
+
+Ciclo do While:....rellenar
+
+Ciclo For: El ciclo for permite iterar sobre secuencias de elementos de una variable de control, condición o una actualización, ejecutando acciones en cada iteración. Se combina con otras estructuras de control de flujo para controlar su comportamiento (Dario )
+
+Palabras Reservadas: 
+
+Break: ........rellenar
+
+Continue: .......rellenar
 
 #  USO DE LAS SENTENCIAS -PROMPT- y -ALERT- 
 
@@ -64,17 +75,6 @@ En resumen, la sentencia prompt se utiliza para solicitar información al usuari
 
 
 
-Ciclo While:......rellenar
-
-Ciclo do While:....rellenar
-
-Ciclo For:.....rellenar
-
-Palabras Reservadas: 
-
-Break: ........rellenar
-
-Continue: .......rellenar
 
 *Comentarios Finales*
 
