@@ -1,5 +1,5 @@
 # _LABORATORIO III_
-![](https://tenor.com/bk6w1.gif)
+![](https://media.giphy.com/media/l3vQXGZtqwRo1Zbe8/giphy.gif)
 
 # Proyecto Ciclo en Java Script - presentado en HTML
 
