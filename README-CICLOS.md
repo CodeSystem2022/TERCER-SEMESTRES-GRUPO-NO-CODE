@@ -30,13 +30,15 @@ de html (index.html) los ciclos:
 [![html-head.webp](https://i.postimg.cc/T3xVRB2z/html-head.webp)](https://postimg.cc/PP6py3wy)
 
 en el siguiente archivo encontrara una estructura simple que tendra en su interior
-una configuracion basica y dentro de su body encontraremos la etiqueta Script la cual 
+una configuracion basica y dentro de su head encontraremos la etiqueta Script la cual 
 contendra codigo en JavaScript y este se encargara a traves de prompts preguntarle al 
 usuario de la web, cuantas repeticiones de algunos ciclos, quiere que se ejecuten, y a
 traves de mensajes de Alert se le mostrara el resultado en cada operacion, y al final 
 dicha ejecucion se accedera a la pagina web donde se mostrara el Titulo del proyecto y 
 los resultados obtenidos en algunos de los casos presentados y los integrantes del mismo.
 
+# CSS
+[![Css-5.pnf](https://www.solucionex.com/sites/default/files/posts/imagen/css_blog.png)
 # JAVASCRIPT:
 [![Javascript-5.jpg](https://i.postimg.cc/fyBNJGn8/Javascript-5.jpg)](https://postimg.cc/SY25PtK9)
 
