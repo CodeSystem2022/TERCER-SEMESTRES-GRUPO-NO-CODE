@@ -40,9 +40,7 @@ En resumen, HTML es el lenguaje principal utilizado para crear contenido web y e
 
 # CSS
 
-![Css-5.pnf](https://www.solucionex.com/sites/default/files/posts/imagen/css_blog.png)
-
-![](https://media.giphy.com/media/8PpFJcG4y8HqsxQumz/giphy.gif)
+![Css-5.pnf](https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif)
 
 CSS, o Cascading Style Sheets, se utiliza para dar estilo y formato a páginas web escritas en lenguaje HTML. Con CSS, puedes controlar la apariencia de todos los elementos HTML en una página, incluyendo el tamaño, la fuente, el color, el diseño y la posición.
 
