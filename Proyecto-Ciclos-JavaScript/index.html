@@ -83,7 +83,15 @@
 						alert('Programa finalizado')
 						break;
 					case 3:
-						alert('Ejercicio 4')
+						alert('Ejercicio 4 con Ciclo for utilizando "prompt" y "alert"(Adendres Winckler)\nSuma todos números hasta el que ingresa el usuario partiendo del 1.')
+						let numfinal = 0
+						let sumanum = 0
+						numfinal = Number(prompt("Se sumaran los números desde el 1 hasta el que ingrese a continuación: "))
+						for (let iteradorB = 1; iteradorB <= numfinal; iteradorB++) {
+							sumanum = sumanum + iteradorB;
+						}
+						alert("La suma de los numeros desde el 1 hasta el " + numfinal + " es " + sumanum)
+						alert('Programa finalizado')
 						break;
 					default:
 
