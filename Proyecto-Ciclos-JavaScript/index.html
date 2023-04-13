@@ -268,6 +268,12 @@
 						break;
 
 				}
+				while (seguir < 1 || seguir > 2) {
+					seguir = Number(prompt('¿Desea volver al menu principal y ver otro ejercicio?\nSi[1]\nNo[2]'))
+					if (seguir < 1 || seguir > 2) {
+						alert('El parametro ingresado no es valido, vuelva a intentarlo.')
+					}
+				}
 				
 
 			} 
