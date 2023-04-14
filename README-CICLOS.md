@@ -73,7 +73,9 @@ Palabras Reservadas:
 
 Break:La sentencia break incluye una etiqueta opcional que permite al programa salir de una sentencia etiquetada. La sentencia break necesita estar anidada dentro de la sentencia etiquetada. La sentencia etiquetada puede ser cualquier tipo de sentencia; no tiene que ser una sentencia de bucle.
 
-Continue: .......rellenar
+Continue: en JavaScript, continue es una palabra clave que se utiliza dentro de bucles (como for y while) para saltar la ejecución de una iteración específica del bucle. Cuando se encuentra la palabra clave continue, se omite el código que sigue inmediatamente dentro del bloque de bucle para la iteración actual y se continúa con la siguiente iteración del bucle.
+
+Continue es útil cuando se necesita saltar una iteración específica del bucle sin interrumpir completamente la ejecución del bucle. Esto puede ser útil en situaciones como la filtración de elementos de una matriz, la omisión de elementos específicos en un ciclo, etc.
 
 Etiqueta labels en JavaScript: ......relenar
 
