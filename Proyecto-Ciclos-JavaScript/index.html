@@ -96,7 +96,16 @@
 						alert('Ejercicio 5 (Ezequiel Mariscal)')
 						break;
 					case 5:
-						alert('Ejercicio 6 (Franco Lara)')
+						alert('Ejercicio 6 con Ciclo Do While (Franco Lara)\nSuma todos los números pares en el rango indicado empezando en 1')
+						let cantidadIteraciones = Number(prompt("Ingrese la cantidad de iteraciones que desea que tenga el ciclo:")), sumaPares = 0, iteradorE = 0;
+
+						do {
+							if (iteradorE % 2 === 0) {
+								sumaPares += iteradorE;
+							}
+							iteradorE++;
+						} while (iteradorE <= cantidadIteraciones);
+						alert("El Programa a finalizado la suma de todos los numeros pares es: " + sumaPares);
 						break;
 					case 6:
 						alert('Ejercicio 7 con Ciclo for con la palabra Break (Jeremias Riquero)\nContador de números negativos y positivos (el programa se detendra cuando ingrese el numero 0 o cuando ingrese los 10 números)')
@@ -147,7 +156,7 @@
 
 			while (opcionEjercicio < 1 || opcionEjercicio > 8 || seguir == 1) {
 				seguir = 0
-				opcionEjercicio = Number(prompt('Ingrese el numero del ejercicio que desea abrir:\nEjercicio 1 con Ciclo While (Abel Pierna) [1]\nEjercicio 2 con Ciclo for utilizando "prompt" y "alert" (Adendres Winckler) [2]\nEjercicio 3 con Ciclo For (Dario Carrizo) [3]\nEjercicio 4 con Ciclo DoWhile (Dante Martinez) [4]\nEjercicio 5 (Ezequiel Mariscal) [5]\nEjercicio 6 (Franco Lara) [6]\nEjercicio 7 con Ciclo for con la palabra Break (Jeremias Riquero) [7]\nEjercicio 8 (Lucas Salina) [8] '))
+				opcionEjercicio = Number(prompt('Ingrese el numero del ejercicio que desea abrir:\nEjercicio 1 con Ciclo While (Abel Pierna) [1]\nEjercicio 2 con Ciclo for utilizando "prompt" y "alert" (Adendres Winckler) [2]\nEjercicio 3 con Ciclo For (Dario Carrizo) [3]\nEjercicio 4 con Ciclo DoWhile (Dante Martinez) [4]\nEjercicio 5 (Ezequiel Mariscal) [5]\nEjercicio 6 con Ciclo Do While (Franco Lara) [6]\nEjercicio 7 con Ciclo for con la palabra Break (Jeremias Riquero) [7]\nEjercicio 8 (Lucas Salina) [8] '))
 				if (opcionEjercicio < 1 || opcionEjercicio > 8) {
 					alert('El número ingresado esta fuera de rango, digite un nuevo número.')
 				}
@@ -218,7 +227,16 @@
 						alert('Ejercicio 5 (Ezequiel Mariscal)')
 						break;
 					case 6:
-						alert('Ejercicio 6 (Franco Lara)')
+						alert('Ejercicio 6 con Ciclo Do While (Franco Lara)\nSuma todos los números pares en el rango indicado empezando en 1')
+						let cantidadIteraciones = Number(prompt("Ingrese la cantidad de iteraciones que desea que tenga el ciclo:")), sumaPares = 0, iteradorE = 0;
+
+						do {
+							if (iteradorE % 2 === 0) {
+								sumaPares += iteradorE;
+							}
+							iteradorE++;
+						} while (iteradorE <= cantidadIteraciones);
+						alert("El Programa a finalizado la suma de todos los numeros pares es: " + sumaPares);
 						break;
 					case 7:
 						alert('Ejercicio 7 con Ciclo for con la palabra Break (Jeremias Riquero)\nContador de números negativos y positivos (el programa se detendra cuando ingrese el numero 0 o cuando ingrese los 10 números)')
@@ -503,7 +521,8 @@
 		font-size: 1.3rem;
 		padding: 1rem;
 	}
-	.contenedor_imagen img{
+
+	.contenedor_imagen img {
 		display: flex;
 		width: 100%;
 		height: 100%;
