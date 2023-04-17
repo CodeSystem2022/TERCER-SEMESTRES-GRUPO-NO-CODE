@@ -93,10 +93,19 @@
 						alert('Programa finalizado')
 						break;
 					case 4:
-						alert('Ejercicio 5 (Ezequiel Mariscal)')
+						alert('Ejercicio 5 con Ciclo For usando la palabra Continue (Ezequiel Mariscal)\nEl ejercicio se podra ver al finalizar el proceso con alert y prompt.')
 						break;
 					case 5:
-						alert('Ejercicio 6 (Franco Lara)')
+						alert('Ejercicio 6 con Ciclo Do While (Franco Lara)\nSuma todos los números pares en el rango indicado empezando en 1')
+						let cantidadIteraciones = Number(prompt("Ingrese la cantidad de iteraciones que desea que tenga el ciclo:")), sumaPares = 0, iteradorE = 0;
+
+						do {
+							if (iteradorE % 2 === 0) {
+								sumaPares += iteradorE;
+							}
+							iteradorE++;
+						} while (iteradorE <= cantidadIteraciones);
+						alert("El Programa a finalizado la suma de todos los numeros pares es: " + sumaPares);
 						break;
 					case 6:
 						alert('Ejercicio 7 con Ciclo for con la palabra Break (Jeremias Riquero)\nContador de números negativos y positivos (el programa se detendra cuando ingrese el numero 0 o cuando ingrese los 10 números)')
@@ -215,10 +224,19 @@
 						alert('Programa finalizado')
 						break;
 					case 5:
-						alert('Ejercicio 5 (Ezequiel Mariscal)')
+						alert('Ejercicio 5 con Ciclo For usando la palabra Continue (Ezequiel Mariscal)\nEl ejercicio se podra ver al finalizar el proceso con alert y prompt.')
 						break;
 					case 6:
-						alert('Ejercicio 6 (Franco Lara)')
+						alert('Ejercicio 6 con Ciclo Do While (Franco Lara)\nSuma todos los números pares en el rango indicado empezando en 1')
+						let cantidadIteraciones = Number(prompt("Ingrese la cantidad de iteraciones que desea que tenga el ciclo:")), sumaPares = 0, iteradorE = 0;
+
+						do {
+							if (iteradorE % 2 === 0) {
+								sumaPares += iteradorE;
+							}
+							iteradorE++;
+						} while (iteradorE <= cantidadIteraciones);
+						alert("El Programa a finalizado la suma de todos los numeros pares es: " + sumaPares);
 						break;
 					case 7:
 						alert('Ejercicio 7 con Ciclo for con la palabra Break (Jeremias Riquero)\nContador de números negativos y positivos (el programa se detendra cuando ingrese el numero 0 o cuando ingrese los 10 números)')
@@ -503,7 +521,8 @@
 		font-size: 1.3rem;
 		padding: 1rem;
 	}
-	.contenedor_imagen img{
+
+	.contenedor_imagen img {
 		display: flex;
 		width: 100%;
 		height: 100%;
