@@ -1,7 +1,7 @@
 PROYECTO ARREGLOS CLASE N2 ARIEL BETANCUD
 PRODUCT OWNER
 
-***Grupo No-Code*** 
+***Grupo No-Code*****
 Integrantes.
 Abel, Pierna.
 Lucas, Salinas.
