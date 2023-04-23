@@ -30,6 +30,17 @@
                     }
                 } while (añoArreglo[i] < 0);
             }
+            for (let i = 0; i < añoArreglo.length; i++) {
+                if (añoArreglo[i] % 4 == 0 && añoArreglo[i] % 100 != 0 || añoArreglo[i] % 400 == 0) {
+                    añosBiciestos[añosBiciestos.length] = añoArreglo[i];
+                    cantidadBiciestos++;
+                } else {
+                    añosNoBiciestos[añosNoBiciestos.length] = añoArreglo[i];
+                    cantidadNoBiciestos++;
+                }
+
+            }
+            alert('De los años ingresados' + cantidadAños + 'los resultados son:\nCantidad de años Biciestos: ' + cantidadBiciestos + '\n' + añosBiciestos + '\nCantidad de años No Biciestos: ' + cantidadNoBiciestos + '\n' + añosNoBiciestos)
             
             do {
                 opcion = Number(prompt('Si desea continuar con el programa ingrese [0]\nSi desea finalizar el programa ingrese [1]'))
