@@ -22,7 +22,14 @@
                     alert('El valor ingresado no es compatible, vuelva a intentarlo');
                 }
             } while (cantidadAños < 0);
-
+            for (let i = 0; i < cantidadAños; i++) {
+                do {
+                    añoArreglo[i] = Number(prompt((i + 1) + '. Ingrese el  Primer año:'));
+                    if (añoArreglo[i] < 0) {
+                        alert('El valor ingresado no es compatible, vuelva a intentarlo');
+                    }
+                } while (añoArreglo[i] < 0);
+            }
             
             do {
                 opcion = Number(prompt('Si desea continuar con el programa ingrese [0]\nSi desea finalizar el programa ingrese [1]'))
