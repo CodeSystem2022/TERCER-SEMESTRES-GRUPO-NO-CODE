@@ -16,6 +16,12 @@
             const añoArreglo = [];
             const añosBiciestos = [];
             const añosNoBiciestos = [];
+            do {
+                cantidadAños = Number(prompt("Ingrese la cantidad de fechas que quiere ingresar: "))
+                if (cantidadAños < 0) {
+                    alert('El valor ingresado no es compatible, vuelva a intentarlo');
+                }
+            } while (cantidadAños < 0);
 
             
             do {
