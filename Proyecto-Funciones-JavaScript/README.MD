@@ -28,7 +28,7 @@ Los temas a realizar en este es scrum son mostrar los diferentes temas observado
 En este html se vera un ejemplo de una función basica de JavaScript, la cual realiza una suma. esto se mostrara de manera interactiva con el uso de html.
 (Realizado por: Martínez Dante)
 
-1.2 Palabra return: 
+1.2 Palabra return: rellenar...............................
 1.3 Funciones de tipo expresión
 1.4 Funciones de tipo self y invoking
 1.5 Tipos de datos en una función
