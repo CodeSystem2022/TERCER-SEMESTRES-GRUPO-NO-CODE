@@ -20,7 +20,7 @@ Las funciones son una parte fundamental del lenguaje de programación JavaScript
 
 Los tipos de datos que se pueden pasar como parámetros a una función incluyen :
 
-                                                                                ipos de datos en funciones de JavaScript
+                                                                                Tipos de datos en funciones de JavaScript
 
 
                                                                                * Strings
