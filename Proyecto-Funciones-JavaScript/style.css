@@ -1,0 +1,15 @@
+.contenedor{
+    background-color: blueviolet;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+h1{
+    text-align: center;
+}
+.parrafo{
+    display:flex;
+    justify-content: center;
+    width: 70%;
+    font-size: 1.5rem;
+}
