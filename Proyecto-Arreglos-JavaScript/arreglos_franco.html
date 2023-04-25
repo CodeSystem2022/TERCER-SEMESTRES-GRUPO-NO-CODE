@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>alert('Ejercicio 6 con Ciclo Do While (Franco Lara)\nSuma todos los números pares en el rango indicado empezando en 1')
+        let cantidadIteraciones = Number(prompt("Ingrese la cantidad de iteraciones que desea que tenga el ciclo:")), sumaPares = 0, iteradorE = 0;
+
+        const pares = [];
+
+        do {
+            if (iteradorE % 2 === 0) {
+                pares[pares.length] = iteradorE
+            }
+            iteradorE++;
+        } while (iteradorE <= cantidadIteraciones);
+        for (let i = 0; i < pares.length; i++) {
+            sumaPares += pares[i];
+        }
+        alert("El Programa a finalizado la suma de todos los numeros pares es: " + sumaPares + '\n ' + pares);</script>
+</head>
+
+<body>
+    <h1>Franco Lara</h1>
+    <h2>El programa basicamente suma los pares dados por el usuario para luego mostrarlos en un arreglo</h2>
+</body>
+
+</html>

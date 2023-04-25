@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeremias Riquero</title>
+    <meta name="autor" content="Jeremias Riquero">
+    <script>
+        alert('Contador de números negativos y positivos (el programa se detendra cuando ingrese el numero 0 o cuando ingrese los 10 números)')
+        const numeros = [0,0,0,0,0,0,0,0,0,0];
+        for (let i = 0, contadorPositivos = 0, contadorNegativos = 0; i < numeros.length ; i++) {
+            numeros[i] = Number(prompt((i+1) + '. Ingrese un número:'));
+            if (numeros[i] >= 1) {
+                contadorPositivos++;
+            }
+            if (numeros[i] <= -1) {
+                contadorNegativos++;
+            }
+            if (numeros[i] == 0) {
+                alert('El programa a sido interrumpido al ingresar el 0\n' + 'La cantidad de números positivos es de: ' + contadorPositivos + '\nLa cantidad de números negativos es de: ' + contadorNegativos)
+                break
+            }
+            if (i == 9) {
+                alert('La cantidad de números positivos es de: ' + contadorPositivos + '\nLa cantidad de números negativos es de: ' + contadorNegativos + '\nListado de números:\n' + numeros);
+                alert('El Programa Finalizo');
+            }
+        }
+        
+
+
+    </script>
+</head>
+
+<body>
+    <style>
+        *{
+            margin:  0;
+            padding: 0;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100vh;
+            background: hsl(0, 58%, 84%);
+        }
+        .contenedor{
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+            width: 40%;
+            height: auto;
+            padding: 3rem;
+            background: #882323;
+            box-shadow: 3px 3px 10px #000;
+        }
+    </style>
+    <div class="contenedor">
+        <h1>Laboratorio III</h1>
+        <h2>No_Code</h2>
+        <h3>Ciclos en JS</h3>
+        <h4>Jeremias Riquero</h4>
+        <h5>Uso de la palabra reservada Break con Arreglos, contador de números postivos y negativos</h5>
+    </div>
+
+
+
+</body>
+
+</html>
