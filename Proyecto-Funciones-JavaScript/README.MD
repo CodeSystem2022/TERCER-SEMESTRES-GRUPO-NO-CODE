@@ -29,7 +29,7 @@ En este html se vera un ejemplo de una función basica de JavaScript, la cual re
 (Realizado por: Martínez Dante)
 
 1.2 Palabra return: rellenar...............................
-1.3 Funciones de tipo expresión
+1.3 Funciones de tipo expresión: Las funciones de tipo expresión son funciones que se definen y se asignan a una variable o constante. Por lo tanto, la función se define como una expresión que se asigna a una variable en lugar de una declaración separada.
 1.4 Funciones de tipo self y invoking
 ¿Qué son las funciones autoejecutables (self invoking) en JavaScript?
 Las funciones autoejecutables en JavaScript son uno de los patrones de diseño más particulares de este lenguaje de programación. Como su nombre indica, este patrón de diseño se caracteriza porque las funciones se llaman a sí mismas después de ser declaradas. Esto quiere decir que se ejecutarán de manera inmediata después de ser creadas.
