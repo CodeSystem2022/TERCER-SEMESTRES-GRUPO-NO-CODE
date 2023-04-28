@@ -19,8 +19,13 @@
             En este scrum se vera un ejemplo de una funcion basica de JavaScript, la cual realiza una suma. esto se mostrara de manera interactiva con el uso de html.
             (Realizado por: Martínez Dante)</p>
     </div>
-    
-    <h2>Introduce los valores de las variables:</h2>
+    <div>
+        <h3>En un segundo Alert se mostrará la multiplicación de los mismos valores con el método invoking <br> realizado por Andrés Winckler</h3>
+        <h3>Se llama invoking o self, porqué se llama a sí misma, no pudiendo reutilizarse. <br>
+            Realizado por Andrés Winckler</h3>
+        
+    </div>
+    <h3>Introduce los valores de las variables:</h2>
 
     <label>Variable a:</label>
     <input type="number" id="a">
@@ -30,6 +35,7 @@
     <br>
     <!--Esta es una función preestablecida de javascript la cual detecta el evento clik-->
     <button onclick="sumar()">Sumar</button>
+    
 
     <script>
         //En esta funcion utilizo document.getElementByID para obtener los valores de los inputs
@@ -44,7 +50,13 @@
 
         // Mostrar el resultado con un alert
         alert("El resultado de la suma es: " + resultado);
-      }
+        
+        // utilizando el método invoking para multiplicar los mismos valores
+
+        (function(a, b){
+    alert("Multiplicando los valores con invoking el resultado es->  "+ (a * b));
+            })(a,b);
+        }
     </script>
 </body>
 </html>
