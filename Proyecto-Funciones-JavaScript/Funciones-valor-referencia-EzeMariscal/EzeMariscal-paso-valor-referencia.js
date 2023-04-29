@@ -43,19 +43,6 @@ function incrementando(x) {
  Como resultado, cualquier modificación que se haga en el objeto
  o array dentro de la función afectará al objeto o array original.
  */
-const Persona = {
-    nombre: 'Juan',
-    apellido: 'Lepez'
-}
-console.log(persona);
-
-function cambiarValoresObjeto(p1) {
-    p1.nombre = 'Ignacio';
-    p1.apellido = 'Perez';
-}
-
-cambiarValoresObjeto(persona);
-console.log(persona);
 
 // declaro una array
 let Arrayrandom = [1, 2, 3, 4];
