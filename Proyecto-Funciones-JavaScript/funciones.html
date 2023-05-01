@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,23 +8,31 @@
     <title>Funciones en JavaScrip - Laboratorio III</title>
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body class="contenedor">
 
     <h1>Integrantes No-code:</h1>
-    <h2>Abel Pierna / Lucas Salinas / Franco Lara / Jeremias Riquero / Dario Carrizo / Ezequiel Mariscal 
+    <h2>Abel Pierna / Lucas Salinas / Franco Lara / Jeremias Riquero / Dario Carrizo / Ezequiel Mariscal
         / Andres, Winkler / Dante Martinez.</h2>
     <h1>Laboratorio III</h1>
     <h1>1.1 Introducción a las Funciones en JavaScript</h1>
     <div class="parrafo">
-        <p>Una función es un codigo reutilizable, la misma utiliza la palabra reservada function y el nombre de la función se utiliza dentro de las buenas prácticas con el uso de la escritura camelCase, una función puede o no tener parametros, en el caso de tener se agregan entre paréntesis y luego se habren llaves, donde en el cuerpo de dicha función se coloca el codigo a realizar, para luego a la hora de ser llamada esta función se llama con argumentos, en el caso de que la misma tenga parametros o sin estos argumentos si la función no posee parametros.
-            En este scrum se vera un ejemplo de una funcion basica de JavaScript, la cual realiza una suma. esto se mostrara de manera interactiva con el uso de html.
+        <p>Una función es un codigo reutilizable, la misma utiliza la palabra reservada function y el nombre de la
+            función se utiliza dentro de las buenas prácticas con el uso de la escritura camelCase, una función puede o
+            no tener parametros, en el caso de tener se agregan entre paréntesis y luego se habren llaves, donde en el
+            cuerpo de dicha función se coloca el codigo a realizar, para luego a la hora de ser llamada esta función se
+            llama con argumentos, en el caso de que la misma tenga parametros o sin estos argumentos si la función no
+            posee parametros.
+            En este scrum se vera un ejemplo de una funcion basica de JavaScript, la cual realiza una suma. esto se
+            mostrara de manera interactiva con el uso de html.
             (Realizado por: Martínez Dante)</p>
     </div>
     <div>
-        <h3>En un segundo Alert se mostrará la multiplicación de los mismos valores con el método invoking <br> realizado por Andrés Winckler</h3>
+        <h3>En un segundo Alert se mostrará la multiplicación de los mismos valores con el método invoking <br>
+            realizado por Andrés Winckler</h3>
         <h3>Se llama invoking o self, porqué se llama a sí misma, no pudiendo reutilizarse. <br>
             Realizado por Andrés Winckler</h3>
-        
+
     </div>
     <h3>Introduce los valores de las variables:</h3>
 
@@ -38,7 +47,10 @@
     <br>
     <h1>1.3 Funciones de tipo expresión</h1>
     <div class="parrafo">
-        <p> Las funciones de tipo expresión son funciones que se definen y se asignan a una variable o constante. Por lo tanto, la función se define como una expresión que se asigna a una variable en lugar de una declaración separada. A continuacion se utilizara realizando una división de dos números el resultado se mostrara  en un alert. (Realizado por: Abel Pierna)</p>
+        <p> Las funciones de tipo expresión son funciones que se definen y se asignan a una variable o constante. Por lo
+            tanto, la función se define como una expresión que se asigna a una variable en lugar de una declaración
+            separada. A continuacion se utilizara realizando una división de dos números el resultado se mostrara en un
+            alert. (Realizado por: Abel Pierna)</p>
     </div>
     <label>Variable c:</label>
     <input type="number" id="a_2">
@@ -47,29 +59,33 @@
     <input type="number" id="b_2">
     <br>
     <!--Esta es una función preestablecida de javascript la cual detecta el evento clik-->
-    <button onclick="">Dividir</button>
-    
+    <button onclick="variableExpresion()">Dividir</button>
+
 
     <script>
         //En esta funcion utilizo document.getElementByID para obtener los valores de los inputs
         //de cada variable a y b asi con la variable resultado realizo la operacion de suma
-      function sumar() {
-        // Obtener los valores de las variables
-        var a = parseInt(document.getElementById("a").value);
-        var b = parseInt(document.getElementById("b").value);
+        function sumar() {
+            // Obtener los valores de las variables
+            var a = parseInt(document.getElementById("a").value);
+            var b = parseInt(document.getElementById("b").value);
 
-        // Realizar la suma
-        var resultado = a + b;
+            // Realizar la suma
+            var resultado = a + b;
 
-        // Mostrar el resultado con un alert
-        alert("El resultado de la suma es: " + resultado);
-        
-        // utilizando el método invoking para multiplicar los mismos valores
+            // Mostrar el resultado con un alert
+            alert("El resultado de la suma es: " + resultado);
 
-        (function(a, b){
-    alert("Multiplicando los valores con invoking el resultado es->  "+ (a * b));
-            })(a,b);
-        }
+            // utilizando el método invoking para multiplicar los mismos valores
+
+            (function (a, b) {
+                alert("Multiplicando los valores con invoking el resultado es->  " + (a * b));
+            })(a, b);
+        }   
+            let variableExpresion = function (a_2 , b_2){var a_2 = parseInt(document.getElementById("a_2").value);var b_2 = parseInt(document.getElementById("b_2").value);return alert('El resultado de ladivicion es: \n' + (a_2 / b_2))};
+
+
     </script>
 </body>
+
 </html>
