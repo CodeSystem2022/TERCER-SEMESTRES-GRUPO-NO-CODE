@@ -8,8 +8,8 @@
     <title>Funciones en JavaScrip - Laboratorio III</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body class="contenedor">
@@ -43,7 +43,8 @@
     <!--Dante-->
     <h1>1.2 Palabra Return en JavaScript</h1>
     <div class="parrafo">
-        <p>Palabra return: La instrucción "return" se utiliza para devolver el valor resultante de la función, es una forma de enviar un valor de una función a otra parte del programa que la llamó.
+        <p>Palabra return: La instrucción "return" se utiliza para devolver el valor resultante de la función, es una
+            forma de enviar un valor de una función a otra parte del programa que la llamó.
             (Realizado por: Martínez Dante)</p>
     </div>
     <!--Abel-->
@@ -65,8 +66,10 @@
     <!--Andres-->
     <div>
         <h1>1.4 Funciones de tipo self y invoking</h1>
-        <p class="parrafo">En un segundo Alert se mostrará la multiplicación de los mismos valores con el método invoking realizado por Andrés Winckler</p>
-        <p class="parrafo">Se llama invoking o self, porqué se llama a sí misma, no pudiendo reutilizarse. Realizado por Andrés Winckler</p>
+        <p class="parrafo">En un segundo Alert se mostrará la multiplicación de los mismos valores con el método
+            invoking realizado por Andrés Winckler</p>
+        <p class="parrafo">Se llama invoking o self, porqué se llama a sí misma, no pudiendo reutilizarse. Realizado por
+            Andrés Winckler</p>
     </div>
     <h3>Introduce los valores de las variables:</h3>
     <label>Variable a:</label>
@@ -80,16 +83,19 @@
     <br>
     <h1>1.5 Tipos de datos en una Funcion</h1>
     <div class="parrafo">
-        <p>En JavaScript, las funciones son objetos que encapsulan un conjunto de declaraciones que realizan una tarea específica. Las funciones se definen mediante la palabra clave "function", seguida del nombre de la función y un conjunto de paréntesis que pueden contener una lista de parámetros separados por comas.(Realizado por Dario Carrizo) </p>
+        <p>En JavaScript, las funciones son objetos que encapsulan un conjunto de declaraciones que realizan una tarea
+            específica. Las funciones se definen mediante la palabra clave "function", seguida del nombre de la función
+            y un conjunto de paréntesis que pueden contener una lista de parámetros separados por comas.(Realizado por
+            Dario Carrizo) </p>
     </div>
-    <div> 
-    <form>
-      <label>Ingrese el primer número:</label>
-      <input type="number" id="numero1"/><br />
-      <label>Ingrese el segundo número:</label>
-      <input type="number" id="numero2"/><br />
-      <button type="button" onclick="sumar()">Sumar</button>
-    </form>
+    <div>
+        <form>
+            <label>Ingrese el primer número:</label>
+            <input type="number" id="numero1" /><br />
+            <label>Ingrese el segundo número:</label>
+            <input type="number" id="numero2" /><br />
+            <button type="button" onclick="sumar()">Sumar</button>
+        </form>
     </div>
     <h1>1.7 Argumentos y parámetros (uso del arguments)</h1>
     <div class="parrafo">
@@ -116,9 +122,12 @@
     <h1>1.8 Concepto Hoisting</h1>
     <div class="parrafo">
         <p>
-            Este programa calcula la raiz cuadrada de el número ingresado . El concepto Hoisting es un comportamiento en JavaScript
-            donde las declaraciones de variables y funciones son movidas al principio del ámbito en el que se encuentran antes de que se ejecute el código.
-            Esto significa que, aunque en el código una variable o función sea declarada más abajo, en realidad es procesada y puede ser utilizada desde el principio del ámbito.
+            Este programa calcula la raiz cuadrada de el número ingresado . El concepto Hoisting es un comportamiento en
+            JavaScript
+            donde las declaraciones de variables y funciones son movidas al principio del ámbito en el que se encuentran
+            antes de que se ejecute el código.
+            Esto significa que, aunque en el código una variable o función sea declarada más abajo, en realidad es
+            procesada y puede ser utilizada desde el principio del ámbito.
             (Realizado por: Franco Lara)
         </p>
     </div>
@@ -129,49 +138,49 @@
     <script>
         //En esta funcion utilizo document.getElementByID para obtener los valores de los inputs
         //de cada variable a y b asi con la variable resultado realizo la operacion de suma
-       function sumar() {
-           // Obtener los valores de las variables
-           var a = parseInt(document.getElementById("a").value);
-           var b = parseInt(document.getElementById("b").value);
+        function sumar() {
+            // Obtener los valores de las variables
+            var a = parseInt(document.getElementById("a").value);
+            var b = parseInt(document.getElementById("b").value);
 
-           // Realizar la suma
-           var resultado = a + b;
+            // Realizar la suma
+            var resultado = a + b;
 
-           // Mostrar el resultado con un alert
-           alert("El resultado de la suma es: " + resultado);
+            // Mostrar el resultado con un alert
+            alert("El resultado de la suma es: " + resultado);
 
-           // utilizando el método invoking para multiplicar los mismos valores
+            // utilizando el método invoking para multiplicar los mismos valores
 
-           (function (a, b) {
-               alert("Multiplicando los valores con invoking el resultado es->  " + (a * b));
+            (function (a, b) {
+                alert("Multiplicando los valores con invoking el resultado es->  " + (a * b));
             })(a, b);
-        }   
-           let variableExpresion = function (a_2 , b_2){var a_2 = parseInt(document.getElementById("a_2").value);var b_2 = parseInt(document.getElementById("b_2").value);return alert('El resultado de ladivicion es: \n' + (a_2 / b_2))};
-       function menorMayor() {
-           let numeroMayor = -Infinity, numeroMenor = Infinity;
-           for (let i = 0; i < arguments.length; i++) {
-               if (arguments[i] > numeroMayor) {
-                   numeroMayor = arguments[i];
-               }
-               if (arguments[i] < numeroMenor) {
-                   numeroMenor = arguments[i];
-               }
-           }
+        }
+        let variableExpresion = function (a_2, b_2) { var a_2 = parseInt(document.getElementById("a_2").value); var b_2 = parseInt(document.getElementById("b_2").value); return alert('El resultado de ladivicion es: \n' + (a_2 / b_2)) };
+        function menorMayor() {
+            let numeroMayor = -Infinity, numeroMenor = Infinity;
+            for (let i = 0; i < arguments.length; i++) {
+                if (arguments[i] > numeroMayor) {
+                    numeroMayor = arguments[i];
+                }
+                if (arguments[i] < numeroMenor) {
+                    numeroMenor = arguments[i];
+                }
+            }
             alert("El número mayor es: " + numeroMayor + "\nEl número menor es: " + numeroMenor);
-       }
-    </script>
-    <script src="./Funciones-DariOCarrizo/Funciones-Dario.js">
-    function raizcuadrada(var1) {
-            var var1 = parseInt(document.getElementById('var1').value)
+        }
+        function raizcuadrada(var1) {
+            var var1 = parseInt(document.getElementById('var1').value);
             return calcularaiz(var1);
 
-            function calcularaiz(valor){
-               let raiz = Math.sqrt(var1); 
-                alert('La raiz cuadrada de: ' + var1 +' es igual a: '+ raiz);
+            function calcularaiz(valor) {
+                let raiz = Math.sqrt(var1);
+                alert('La raiz cuadrada de: ' + var1 + ' es igual a: ' + raiz);
             }
-            
-        }
+
+        }
     </script>
+
+    <script src="./Funciones-DariOCarrizo/Funciones-Dario.js"></script>
 </body>
 
 </html>
