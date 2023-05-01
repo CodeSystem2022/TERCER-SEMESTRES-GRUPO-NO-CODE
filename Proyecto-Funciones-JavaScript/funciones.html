@@ -102,25 +102,35 @@
     <script>
         //En esta funcion utilizo document.getElementByID para obtener los valores de los inputs
         //de cada variable a y b asi con la variable resultado realizo la operacion de suma
-        function sumar() {
-            // Obtener los valores de las variables
-            var a = parseInt(document.getElementById("a").value);
-            var b = parseInt(document.getElementById("b").value);
+       function sumar() {
+           // Obtener los valores de las variables
+           var a = parseInt(document.getElementById("a").value);
+           var b = parseInt(document.getElementById("b").value);
 
-            // Realizar la suma
-            var resultado = a + b;
+           // Realizar la suma
+           var resultado = a + b;
 
-            // Mostrar el resultado con un alert
-            alert("El resultado de la suma es: " + resultado);
+           // Mostrar el resultado con un alert
+           alert("El resultado de la suma es: " + resultado);
 
-            // utilizando el método invoking para multiplicar los mismos valores
+           // utilizando el método invoking para multiplicar los mismos valores
 
-            (function (a, b) {
-                alert("Multiplicando los valores con invoking el resultado es->  " + (a * b));
+           (function (a, b) {
+               alert("Multiplicando los valores con invoking el resultado es->  " + (a * b));
             })(a, b);
         }   
-            let variableExpresion = function (a_2 , b_2){var a_2 = parseInt(document.getElementById("a_2").value);var b_2 = parseInt(document.getElementById("b_2").value);return alert('El resultado de ladivicion es: \n' + (a_2 / b_2))};
-
+           let variableExpresion = function (a_2 , b_2){var a_2 = parseInt(document.getElementById("a_2").value);var b_2 = parseInt(document.getElementById("b_2").value);return alert('El resultado de ladivicion es: \n' + (a_2 / b_2))};
+       function menorMayor() {
+           let numeroMayor = -Infinity, numeroMenor = Infinity;
+           for (let i = 0; i < arguments.length; i++) {
+               if (arguments[i] > numeroMayor) {
+                   numeroMayor = arguments[i];
+               }
+               if (arguments[i] < numeroMenor) {
+                   numeroMenor = arguments[i];
+               }
+           }
+            alert("El número mayor es: " + numeroMayor + "\nEl número menor es: " + numeroMenor);
 
     </script>
 </body>
