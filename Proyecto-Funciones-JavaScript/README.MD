@@ -38,6 +38,8 @@ Las funciones autoejecutables en JavaScript son uno de los patrones de diseño m
 
 A este patrón de diseño se le conoce como IIFE por su nombre en inglés: inmediately invoked function expression (expresión de función inmediatamente invocada). Este nombre nos indica que el patrón de diseño utiliza funciones que se ejecutan a penas son declaradas.
 
+1.6 Las funciones flecha son una forma concisa de definir funciones en JavaScript. Tienen una sintaxis más breve que las funciones tradicionales, no tienen su propio this y no pueden ser utilizadas como constructores o  métodos de objetos. Son útiles para funciones simples y cortas.
+
 1.7 Parametros y argumentos:Los parámetros son variables definidas dentro de la definición de una función que se utilizan para representar los valores que se esperan
 recibir como entrada. Por otro lado, los argumentos son los valores reales que se pasan a la función cuando se la llama.
 
