@@ -24,3 +24,34 @@ input {
     font-size: 1.2rem;
     box-shadow: #000 3px 3px 5px;
 }
+button {
+    background-color: #da6099;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: .3rem;
+    box-shadow: #000 2px 2px 5px;
+  }
+  
+  button:hover {
+    background-color: #be3877;
+  }
+  
+  button:active {
+    animation-name: color-change;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes color-change {
+    0% { background-color: #4CAF50; color: white; }
+    50% { background-color: black; color: black; }
+    100% { background-color: black; color: white; }
+  }
+  
