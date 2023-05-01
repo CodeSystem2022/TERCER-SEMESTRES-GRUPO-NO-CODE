@@ -38,6 +38,9 @@ Las funciones autoejecutables en JavaScript son uno de los patrones de diseño m
 
 A este patrón de diseño se le conoce como IIFE por su nombre en inglés: inmediately invoked function expression (expresión de función inmediatamente invocada). Este nombre nos indica que el patrón de diseño utiliza funciones que se ejecutan a penas son declaradas.
 
+1.7 Parametros y argumentos:Los parámetros son variables definidas dentro de la definición de una función que se utilizan para representar los valores que se esperan
+recibir como entrada. Por otro lado, los argumentos son los valores reales que se pasan a la función cuando se la llama.
+
 Rellenar por favor la teoria segun el ejercicio de cada uno:
 
 1.5 Tipos de datos en una función
