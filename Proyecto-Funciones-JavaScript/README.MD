@@ -41,6 +41,8 @@ A este patrón de diseño se le conoce como IIFE por su nombre en inglés: inmed
 1.7 Parametros y argumentos:Los parámetros son variables definidas dentro de la definición de una función que se utilizan para representar los valores que se esperan
 recibir como entrada. Por otro lado, los argumentos son los valores reales que se pasan a la función cuando se la llama.
 
+1.8 Concepto Hoisting:Hoisting es un comportamiento en JavaScript donde las declaraciones de variables y funciones son movidas al principio del ámbito en el que se encuentran antes de que se ejecute el código. Esto significa que, aunque en el código una variable o función sea declarada más abajo, en realidad es procesada y puede ser utilizada desde el principio del ámbito.
+
 Rellenar por favor la teoria segun el ejercicio de cada uno:
 
 1.5 Tipos de datos en una función
