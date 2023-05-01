@@ -28,7 +28,7 @@ Los temas a realizar en este es scrum son mostrar los diferentes temas observado
 En este html se vera un ejemplo de una función basica de JavaScript, la cual realiza una suma. esto se mostrara de manera interactiva con el uso de html.
 (Realizado por: Martínez Dante)
 
-1.2 Palabra return: rellenar...............................
+1.2 Palabra return: La instrucción "return" se utiliza para devolver el valor resultante de la función, es una forma de enviar un valor de una función a otra parte del programa que la llamó.
 
 1.3 Funciones de tipo expresión: Las funciones de tipo expresión son funciones que se definen y se asignan a una variable o constante. Por lo tanto, la función se define como una expresión que se asigna a una variable en lugar de una declaración separada.
 
@@ -37,6 +37,8 @@ En este html se vera un ejemplo de una función basica de JavaScript, la cual re
 Las funciones autoejecutables en JavaScript son uno de los patrones de diseño más particulares de este lenguaje de programación. Como su nombre indica, este patrón de diseño se caracteriza porque las funciones se llaman a sí mismas después de ser declaradas. Esto quiere decir que se ejecutarán de manera inmediata después de ser creadas.
 
 A este patrón de diseño se le conoce como IIFE por su nombre en inglés: inmediately invoked function expression (expresión de función inmediatamente invocada). Este nombre nos indica que el patrón de diseño utiliza funciones que se ejecutan a penas son declaradas.
+
+Rellenar por favor la teoria segun el ejercicio de cada uno:
 
 1.5 Tipos de datos en una función
 1.6  Funciones flecha
