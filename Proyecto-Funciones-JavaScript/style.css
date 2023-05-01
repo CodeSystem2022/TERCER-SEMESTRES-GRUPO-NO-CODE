@@ -13,3 +13,14 @@ h1{
     width: 70%;
     font-size: 1.5rem;
 }
+input {
+    width: 20%;
+    height: 2.3rem;
+    background-color: transparent;
+    border-radius: 0.3rem;
+    border: 0.1rem solid rgba(239, 161, 255, 0.3);
+    border-bottom: 0.2rem solid #efa1ff;
+    color: #fff;
+    font-size: 1.2rem;
+    box-shadow: #000 3px 3px 5px;
+}
