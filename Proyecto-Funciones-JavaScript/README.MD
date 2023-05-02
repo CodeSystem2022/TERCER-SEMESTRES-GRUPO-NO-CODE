@@ -38,27 +38,12 @@ Las funciones autoejecutables en JavaScript son uno de los patrones de diseño m
 
 A este patrón de diseño se le conoce como IIFE por su nombre en inglés: inmediately invoked function expression (expresión de función inmediatamente invocada). Este nombre nos indica que el patrón de diseño utiliza funciones que se ejecutan a penas son declaradas.
 
-1.5) Tipos de datos en una función:
-
-1.6) Las funciones flecha son una forma concisa de definir funciones en JavaScript. Tienen una sintaxis más breve que las funciones tradicionales, no tienen su propio this y no pueden ser utilizadas como constructores o  métodos de objetos. Son útiles para funciones simples y cortas.
-
-1.7) Parametros y argumentos:Los parámetros son variables definidas dentro de la definición de una función que se utilizan para representar los valores que se esperan
-recibir como entrada. Por otro lado, los argumentos son los valores reales que se pasan a la función cuando se la llama.
-
-1.8) Concepto Hoisting:Es un comportamiento en JavaScript donde las declaraciones de variables y funciones son movidas al principio del ámbito en el que se encuentran antes de que se ejecute el código. Esto significa que, aunque en el código una variable o función sea declarada más abajo, en realidad es procesada y puede ser utilizada desde el principio del ámbito.
-
-Rellenar por favor la teoria segun el ejercicio de cada uno:
-
-
-
-1.9) Paso por valor :El paso por valor es un concepto utilizado en lenguajes de programación para describir cómo se pasan los argumentos a una función. En un paso por valor, el valor de una variable se copia en una nueva variable dentro de la función y cualquier cambio realizado en la variable dentro de la función no afecta a la variable original fuera de la función.
-
-En JavaScript, los tipos primitivos, como los números, booleanos
+1.5) Tipos de datos en una función:En JavaScript, los tipos primitivos, como los números, booleanos
 y cadenas, se pasan por valor. Esto significa que cuando se pasa
 una variable que contiene un tipo primitivo a una función.
 Por ejemplo, si tienes una función que toma un número como argumento y lo incrementa en uno, no afectará al número original fuera de la función:
 
- Son 6
+* Son 6
 
 let v = 42; // number: se utiliza para representar números, tanto enteros como de punto flotante.
 
@@ -71,6 +56,15 @@ let a; // undefined: se utiliza para representar una variable que no tiene un va
 let b = null; // null: se utiliza para representar la ausencia intencional de cualquier objeto o valor.
 
 let c = Symbol("foo"); // symbol: se utiliza para representar identificadores únicos y no modificables.
+
+1.6) Las funciones flecha son una forma concisa de definir funciones en JavaScript. Tienen una sintaxis más breve que las funciones tradicionales, no tienen su propio this y no pueden ser utilizadas como constructores o  métodos de objetos. Son útiles para funciones simples y cortas.
+
+1.7) Parametros y argumentos:Los parámetros son variables definidas dentro de la definición de una función que se utilizan para representar los valores que se esperan
+recibir como entrada. Por otro lado, los argumentos son los valores reales que se pasan a la función cuando se la llama.
+
+1.8) Concepto Hoisting:Es un comportamiento en JavaScript donde las declaraciones de variables y funciones son movidas al principio del ámbito en el que se encuentran antes de que se ejecute el código. Esto significa que, aunque en el código una variable o función sea declarada más abajo, en realidad es procesada y puede ser utilizada desde el principio del ámbito.
+
+1.9) Paso por valor :El paso por valor es un concepto utilizado en lenguajes de programación para describir cómo se pasan los argumentos a una función. En un paso por valor, el valor de una variable se copia en una nueva variable dentro de la función y cualquier cambio realizado en la variable dentro de la función no afecta a la variable original fuera de la función.
 
 1.9.1) Paso por referencia : es un mecanismo por el cual se pasa una referencia o dirección de memoria de un objeto como argumento a una función en lugar de copiar su valor. Esto significa que cualquier cambio realizado en el objeto dentro de la función afectará a su valor original fuera de la función.
 
