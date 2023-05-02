@@ -8,14 +8,17 @@ una copia de ese valor y se utiliza la copia dentro dela función.
 Cualquier modificación que se haga dentro de la función no afectará
 al valor original.
 
-Por ejemplo, si tienes una función que toma un número como argumento y lo incrementa en uno, no afectará al número original fuera de la función:
+Por ejemplo, si tienes una función que toma un número como argumento
+ y lo incrementa en uno, no afectará al número original fuera de la 
+ función:
 */
 
-// tipos primitivos =  tipos de datos básicos que representan valores simples
+// tipos primitivos =  tipos de datos básicos que representan valores
+// simples
 
 // Son 6
 
-let x = 42; // number: se utiliza para representar números, tanto enteros como de punto flotante.
+let v = 42; // number: se utiliza para representar números, tanto enteros como de punto flotante.
 let y = "Hello world"; // string: se utiliza para representar cadenas de caracteres.
 let z = true; // boolean: se utiliza para representar valores booleanos (true o false).
 let a; // undefined: se utiliza para representar una variable que no tiene un valor asignado.
@@ -23,14 +26,19 @@ let b = null; // null: se utiliza para representar la ausencia intencional de cu
 let c = Symbol("foo"); // symbol: se utiliza para representar identificadores únicos y no modificables.
 
 // declaron una fx
+
 function incrementando(x) {
-    x++; //x=x+1
-    console.log(x); // 6
+  var x = parseInt(document.getElementById('x').value);
+    x++; //x=x+1   
+    //console.log(x); // 6
+  //var x2 = parseInt(document.getElementById('x2').value);
+    //x2 = x - 1; 
+    alert('Se incremento en +1 el nro y es igual a =  ' + x );
   }
   
-  let num = 5; // creo un var num que es 5
-  incrementando(num); // paso este parametro x valor .. la fx no modifica la variable
-  console.log(num); // 5
+  //let num = 5; // creo un var num que es 5
+  //incrementando(num); // paso este parametro x valor .. la fx no modifica la variable
+  //console.log(num); // 5
 
 // Los pasos por valor no modifican el valor original fuera de la fx  
 
@@ -45,17 +53,19 @@ function incrementando(x) {
  */
 
 // declaro una array
-let Arrayrandom = [1, 2, 3, 4];
-console.log(Arrayrandom)
+// let Arrayrandom = [1, 2, 3, 4];
+//console.log(Arrayrandom)
 //declaro una fx para modificarla
-function modificadordeArray(arr) {
-    arr[0] = "Hola";
-    arr[1] = "Profe Ariel Betancud";
-    console.log(arr); // ["Hola", "Profe Ariel Betancud", 3, 4]
-  }
+//function modificadordeArray(x2) {
+  //X2 = ["oveja", "jirafa", "y " + x2 ]
+  //alert(modificadordeArray(x2));
+    //arr[0] = "Hola";
+    //arr[1] = "Profe Ariel Betancud";
+    //console.log(arr); // ["Hola", "Profe Ariel Betancud", 3, 4]
+  //}
 //utilizo la fx con parametro de Arrayrandom
-modificadordeArray(Arrayrandom);
-console.log(Arrayrandom); // ["Hola", "Mundo", 3, 4]
+//modificadordeArray(Arrayrandom);
+//console.log(Arrayrandom); // ["Hola", "Mundo", 3, 4]
 
 /*
 En este ejemplo, se define una variable Arrayrandom que contiene
@@ -73,5 +83,22 @@ nal, que ahora contiene los valores "Hola" y "Profe Ariel Betancud"
 en las posiciones 0 y 1.
 
 */
+let miArray = ["Ovejas", "Jirafas", "Cebras"];
 
+      function actualizarLista() {
+        let listaHtml = "";
+        for (let i = 0; i < miArray.length; i++) {
+          listaHtml += "<li>" + miArray[i] + "</li>";
+        }
+        let lista = document.getElementById("mi-lista");
+        lista.innerHTML = listaHtml;
+      }
+
+      function agregarElemento() {
+        let nuevoElemento = document.getElementById("nuevo-elemento").value;
+        miArray.push(nuevoElemento);
+        actualizarLista();
+      }
+
+      actualizarLista();
 // Mariscal Ezequiel - GRUPO NO_CODE

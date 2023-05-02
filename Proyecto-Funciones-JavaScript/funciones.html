@@ -147,6 +147,47 @@
     <input type="number" id="var1" />
     <br>
     <button onclick="raizcuadrada()">Calcular</button>
+    <h1>1.9 Concepto paso por valor</h1>
+    <div class="parrafo">
+        <p>
+            En JavaScript, los tipos de datos primitivos se pasan por valor. Esto significa que al pasar un valor primitivo
+            como argumento a una función, se crea una copia del valor original y se le pasa a la función. Cualquier cambio 
+            que se haga dentro de la función no afectará el valor original fuera de la función.
+        </p>
+    </div>
+    <label>Introduce de valor primitivo un numero:</label>
+    <input type="number" id="x" />
+    <br>
+    <button onclick="incrementando(x.value)">Calcular</button>
+    <h1>1.9.1 Concepto paso por referencia</h1>
+    <div class="parrafo">
+        <p>
+            Los objetos y arrays se pasan por referencia, lo que significa
+            que cuando se pasan como argumentos de función, se pasa una re
+            ferencia a la ubicación de memoria donde se almacenan los datos
+            del objeto o array, en lugar de una copia del objeto o array. 
+            Como resultado, cualquier modificación que se haga en el objeto
+            o array dentro de la función afectará al objeto o array original.
+            
+            <br>
+            <br>
+
+            Yo tengo en mi arca estos animales = [ovejas,jirafas,cebras]
+            Que otros animales puedo agregar?
+            
+        </p>
+    </div>
+    <br>
+    <label>Introduce de valor por referencia de un animal cualquiera:</label>
+    <br>
+    <h2>Mi lista de animales</h2>
+    <ul id="mi-lista"></ul>
+    <form>
+      <label for="nuevo-elemento">Agregar un elemento:</label>
+      <input type="text" id="nuevo-elemento" name="nuevo-elemento">
+      <button type="button" onclick="agregarElemento()">Agregar</button>
+    </form>
+
     <script>
         //En esta funcion utilizo document.getElementByID para obtener los valores de los inputs
         //de cada variable a y b asi con la variable resultado realizo la operacion de suma
@@ -197,6 +238,10 @@
     </script>
 
     <script src="./Funciones-DariOCarrizo/Funciones-Dario.js"></script>
+    
+
+    <script src="./Funciones-valor-referencia-EzeMariscal/EzeMariscal-paso-valor-referencia.js"></script>
+    </script>
 </body>
 
 </html>
