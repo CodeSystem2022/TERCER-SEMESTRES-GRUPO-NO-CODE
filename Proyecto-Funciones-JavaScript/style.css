@@ -1,5 +1,5 @@
 .contenedor{
-    background-color: blueviolet;
+    background-color: rgb(155, 128, 232);
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -7,6 +7,10 @@
 }
 h1{
     text-align: center;
+    color: #fafafa;
+}
+h3{
+  color: #5d054d;
 }
 .parrafo{
     display:flex;

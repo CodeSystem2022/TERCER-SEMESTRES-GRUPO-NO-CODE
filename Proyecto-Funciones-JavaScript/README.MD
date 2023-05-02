@@ -40,9 +40,7 @@ A este patrón de diseño se le conoce como IIFE por su nombre en inglés: inmed
 y cadenas, se pasan por valor. Esto significa que cuando se pasa
 una variable que contiene un tipo primitivo a una función.
 Por ejemplo, si tienes una función que toma un número como argumento y lo incrementa en uno, no afectará al número original fuera de la función:
-
-### Son 6:
-
+#### Ejemplos de datos:
 let v = 42; // number: se utiliza para representar números, tanto enteros como de punto flotante.
 let y = "Hello world"; // string: se utiliza para representar cadenas de caracteres.
 let z = true; // boolean: se utiliza para representar valores booleanos (true o false).
@@ -61,3 +59,5 @@ recibir como entrada. Por otro lado, los argumentos son los valores reales que s
 
 1.9.1) Paso por referencia : es un mecanismo por el cual se pasa una referencia o dirección de memoria de un objeto como argumento a una función en lugar de copiar su valor. Esto significa que cualquier cambio realizado en el objeto dentro de la función afectará a su valor original fuera de la función.
 Por ejemplo, si se pasa un objeto como argumento a una función y se modifica alguna de sus propiedades dentro de la función, la modificación se reflejará en el objeto original fuera de la función. Ya sea por un objeto o una array.
+
+Bien hasta aqui llega este proyecto, donde se mostraron por medio de un html el funcionamiento de las funciones en javaScript, para finalizar les pido que evaluen el trabajo con sus correspondientes estrellitas, muchas gracias!
