@@ -51,5 +51,7 @@ Rellenar por favor la teoria segun el ejercicio de cada uno:
 1.6  Funciones flecha
 1.7 Argumentos y parámetros
 1.8 Concepto hoisting
-1.9 Paso por valor
-1.9.1 Paso por referencia
+1.9 Paso por valor :El paso por valor es un concepto utilizado en lenguajes de programación para describir cómo se pasan los argumentos a una función. En un paso por valor, el valor de una variable se copia en una nueva variable dentro de la función y cualquier cambio realizado en la variable dentro de la función no afecta a la variable original fuera de la función.
+1.9.1 Paso por referencia : es un mecanismo por el cual se pasa una referencia o dirección de memoria de un objeto como argumento a una función en lugar de copiar su valor. Esto significa que cualquier cambio realizado en el objeto dentro de la función afectará a su valor original fuera de la función.
+
+Por ejemplo, si se pasa un objeto como argumento a una función y se modifica alguna de sus propiedades dentro de la función, la modificación se reflejará en el objeto original fuera de la función. Ya sea por un objeto o una array.
