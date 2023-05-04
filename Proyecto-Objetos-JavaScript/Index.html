@@ -65,16 +65,26 @@
         <div class="contenedor_formulario">
             <h4>4. Formulario para patentación de vehiculos (Realizado por: Abel Pierna y Jeremias Riquero)</h4>
             <br>
-            <label>Nombre:</label>
-            <input type="text" id="dato4_1" />
-            <br>
-            <label>Apellido:</label>
-            <input type="text" id="dato4_2" />
-            <br>
-            <label>Edad:</label>
-            <input type="number" id="dato4_3" />
-            <br>
-            <button onclick="">Enviar</button>
+            function formulario4() {
+            let nombre = document.getElementById('dato4_1').value;
+            let apellido = document.getElementById('dato4_2').value;
+            let edad = document.getElementById('dato4_3').value;
+            let dni = document.getElementById('dato4_4').value;
+            let patente = document.getElementById('dato4_5').value;
+            let modelo = document.getElementById('dato4_6').value;
+            let marca = document.getElementById('dato4_7').value;
+
+            let persona4 = {
+                nombre: nombre,
+                apellido: apellido,
+                edad: edad,
+                dni: patente,
+                patente: patente,
+                modelo: modelo,
+                marca: marca,
+
+                
+            };
         </div>
     </div>
     <script>
@@ -89,7 +99,28 @@
         //formulario 3
         //.................
         //formulario 4
-        //.................
+        <label>Nombre:</label>
+            <input type="text" id="dato4_1" />
+            <br>
+            <label>Apellido:</label>
+            <input type="text" id="dato4_2" />
+            <br>
+            <label>Edad:</label>
+            <input type="number" id="dato4_3" />
+            <br>
+            <label>Dni:</label>
+            <input type="number" id="dato4_4" />
+            <br>
+            <label>Patente:</label>
+            <input type="text" id="dato4_5" />
+            <br>
+            <label>Modelo:</label>
+            <input type="number" id="dato4_6" />
+            <br>
+            <label>Marca:</label>
+            <input type="text" id="dato4_7" />
+            <br>
+            <button onclick="formulario4()">Enviar</button>
     </script>
 </body>
 
