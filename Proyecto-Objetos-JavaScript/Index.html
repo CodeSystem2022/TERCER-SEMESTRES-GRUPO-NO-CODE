@@ -87,6 +87,7 @@
             <input type="text" id="dato4_7" />
             <br>
             <button onclick="formulario4()">Enviar</button>
+            
         </div>
     </div>
     <script>
@@ -118,6 +119,10 @@
                 patente: patente,
                 modelo: modelo,
                 marca: marca,
+                mostrarConfirmacion: function () {
+                    alert("Los datos han sido resividos correctamente")
+                }
+             persona4.mostrarConfirmacion();
 
                 
             }}
