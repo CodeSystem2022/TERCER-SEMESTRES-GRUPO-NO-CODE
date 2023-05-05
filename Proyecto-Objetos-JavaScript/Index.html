@@ -97,7 +97,7 @@
             <p id="devolucionModelo"></p>
             <p id="devolucionMarca"></p>
             <p id="devolucionNuevo"></p>
-            
+
         </div>
     </div>
     <script>
@@ -112,7 +112,7 @@
         //formulario 3
         //.................
         //formulario 4
-       function formulario4() {
+        function formulario4() {
             let nombre = document.getElementById('dato4_1').value;
             let apellido = document.getElementById('dato4_2').value;
             let edad = document.getElementById('dato4_3').value;
@@ -132,23 +132,23 @@
                 mostrarConfirmacion: function () {
                     alert("Los datos han sido resividos correctamente")
                 },
-                rellenarDatos: function(){
-                    document.getElementById('devolucionTitulo').innerHTML =  "Datos de "+ nombre +" " + apellido + ": " ;
-                    document.getElementById('devolucionNombre').innerHTML =  'Nombre: ' + nombre ;
-                    document.getElementById('devolucionApellido').innerHTML =  'Apellido: ' + apellido;
-                    document.getElementById('devolucionEdad').innerHTML =  'Edad: ' + edad;
-                    document.getElementById('devolucionDni').innerHTML =  'DNI: ' + dni;
-                    document.getElementById('devolucionPatente').innerHTML =  'Número de patenten: ' + patente;
-                    document.getElementById('devolucionModelo').innerHTML =  'Modelo del vehiculo: ' + modelo;
-                    document.getElementById('devolucionMarca').innerHTML =  'Marca del vehiculo: ' + marca;
-                    
+                rellenarDatos: function () {
+                    document.getElementById('devolucionTitulo').innerHTML = "Datos de " + nombre + " " + apellido + ": ";
+                    document.getElementById('devolucionNombre').innerHTML = 'Nombre: ' + nombre;
+                    document.getElementById('devolucionApellido').innerHTML = 'Apellido: ' + apellido;
+                    document.getElementById('devolucionEdad').innerHTML = 'Edad: ' + edad;
+                    document.getElementById('devolucionDni').innerHTML = 'DNI: ' + dni;
+                    document.getElementById('devolucionPatente').innerHTML = 'Número de patenten: ' + patente;
+                    document.getElementById('devolucionModelo').innerHTML = 'Modelo del vehiculo: ' + modelo;
+                    document.getElementById('devolucionMarca').innerHTML = 'Marca del vehiculo: ' + marca;
+
                 }
             }
-             persona4.mostrarConfirmacion();
-             persona4.rellenarDatos();
+            persona4.mostrarConfirmacion();
+            persona4.rellenarDatos();
 
-                
-            }
+
+        }
     </script>
 </body>
 
