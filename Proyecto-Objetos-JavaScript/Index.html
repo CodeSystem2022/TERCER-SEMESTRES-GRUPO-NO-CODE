@@ -87,6 +87,16 @@
             <input type="text" id="dato4_7" />
             <br>
             <button onclick="formulario4()">Enviar</button>
+            <br>
+            <h5 id="devolucionTitulo"></h5>
+            <p id="devolucionNombre"></p>
+            <p id="devolucionApellido"></p>
+            <p id="devolucionEdad"></p>
+            <p id="devolucionDni"></p>
+            <p id="devolucionPatente"></p>
+            <p id="devolucionModelo"></p>
+            <p id="devolucionMarca"></p>
+            <p id="devolucionNuevo"></p>
             
         </div>
     </div>
@@ -121,11 +131,24 @@
                 marca: marca,
                 mostrarConfirmacion: function () {
                     alert("Los datos han sido resividos correctamente")
+                },
+                rellenarDatos: function(){
+                    document.getElementById('devolucionTitulo').innerHTML =  "Datos de "+ nombre +" " + apellido + ": " ;
+                    document.getElementById('devolucionNombre').innerHTML =  'Nombre: ' + nombre ;
+                    document.getElementById('devolucionApellido').innerHTML =  'Apellido: ' + apellido;
+                    document.getElementById('devolucionEdad').innerHTML =  'Edad: ' + edad;
+                    document.getElementById('devolucionDni').innerHTML =  'DNI: ' + dni;
+                    document.getElementById('devolucionPatente').innerHTML =  'Número de patenten: ' + patente;
+                    document.getElementById('devolucionModelo').innerHTML =  'Modelo del vehiculo: ' + modelo;
+                    document.getElementById('devolucionMarca').innerHTML =  'Marca del vehiculo: ' + marca;
+                    
                 }
+            }
              persona4.mostrarConfirmacion();
+             persona4.rellenarDatos();
 
                 
-            }}
+            }
     </script>
 </body>
 
