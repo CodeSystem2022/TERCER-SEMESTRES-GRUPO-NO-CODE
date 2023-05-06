@@ -46,8 +46,8 @@
             <label>Edad:</label>
             <input type="number" id="dato2_3Edad" />
             <br>
-            <label>Correo Electronico:</label>
-            <input type="number" id="dato2_3Edad" /
+            <label>Correo Electrónico:</label>
+            <input type="email" id="dato2_6CorreoElectronico" />
             <br>
             <label>Especialidad:</label>
             <input type="text" id="dato2_4Estudios" />
@@ -127,15 +127,17 @@
         var dato1_1 = parseInt(document.getElementById("dato1_1").value);
         //.................
         //formulario 2
-        //Codigo del formulario 2 (Realizado por: Dante Martinez y Dario Carrizo)
+        //Codigo del formulario 2 (Realizado por: Dante Martinez y Dario   Carrizo)
             //Capturando valores del frontend
 document.getElementById("crear").addEventListener("click", function(event){
     event.preventDefault();
         const nombre = document.getElementById("dato2_1Nombre").value;
         const apellido = document.getElementById("dato2_2Apellido").value;
         const edad = parseInt(document.getElementById("dato2_3Edad").value);
-        const estudios = document.getElementById("dato2_4Estudios").value;
+        const Correo_Electronico = document.getElementById("dato2_4CorreoElectronico").value;
+        const Especialidad = document.getElementById("dato2_4Especialidad").value;
         const areaTrabajo= document.getElementById("dato2_5AreaTrabajo").value;
+        
 
 })
 //---------------------------------------------------------------------------
