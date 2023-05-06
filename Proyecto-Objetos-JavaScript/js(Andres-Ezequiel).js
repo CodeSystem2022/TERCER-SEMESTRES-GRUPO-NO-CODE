@@ -21,4 +21,6 @@ function formulario1() {
 }
 persona1.mostrarConfirmacion();
 persona1.rellenarDatos();
+alert('nombre:'+ nombre+' apellido:'+apellido+' edad:'+edad)
+
 }
