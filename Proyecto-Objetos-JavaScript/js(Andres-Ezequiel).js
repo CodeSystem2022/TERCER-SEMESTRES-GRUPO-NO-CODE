@@ -1,9 +1,9 @@
 const formulario = document.getElementById("form1");
 
 function formulario1() {
-    let nombre = this.document.getElementById("dato1_1").value;
-    let apellido = this.document.getElementById("dato1_2").value;
-    let edad = this.getElementById("dato1_3").value;
+    let nombre = document.getElementById("dato1_1").value;
+    let apellido = document.getElementById("dato1_2").value;
+    let edad = document.getElementById("dato1_3").value;
 
     let persona1 = {
         nombre: nombre,
