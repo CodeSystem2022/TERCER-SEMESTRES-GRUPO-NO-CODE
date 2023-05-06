@@ -1,4 +1,4 @@
-const formulario = document.getElementById("form1");
+const formulario1 = document.getElementById("form1");
 
 function formulario1() {
     let nombre = document.getElementById("dato1_1").value;
