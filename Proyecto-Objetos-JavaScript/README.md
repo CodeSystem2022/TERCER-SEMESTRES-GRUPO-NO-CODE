@@ -35,7 +35,11 @@ En JavaScript, puede agregar o eliminar atributos en objetos utilizando la notac
 Para agregar un atributo a un objeto, puede usar la notación de puntos o la notación de corchetes. La notación de puntos se utiliza cuando el nombre del atributo es una cadena válida de JavaScript y no contiene caracteres especiales. La notación de corchetes se utiliza cuando el nombre del atributo contiene caracteres especiales o es una variable.
 
 Aquí hay un ejemplo que muestra cómo agregar un atributo a un objeto utilizando la notación de puntos:
-const persona = {};
-persona.nombre = 'Lucas';
-persona.edad = 15;
-console.log(persona); // { nombre: 'Lucas', edad: 15 }
+
+ const persona = {};
+  
+  persona.nombre = 'Lucas';
+  
+  persona.edad = 15;
+  
+  console.log(persona); // { nombre: 'Lucas', edad: 15 }
