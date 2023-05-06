@@ -45,11 +45,7 @@
             <br>
             <label>Edad:</label>
             <input type="number" id="dato2_3Edad" />
-            <br>
-            <label>Correo Electrónico:</label>
-            <input type="email" id="dato2_6CorreoElectronico" />
-            <br>
-            <label>Especialidad:</label>
+            <label>Estudios:</label>
             <input type="text" id="dato2_4Estudios" />
             <br>
             <label>Area de Trabajo:</label>
@@ -134,10 +130,22 @@ document.getElementById("crear").addEventListener("click", function(event){
         const nombre = document.getElementById("dato2_1Nombre").value;
         const apellido = document.getElementById("dato2_2Apellido").value;
         const edad = parseInt(document.getElementById("dato2_3Edad").value);
-        const Correo_Electronico = document.getElementById("dato2_4CorreoElectronico").value;
-        const Especialidad = document.getElementById("dato2_4Especialidad").value;
+        const estudios = document.getElementById("dato2_4Estudios").value;
         const areaTrabajo= document.getElementById("dato2_5AreaTrabajo").value;
-        
+                //Armamos el objeto persona5
+        let persona5 = {
+        nombre,
+        apellido,
+        edad,
+        estudios,
+        areaTrabajo
+        }
+    //Aqui creamos la solucion pedida un for in que muestra el objeto con un alert    
+    let persona5Contiene = "";
+    for (let atributo in persona5) {
+    persona5Contiene += atributo + ": " + persona5[atributo] + "\n";
+}
+alert(persona5Contiene);
 
 })
 //---------------------------------------------------------------------------
