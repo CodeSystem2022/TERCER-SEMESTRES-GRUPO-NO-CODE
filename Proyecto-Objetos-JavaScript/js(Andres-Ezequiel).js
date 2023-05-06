@@ -1,7 +1,7 @@
 const formulario1 = document.getElementById("form1")
 
 function form1(){
-        let nombre = document.getElementById("dato1_1").value;
+    let nombre = document.getElementById("dato1_1").value;
     let apellido = document.getElementById("dato1_2").value;
     let edad = document.getElementById("dato1_3").value;
 
