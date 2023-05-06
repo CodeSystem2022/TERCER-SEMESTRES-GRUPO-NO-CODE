@@ -34,7 +34,7 @@
             <br>
             <button onclick="">Enviar</button>
         </div>
-        <div class="contenedor_formulario">
+        <form class="contenedor_formulario">
             <h4>2. Formulario para reclutador de empresas (Realizado por: Dante Martinez y Dario Carrizo)</h4>
             <br>
             <label>Nombre:</label>
@@ -52,9 +52,8 @@
             <label>Area de Trabajo:</label>
             <input type="text" id="dato2_5AreaTrabajo" />
             <br>
-            <br>
-            <button onclick="">Enviar</button>
-        </div>
+            <button type="submit" id="crear" >Enviar</button>
+        </form>
         <div class="contenedor_formulario">
             <h4>3. Formulario para inscripción escolar (Realizado por: Lucas Salinas y Franco Lara)</h4>
             <br>
@@ -67,7 +66,7 @@
             <label>Edad:</label>
             <input type="number" id="dato3_3" />
             <br>
-            <button onclick="">Enviar</button>
+            <button id="crear-persona" onclick="crearPersona()">Enviar</button>
         </div>
         <div class="contenedor_formulario">
             <h4>4. Formulario para patentación de vehiculos (Realizado por: Abel Pierna y Jeremias Riquero)</h4>
@@ -115,6 +114,18 @@
         var dato1_1 = parseInt(document.getElementById("dato1_1").value);
         //.................
         //formulario 2
+        //Codigo del formulario 2 (Realizado por: Dante Martinez y Dario Carrizo)
+            //Capturando valores del frontend
+document.getElementById("crear").addEventListener("click", function(event){
+    event.preventDefault();
+        const nombre = document.getElementById("dato2_1Nombre").value;
+        const apellido = document.getElementById("dato2_2Apellido").value;
+        const edad = parseInt(document.getElementById("dato2_3Edad").value);
+        const estudios = document.getElementById("dato2_4Estudios").value;
+        const areaTrabajo= document.getElementById("dato2_5AreaTrabajo").value;
+
+})
+//---------------------------------------------------------------------------
         //.................
         //formulario 3
         //.................
@@ -154,13 +165,10 @@
             persona4.mostrarConfirmacion();
             persona4.rellenarDatos();
 
-            //Codigo del formulario 2 (Realizado por: Dante Martinez y Dario Carrizo)
-            var dato2_1Nombre = document.getElementById("dato2_1").value;
-            var dato2_2Apellido = document.getElementById("dato2_2").value;
-            var dato2_3Edad = parseInt(document.getElementById("dato2_3").value)
-        }
+            
+    }
     </script>
-
+    
 </body>
 
 </html>
