@@ -156,6 +156,7 @@ alert(persona5Contiene);
         //formulario 4
         function formulario4() {
             let opcion = 0;
+            let opcionEliminar = 0;
             let nombre = document.getElementById('dato4_1').value;
             let apellido = document.getElementById('dato4_2').value;
             let edad = document.getElementById('dato4_3').value;
@@ -184,6 +185,11 @@ alert(persona5Contiene);
                             persona4.otro = otro;
 
                         }
+                        if (opcion == 2) {
+                            do {
+                                opcionEliminar = Number(prompt('¿Qué Atributo quieres borrar?\n[1]Nombre    [2]Apellido\n[3]Edad    [4]DNI\n[5]Patente    [6]Modelo\n[7]Marca'));
+                            } while (opcionEliminar < 1 || opcionEliminar > 7);
+                        } 
                     }while(opcion < 1 || opcion > 3);
                 },
                 rellenarDatos: function () {
