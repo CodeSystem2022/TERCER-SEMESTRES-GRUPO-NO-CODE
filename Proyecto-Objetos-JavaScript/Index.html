@@ -113,16 +113,6 @@
             <input type="text" id="dato4_7" />
             <br>
             <button onclick="formulario4()">Enviar</button>
-            <br>
-            <h5 id="devolucionTitulo"></h5>
-            <p id="devolucionNombre"></p>
-            <p id="devolucionApellido"></p>
-            <p id="devolucionEdad"></p>
-            <p id="devolucionDni"></p>
-            <p id="devolucionPatente"></p>
-            <p id="devolucionModelo"></p>
-            <p id="devolucionMarca"></p>
-            <p id="devolucionNuevo"></p>
 
         </form>
     </div>
@@ -243,16 +233,17 @@
 
                 },
                 rellenarDatos: function () {
-                    document.getElementById('devolucionTitulo').innerHTML = "Datos de " + nombre + " " + apellido + ": ";
-                    document.getElementById('devolucionNombre').innerHTML = 'Nombre: ' + nombre;
-                    document.getElementById('devolucionApellido').innerHTML = 'Apellido: ' + apellido;
-                    document.getElementById('devolucionEdad').innerHTML = 'Edad: ' + edad;
-                    document.getElementById('devolucionDni').innerHTML = 'DNI: ' + dni;
-                    document.getElementById('devolucionPatente').innerHTML = 'Número de patenten: ' + patente;
-                    document.getElementById('devolucionModelo').innerHTML = 'Modelo del vehiculo: ' + modelo;
-                    document.getElementById('devolucionMarca').innerHTML = 'Marca del vehiculo: ' + marca;
+                    if(opcion != 1){
+                        alert("DATOS DE " + nombre + " " + apellido + "\nNombre: " + nombre + "\nApellido: " + apellido
+                        + '\nEdad: ' + edad + '\nDNI: ' + dni + '\nNúmero de patente: ' + patente + '\nModelo del vehiculo: '
+                        + modelo + '\nMarca del vehiculo: ' + marca)
+                        alert('Datos guardados')
+                    }
                     if (opcion == 1) {
-                        document.getElementById('devolucionOtro').innerHTML = 'Otros: ' + otro;
+                        alert("DATOS DE " + nombre + " " + apellido + "\nNombre: " + nombre + "\nApellido: " + apellido
+                        + '\nEdad: ' + edad + '\nDNI: ' + dni + '\nNúmero de patente: ' + patente + '\nModelo del vehiculo: '
+                        + modelo + '\nMarca del vehiculo: ' + marca + '\nDato agregado: ' + otro);
+                        alert('Datos guardados')
                     }
 
 
