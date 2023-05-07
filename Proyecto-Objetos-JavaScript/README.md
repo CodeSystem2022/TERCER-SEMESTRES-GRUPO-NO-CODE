@@ -103,10 +103,38 @@ function Persona(nombre, edad, ciudad) {
 
 const persona1 = new Persona('Juan', 25, 'Madrid');
 
-
 En este ejemplo, se ha creado una función constructora Persona que acepta tres parámetros: nombre, edad y ciudad. Dentro de la función constructora, se asignan estos parámetros a las propiedades correspondientes del objeto utilizando la palabra clave this. Luego, se crea una nueva instancia del objeto Persona utilizando la palabra clave new y se le asigna a la variable persona1. Los valores 'Juan', 25 y 'Madrid' se pasan como argumentos a la función constructora para establecer los valores de las propiedades correspondientes del objeto.
 
 En resumen, la palabra clave new se utiliza para crear una nueva instancia de un objeto en JavaScript. Se utiliza junto con una función constructora para crear objetos personalizados con propiedades y valores específicos.
 
+##Formulario 3 Como modificar un atributo con "Prompt":
+En este ejercicio creamos una funcion llamada "ModificarDato", en la cual preguntamos si el usuario deseaba modificar alguno de los datos ingresados.
+En el caso de que si, se usa su "Switch" con 5 casos posibles, cada uno correspondiente al dato a modificar, luego se muestra en un "alert" el nuevo dato:
+
+Ejemplo de como modificar un dato con "Prompt":
+                                switch (opcionDato) {
+                                    case 1:
+                                        nombreCompleto = (prompt('Digite el nuevo nombre'));
+                                        persona3.nombreCompleto = nombreCompleto
+                                        break;
+                                    case 2:
+                                        edad = Number(prompt('Digite la nueva edad'));
+                                        persona3.edad = edad
+                                        break;
+                                    case 3:
+                                        dni = Number(prompt('Digite el dni'));
+                                        persona3.dni = dni
+                                        break;
+                                    case 4:
+                                        escuela = (prompt('Digite la escuela'));
+                                        persona3.escuela = escuela
+                                        break;
+                                    case 5:
+                                        email = (prompt('Digite el nuevo email'));
+                                        persona3.email = email
+                                        break;
+                                    default:
+                                        break;
+                                }
 
 
