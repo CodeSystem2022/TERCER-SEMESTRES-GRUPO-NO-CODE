@@ -188,6 +188,41 @@ alert(persona5Contiene);
                         if (opcion == 2) {
                             do {
                                 opcionEliminar = Number(prompt('¿Qué Atributo quieres borrar?\n[1]Nombre    [2]Apellido\n[3]Edad    [4]DNI\n[5]Patente    [6]Modelo\n[7]Marca'));
+                                switch (opcionEliminar) {
+                                    case 1:
+                                        delete persona4.nombre;
+                                        nombre = "Dato Eliminado"
+                                        break;
+                                    case 2:
+                                        delete persona4.apellido;
+                                        apellido = "Dato Eliminado"
+                                        break;
+                                    case 3:
+                                        delete persona4.edad;
+                                        edad = "Dato Eliminado"
+                                        break;
+                                    case 4:
+                                        delete persona4.dni;
+                                        dni = "Dato Eliminado"
+                                        break;
+                                    case 5:
+                                        delete persona4.patente;
+                                        patente = "Dato Eliminado"
+                                        break;
+                                    case 6:
+                                        delete persona4.modelo;
+                                        modelo = "Dato Eliminado"
+                                        break;
+                                    case 7:
+                                        delete persona4.marca;
+                                        marca = "Dato Eliminado"
+                                        break;
+                                    default:
+                                        alert('El parametro ingresado no es valido');
+                                        break;
+
+                                }
+                                alert('Dato Eliminado Correctamente')
                             } while (opcionEliminar < 1 || opcionEliminar > 7);
                         } 
                     }while(opcion < 1 || opcion > 3);
