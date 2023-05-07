@@ -33,9 +33,9 @@
             <input type="number" id="dato1_3" />
             <br>
             <button onclick="form1()">Enviar</button>
-            <script src="js(Andres-Ezequiel).js" ></script>
+            <script src="js(Andres-Ezequiel).js"></script>
         </form>
-        <form class="contenedor_formulario" >
+        <form class="contenedor_formulario">
             <h4>2. Formulario para reclutador de empresas (Realizado por: Dante Martinez y Dario Carrizo)</h4>
             <br>
             <label>Nombre:</label>
@@ -52,9 +52,9 @@
             <label>Area de Trabajo:</label>
             <input type="text" id="dato2_5AreaTrabajo" />
             <br>
-            <button type="submit" id="crear" >Enviar</button>
-            </form>
-            <div class="contenedor_formulario">
+            <button type="submit" id="crear">Enviar</button>
+        </form>
+        <form class="contenedor_formulario">
             <h4>3. Formulario para inscripción escolar (Realizado por: Lucas Salinas y Franco Lara)</h4>
             <br>
             <label>Nombre:</label>
@@ -77,8 +77,8 @@
             <br />
             <br>
             <button id="crear-persona" onclick="crearPersona()">Enviar</button>
-        </div>
-        <div class="contenedor_formulario">
+        </form>
+        <form class="contenedor_formulario">
             <h4>4. Formulario para patentación de vehiculos (Realizado por: Abel Pierna y Jeremias Riquero)</h4>
             <br>
             <label>Nombre:</label>
@@ -114,7 +114,7 @@
             <p id="devolucionMarca"></p>
             <p id="devolucionNuevo"></p>
 
-        </div>
+        </form>
     </div>
     <script>
         //Aqui cuelguen sus codigos de js
@@ -125,31 +125,31 @@
         //.................
         //formulario 2
         //Codigo del formulario 2 (Realizado por: Dante Martinez y Dario   Carrizo)
-            //Capturando valores del frontend
-document.getElementById("crear").addEventListener("click", function(event){
-    event.preventDefault();
-        const nombre = document.getElementById("dato2_1Nombre").value;
-        const apellido = document.getElementById("dato2_2Apellido").value;
-        const edad = parseInt(document.getElementById("dato2_3Edad").value);
-        const estudios = document.getElementById("dato2_4Estudios").value;
-        const areaTrabajo= document.getElementById("dato2_5AreaTrabajo").value;
-                //Armamos el objeto persona5
-        let persona5 = {
-        nombre,
-        apellido,
-        edad,
-        estudios,
-        areaTrabajo
-        }
-    //Aqui creamos la solucion pedida un for in que muestra el objeto con un alert    
-    let persona5Contiene = "";
-    for (let atributo in persona5) {
-    persona5Contiene += atributo + ": " + persona5[atributo] + "\n";
-}
-alert(persona5Contiene);
+        //Capturando valores del frontend
+        document.getElementById("crear").addEventListener("click", function (event) {
+            event.preventDefault();
+            const nombre = document.getElementById("dato2_1Nombre").value;
+            const apellido = document.getElementById("dato2_2Apellido").value;
+            const edad = parseInt(document.getElementById("dato2_3Edad").value);
+            const estudios = document.getElementById("dato2_4Estudios").value;
+            const areaTrabajo = document.getElementById("dato2_5AreaTrabajo").value;
+            //Armamos el objeto persona5
+            let persona5 = {
+                nombre,
+                apellido,
+                edad,
+                estudios,
+                areaTrabajo
+            }
+            //Aqui creamos la solucion pedida un for in que muestra el objeto con un alert    
+            let persona5Contiene = "";
+            for (let atributo in persona5) {
+                persona5Contiene += atributo + ": " + persona5[atributo] + "\n";
+            }
+            alert(persona5Contiene);
 
-})
-//---------------------------------------------------------------------------
+        })
+        //---------------------------------------------------------------------------
         //.................
         //formulario 3
         //.................
@@ -175,7 +175,7 @@ alert(persona5Contiene);
                 marca: marca,
                 mostrarConfirmacion: function () {
                     alert("Los datos han sido resividos correctamente")
-                    do{
+                    do {
                         opcion = Number(prompt('Desea agregar o eliminar algun dato?\nAgregar[1]\nEliminar[2]\nTerminar programa[3]'));
                         if (opcion < 1 || opcion > 3) {
                             alert('El parametro ingresado no es valido, vuelva a intentarlo.');
@@ -224,8 +224,8 @@ alert(persona5Contiene);
                                 }
                                 alert('Dato Eliminado Correctamente')
                             } while (opcionEliminar < 1 || opcionEliminar > 7);
-                        } 
-                    }while(opcion < 1 || opcion > 3);
+                        }
+                    } while (opcion < 1 || opcion > 3);
                 },
                 rellenarDatos: function () {
                     document.getElementById('devolucionTitulo').innerHTML = "Datos de " + nombre + " " + apellido + ": ";
@@ -245,10 +245,10 @@ alert(persona5Contiene);
             persona4.mostrarConfirmacion();
             persona4.rellenarDatos();
 
-            
-    }
+
+        }
     </script>
-    
+
 </body>
 
 </html>
