@@ -32,16 +32,6 @@
             <label>Edad:</label>
             <input type="number" id="dato1_3" />
             <br>
-            <label>DNI:</label>
-            <input type="number" id="dato1_4" />
-            <br>
-            <label>Enfermedad o condición:</label>
-            <input type="text" id="dato1_5" />
-            <br>
-            <label>Grupo Sanguineo:</label>
-            <input type="text" id="dato1_6" />
-            <br>
-
             <button onclick="form1()">Enviar</button>
             <script src="js(Andres-Ezequiel).js" ></script>
         </form>
@@ -186,6 +176,14 @@ alert(persona5Contiene);
                     alert("Los datos han sido resividos correctamente")
                     do{
                         opcion = Number(prompt('Desea agregar o eliminar algun dato?\nAgregar[1]\nEliminar[2]\nTerminar programa[3]'));
+                        if (opcion < 1 || opcion > 3) {
+                            alert('El parametro ingresado no es valido, vuelva a intentarlo.');
+                        }
+                        if (opcion == 1) {
+                            otro = prompt('Agrege el dato que concidere necesario: ');
+                            persona4.otro = otro;
+
+                        }
                     }while(opcion < 1 || opcion > 3);
                 },
                 rellenarDatos: function () {
@@ -197,6 +195,9 @@ alert(persona5Contiene);
                     document.getElementById('devolucionPatente').innerHTML = 'Número de patenten: ' + patente;
                     document.getElementById('devolucionModelo').innerHTML = 'Modelo del vehiculo: ' + modelo;
                     document.getElementById('devolucionMarca').innerHTML = 'Marca del vehiculo: ' + marca;
+                    if (opcion == 1) {
+                        document.getElementById('devolucionOtro').innerHTML = 'Otros: ' + otro;
+                    }
 
                 }
             }
