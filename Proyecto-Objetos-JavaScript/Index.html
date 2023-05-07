@@ -164,12 +164,14 @@
             let patente = document.getElementById('dato4_5').value;
             let modelo = document.getElementById('dato4_6').value;
             let marca = document.getElementById('dato4_7').value;
+            let otro = null;
+            
 
             let persona4 = {
                 nombre: nombre,
                 apellido: apellido,
                 edad: edad,
-                dni: patente,
+                dni: dni,
                 patente: patente,
                 modelo: modelo,
                 marca: marca,
@@ -223,9 +225,12 @@
 
                                 }
                                 alert('Dato Eliminado Correctamente')
+
                             } while (opcionEliminar < 1 || opcionEliminar > 7);
                         }
                     } while (opcion < 1 || opcion > 3);
+
+
                 },
                 rellenarDatos: function () {
                     document.getElementById('devolucionTitulo').innerHTML = "Datos de " + nombre + " " + apellido + ": ";
@@ -240,13 +245,13 @@
                         document.getElementById('devolucionOtro').innerHTML = 'Otros: ' + otro;
                     }
 
+
                 }
             }
             persona4.mostrarConfirmacion();
             persona4.rellenarDatos();
-
-
         }
+
     </script>
 
 </body>
