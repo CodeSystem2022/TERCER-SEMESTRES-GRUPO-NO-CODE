@@ -165,6 +165,7 @@ alert(persona5Contiene);
         //.................
         //formulario 4
         function formulario4() {
+            let opcion = 0;
             let nombre = document.getElementById('dato4_1').value;
             let apellido = document.getElementById('dato4_2').value;
             let edad = document.getElementById('dato4_3').value;
@@ -183,6 +184,9 @@ alert(persona5Contiene);
                 marca: marca,
                 mostrarConfirmacion: function () {
                     alert("Los datos han sido resividos correctamente")
+                    do{
+                        opcion = Number(prompt('Desea agregar o eliminar algun dato?\nAgregar[1]\nEliminar[2]\nTerminar programa[3]'));
+                    }while(opcion < 1 || opcion > 3);
                 },
                 rellenarDatos: function () {
                     document.getElementById('devolucionTitulo').innerHTML = "Datos de " + nombre + " " + apellido + ": ";
