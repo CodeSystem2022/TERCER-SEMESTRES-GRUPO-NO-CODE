@@ -44,7 +44,7 @@ Aquí hay un ejemplo que muestra cómo agregar un atributo a un objeto utilizand
   
   console.log(persona); // { nombre: 'Lucas', edad: 15 }
   
-  OBJETOS EN JAVASCRIPT  (ANDRES WINCKLER - EZEQUIEL MARISCAL)
+  ## OBJETOS EN JAVASCRIPT  (ANDRES WINCKLER - EZEQUIEL MARISCAL)
   
   
   En JavaScript, los objetos son una estructura de datos que se utilizan para almacenar información en pares de clave-valor. Para crear un objeto en JavaScript, se puede utilizar la sintaxis de objeto literal o la función constructora.
