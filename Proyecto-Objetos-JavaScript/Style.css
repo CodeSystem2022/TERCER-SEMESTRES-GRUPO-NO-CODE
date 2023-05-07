@@ -12,7 +12,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: radial-gradient(circle, rgba(120,255,176,1) 0%, rgba(49,130,58,1) 86%, rgba(12,78,39,1) 100%);
+    background: radial-gradient(circle, rgb(163, 163, 163) 0%, rgb(94, 94, 94) 65%, rgb(20, 20, 20) 100%);
 }
 .rotulo{
     display: flex;
@@ -22,10 +22,25 @@ body {
     flex-direction: column;
     text-align: center;
     padding: 2rem;
+    color:#fff;
+    text-shadow: #1f1f1f 2px 2px 6px;
+}
+h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 2.2rem;
+}
+h3{
+    font-size: 1.2rem;
+}
+.rotulo p{
+    margin-top: 5rem;
+    font-size: 2rem;
 }
 .contenedor_formularios{
     display: flex;
-    width: 60%;
+    width: 80%;
     height: auto;
     align-items: center;
     flex-direction: column;
@@ -36,13 +51,34 @@ body {
     flex-direction: column;
     align-items: center;
     margin-bottom: 3rem;
-    background-color: rgba(0, 0, 0,.3);
-    border: 2px solid #000;
+    background-color: #383838;
     padding: 1rem;
     color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 0 20px #000;
 }
 .contenedor_formulario h4{
-    font-size: 1.4rem;
+    font-size: 1.5rem;
+    text-shadow: #1f1f1f 2px 2px 6px;
     text-align: center;
     color: #fff;
 }
+label{
+    font-size: 1.3rem;
+    text-shadow: #1f1f1f 2px 2px 6px;
+
+}
+input{
+    background-color: #555;
+    border: none;
+    width: 20rem;
+    height: 2.5rem;
+    padding: .5rem;
+    font-size: 1.2rem;
+    color: #fff;
+    margin: .5rem;
+    border-radius: .4rem;
+    box-shadow: 2px 2px 4px #1f1f1f;
+
+}
+
