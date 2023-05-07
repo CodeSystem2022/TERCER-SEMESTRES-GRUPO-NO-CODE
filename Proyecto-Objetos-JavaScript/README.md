@@ -52,9 +52,13 @@ Aquí hay un ejemplo que muestra cómo agregar un atributo a un objeto utilizand
 La sintaxis de objeto literal se utiliza para crear un objeto simple con pares de clave-valor. Aquí hay un ejemplo:
 
 const persona = {
+
   nombre: 'Juan',
+  
   edad: 25,
+  
   ciudad: 'Madrid'
+  
 };
 
 En este ejemplo, se ha creado un objeto llamado persona con tres propiedades: nombre, edad y ciudad. Cada propiedad tiene un valor asociado, como 'Juan', 25 y 'Madrid', respectivamente.
@@ -62,12 +66,17 @@ En este ejemplo, se ha creado un objeto llamado persona con tres propiedades: no
 La función constructora se utiliza para crear objetos más complejos y personalizados. Aquí hay un ejemplo:
 
 function Persona(nombre, edad, ciudad) {
+
   this.nombre = nombre;
+  
   this.edad = edad;
+  
   this.ciudad = ciudad;
+  
 }
 
 const persona1 = new Persona('Juan', 25, 'Madrid');
+
 
 En este ejemplo, se ha creado un constructor de objetos Persona con tres propiedades: nombre, edad y ciudad. Luego se crea un nuevo objeto llamado persona1 utilizando el constructor Persona y se le asignan los valores 'Juan', 25 y 'Madrid' a las propiedades correspondientes.
 
@@ -77,17 +86,23 @@ En JavaScript, la palabra clave new se utiliza para crear una nueva instancia de
 
 const objeto = new Object();
 
+
 En este ejemplo, se ha creado un objeto vacío utilizando la función constructora Object y se ha asignado a la variable objeto. Sin embargo, este objeto vacío no tiene propiedades ni métodos definidos, por lo que no es muy útil por sí solo.
 
 Para crear objetos más complejos y personalizados, es común utilizar funciones constructoras personalizadas en lugar de la función Object. Por ejemplo, supongamos que se quiere crear un objeto Persona con propiedades como nombre, edad y ciudad. La función constructora se vería así:
 
 function Persona(nombre, edad, ciudad) {
+
   this.nombre = nombre;
+  
   this.edad = edad;
+  
   this.ciudad = ciudad;
+  
 }
 
 const persona1 = new Persona('Juan', 25, 'Madrid');
+
 
 En este ejemplo, se ha creado una función constructora Persona que acepta tres parámetros: nombre, edad y ciudad. Dentro de la función constructora, se asignan estos parámetros a las propiedades correspondientes del objeto utilizando la palabra clave this. Luego, se crea una nueva instancia del objeto Persona utilizando la palabra clave new y se le asigna a la variable persona1. Los valores 'Juan', 25 y 'Madrid' se pasan como argumentos a la función constructora para establecer los valores de las propiedades correspondientes del objeto.
 
