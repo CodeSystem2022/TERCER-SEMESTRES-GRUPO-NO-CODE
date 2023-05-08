@@ -29,7 +29,7 @@ for (let propiedad in persona) {
 En este ejemplo, el ciclo for...in recorre todas las propiedades del objeto persona y en cada iteración asigna el nombre de la propiedad a la variable propiedad. Luego, podemos acceder al valor de la propiedad utilizando la sintaxis persona[propiedad].
 Al ejecutar este código, se mostrará por consola el nombre y valor de cada propiedad del objeto persona.
 
-### Eliminar o agregar atributos(Abel Pierna, Jeremias Riquero):
+## Eliminar o agregar atributos(Abel Pierna, Jeremias Riquero):
 En JavaScript, puede agregar o eliminar atributos en objetos utilizando la notación de puntos o la notación de corchetes.
 
 Para agregar un atributo a un objeto, puede usar la notación de puntos o la notación de corchetes. La notación de puntos se utiliza cuando el nombre del atributo es una cadena válida de JavaScript y no contiene caracteres especiales. La notación de corchetes se utiliza cuando el nombre del atributo contiene caracteres especiales o es una variable.
