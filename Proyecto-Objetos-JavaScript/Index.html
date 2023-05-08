@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -115,11 +115,6 @@
     </div>
     <script>
         //Aqui cuelguen sus codigos de js
-        //Hagan un alert de confimacion cuando se aprieta el boton, que muestre los datos ingresados y ademas especifiquen la parte de la clase que les toco mostrar
-        //formulario 1
-        //EJEMPLO de como pasar un dato ingresado en un input a JS
-        var dato1_1 = parseInt(document.getElementById("dato1_1").value);
-        //.................
         //formulario 2
         //Codigo del formulario 2 (Realizado por: Dante Martinez y Dario   Carrizo)
         //Capturando valores del frontend
@@ -146,8 +141,6 @@
             alert(persona5Contiene);
 
         })
-        //---------------------------------------------------------------------------
-        //.................
         //formulario 3
         //Formulario realizado por Lucas Salinas y Franco Lara:
         function formulario3() {
@@ -202,7 +195,7 @@
                         }
                     } while (opcion < 1 || opcion > 2);
                 },
-                mostrarDatos: function() {
+                mostrarDatos: function () {
                     alert("Datos guardadaos: \nNombre completo: " + nombreCompleto + "\nEdad: " + edad + "\nDni: " + dni + "\nEscuela: " + escuela + "\nEmail: " + email)
                 }
             }
@@ -221,7 +214,7 @@
             let modelo = document.getElementById('dato4_6').value;
             let marca = document.getElementById('dato4_7').value;
             let otro = null;
-            
+
 
             let persona4 = {
                 nombre: nombre,
@@ -289,16 +282,16 @@
 
                 },
                 rellenarDatos: function () {
-                    if(opcion != 1){
+                    if (opcion != 1) {
                         alert("DATOS DE " + nombre + " " + apellido + "\nNombre: " + nombre + "\nApellido: " + apellido
-                        + '\nEdad: ' + edad + '\nDNI: ' + dni + '\nNúmero de patente: ' + patente + '\nModelo del vehiculo: '
-                        + modelo + '\nMarca del vehiculo: ' + marca)
+                            + '\nEdad: ' + edad + '\nDNI: ' + dni + '\nNúmero de patente: ' + patente + '\nModelo del vehiculo: '
+                            + modelo + '\nMarca del vehiculo: ' + marca)
                         alert('Datos guardados')
                     }
                     if (opcion == 1) {
                         alert("DATOS DE " + nombre + " " + apellido + "\nNombre: " + nombre + "\nApellido: " + apellido
-                        + '\nEdad: ' + edad + '\nDNI: ' + dni + '\nNúmero de patente: ' + patente + '\nModelo del vehiculo: '
-                        + modelo + '\nMarca del vehiculo: ' + marca + '\nDato agregado: ' + otro);
+                            + '\nEdad: ' + edad + '\nDNI: ' + dni + '\nNúmero de patente: ' + patente + '\nModelo del vehiculo: '
+                            + modelo + '\nMarca del vehiculo: ' + marca + '\nDato agregado: ' + otro);
                         alert('Datos guardados')
                     }
 
