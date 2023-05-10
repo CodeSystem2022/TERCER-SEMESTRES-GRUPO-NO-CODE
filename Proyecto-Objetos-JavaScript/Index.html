@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -16,7 +16,8 @@
         <h2>Grupo: No_Code</h2>
         <h3>Integrantes: Abel Pierna, Andres Winckler, Dante Martinez, Ezequiel Mariscal, Dario Carrizo, Franco Lara,
             Lucas Salinas, Jeremias Riquero (Scrum Master).</h3>
-        <p>Creamos una serie de cuatro Formularios para diferentes funciones creando objetos(personas) para cada uno.
+        <p>Creamos una serie de cuatro Formularios para diferentes funciones creando objetos(personas) para cada uno
+            aplicando lo visto en la clase.
         </p>
     </div>
     <div class="contenedor_formularios">
@@ -43,9 +44,9 @@
             <br>
 
             <button onclick="form1()">Enviar</button>
-            <script src="js(Andres-Ezequiel).js" ></script>
+            <script src="js(Andres-Ezequiel).js"></script>
         </form>
-        <form class="contenedor_formulario" >
+        <form class="contenedor_formulario">
             <h4>2. Formulario para reclutador de empresas (Realizado por: Dante Martinez y Dario Carrizo)</h4>
             <br>
             <label>Nombre:</label>
@@ -62,110 +63,149 @@
             <label>Area de Trabajo:</label>
             <input type="text" id="dato2_5AreaTrabajo" />
             <br>
-            <button type="submit" id="crear" >Enviar</button>
-            </form>
-            <div class="contenedor_formulario">
+            <button type="submit" id="crear">Enviar</button>
+        </form>
+        <form class="contenedor_formulario">
             <h4>3. Formulario para inscripción escolar (Realizado por: Lucas Salinas y Franco Lara)</h4>
             <br>
-            <label>Nombre:</label>
+            <label>Nombre Completo:</label>
             <input type="text" id="dato3_1" />
             <br>
-            <label>Apellido:</label>
-            <input type="text" id="dato3_2" />
-            <br>
             <label>Edad:</label>
+            <input type="number" id="dato3_2" />
+            <br />
+            <label>DNI</label>
             <input type="number" id="dato3_3" />
             <br />
-            <label>Correo Electrónico:</label>
-            <input type="email" id="dato2_6CorreoElectronico" />
+            <label>Escuela</label>
+            <input type="text" id="dato3_4" />
             <br />
-            <label>Dirección:</label>
-            <input type="text" id="dato2_7Direccion" />
+            <label>Email</label>
+            <input type="email" id="dato3_5" />
             <br />
-            <label>Teléfono:</label>
-            <input type="tel" id="dato2_8Telefono" />
-            <br />
-            <br>
-            <button id="crear-persona" onclick="crearPersona()">Enviar</button>
-        </div>
-        <div class="contenedor_formulario">
+            <button id="crear-persona" onclick="formulario3()">Enviar</button>
+        </form>
+        <form class="contenedor_formulario">
             <h4>4. Formulario para patentación de vehiculos (Realizado por: Abel Pierna y Jeremias Riquero)</h4>
             <br>
             <label>Nombre:</label>
-            <input type="text" id="dato4_1" />
+            <input type="text" id="dato4_1" placeholder="Escribe tu Nombre..." />
             <br>
             <label>Apellido:</label>
-            <input type="text" id="dato4_2" />
+            <input type="text" id="dato4_2" placeholder="Escribe tu Apellido..." />
             <br>
             <label>Edad:</label>
-            <input type="number" id="dato4_3" />
+            <input type="number" id="dato4_3" placeholder="Escribe tu Edad..." />
             <br>
             <label>Dni:</label>
-            <input type="number" id="dato4_4" />
+            <input type="number" id="dato4_4" placeholder="Ejemplo 44378289..." />
             <br>
             <label>Patente:</label>
-            <input type="text" id="dato4_5" />
+            <input type="text" id="dato4_5" placeholder="Ejemolo 123ABC..." />
             <br>
             <label>Modelo:</label>
-            <input type="number" id="dato4_6" />
+            <input type="number" id="dato4_6" placeholder="Escribe el modelo..." />
             <br>
             <label>Marca:</label>
-            <input type="text" id="dato4_7" />
+            <input type="text" id="dato4_7" placeholder="Ejemplo FIAT..." />
             <br>
             <button onclick="formulario4()">Enviar</button>
-            <br>
-            <h5 id="devolucionTitulo"></h5>
-            <p id="devolucionNombre"></p>
-            <p id="devolucionApellido"></p>
-            <p id="devolucionEdad"></p>
-            <p id="devolucionDni"></p>
-            <p id="devolucionPatente"></p>
-            <p id="devolucionModelo"></p>
-            <p id="devolucionMarca"></p>
-            <p id="devolucionNuevo"></p>
 
-        </div>
+        </form>
     </div>
     <script>
         //Aqui cuelguen sus codigos de js
-        //Hagan un alert de confimacion cuando se aprieta el boton, que muestre los datos ingresados y ademas especifiquen la parte de la clase que les toco mostrar
-        //formulario 1
-        //EJEMPLO de como pasar un dato ingresado en un input a JS
-        var dato1_1 = parseInt(document.getElementById("dato1_1").value);
-        //.................
         //formulario 2
         //Codigo del formulario 2 (Realizado por: Dante Martinez y Dario   Carrizo)
-            //Capturando valores del frontend
-document.getElementById("crear").addEventListener("click", function(event){
-    event.preventDefault();
-        const nombre = document.getElementById("dato2_1Nombre").value;
-        const apellido = document.getElementById("dato2_2Apellido").value;
-        const edad = parseInt(document.getElementById("dato2_3Edad").value);
-        const estudios = document.getElementById("dato2_4Estudios").value;
-        const areaTrabajo= document.getElementById("dato2_5AreaTrabajo").value;
-                //Armamos el objeto persona5
-        let persona5 = {
-        nombre,
-        apellido,
-        edad,
-        estudios,
-        areaTrabajo
-        }
-    //Aqui creamos la solucion pedida un for in que muestra el objeto con un alert    
-    let persona5Contiene = "";
-    for (let atributo in persona5) {
-    persona5Contiene += atributo + ": " + persona5[atributo] + "\n";
-}
-alert(persona5Contiene);
+        //Capturando valores del frontend
+        document.getElementById("crear").addEventListener("click", function (event) {
+            event.preventDefault();
+            const nombre = document.getElementById("dato2_1Nombre").value;
+            const apellido = document.getElementById("dato2_2Apellido").value;
+            const edad = parseInt(document.getElementById("dato2_3Edad").value);
+            const estudios = document.getElementById("dato2_4Estudios").value;
+            const areaTrabajo = document.getElementById("dato2_5AreaTrabajo").value;
+            //Armamos el objeto persona5
+            let persona5 = {
+                nombre,
+                apellido,
+                edad,
+                estudios,
+                areaTrabajo
+            }
+            //Aqui creamos la solucion pedida un for in que muestra el objeto con un alert    
+            let persona5Contiene = "";
+            for (let atributo in persona5) {
+                persona5Contiene += atributo + ": " + persona5[atributo] + "\n";
+            }
+            alert(persona5Contiene);
 
-})
-//---------------------------------------------------------------------------
-        //.................
+        })
         //formulario 3
-        //.................
+        //Formulario realizado por Lucas Salinas y Franco Lara:
+        function formulario3() {
+            let nombreCompleto, edad, dni, escuela, email, opcion = 0, opcionDato = 0;
+            nombreCompleto = document.getElementById("dato3_1").value;
+            edad = document.getElementById("dato3_2").value;
+            dni = document.getElementById("dato3_3").value;
+            escuela = document.getElementById("dato3_4").value;
+            email = document.getElementById("dato3_5").value;
+
+            let persona3 = {
+                nombreCompleto: nombreCompleto,
+                edad: edad,
+                dni: dni,
+                escuela: escuela,
+                email: email,
+
+                modificarDato: function () {
+                    do {
+                        opcion = Number(prompt("Desea modificar algun dato?\nModificar [1]\nSalir del programa [2]"));
+                        if (opcion < 1 || opcion > 2) {
+                            alert('El parametro ingresado no es valido, vuelva a intentarlo.');
+                        }
+                        if (opcion == 1) {
+                            do {
+                                opcionDato = Number(prompt('¿Que dato desea modificar?\n[1] Nombre Completo \n[2] Edad\n[3] DNI\n[4] Escuela \n[5] Email'));
+                                switch (opcionDato) {
+                                    case 1:
+                                        nombreCompleto = (prompt('Digite el nuevo nombre'));
+                                        persona3.nombreCompleto = nombreCompleto
+                                        break;
+                                    case 2:
+                                        edad = Number(prompt('Digite la nueva edad'));
+                                        persona3.edad = edad
+                                        break;
+                                    case 3:
+                                        dni = Number(prompt('Digite el dni'));
+                                        persona3.dni = dni
+                                        break;
+                                    case 4:
+                                        escuela = (prompt('Digite la escuela'));
+                                        persona3.escuela = escuela
+                                        break;
+                                    case 5:
+                                        email = (prompt('Digite el nuevo email'));
+                                        persona3.email = email
+                                        break;
+                                    default:
+                                        break;
+                                }
+                            } while (opcionDato < 1 || opcionDato > 5);
+                        }
+                    } while (opcion < 1 || opcion > 2);
+                },
+                mostrarDatos: function () {
+                    alert("Datos guardadaos: \nNombre completo: " + nombreCompleto + "\nEdad: " + edad + "\nDni: " + dni + "\nEscuela: " + escuela + "\nEmail: " + email)
+                }
+            }
+            persona3.modificarDato();
+            persona3.mostrarDatos();
+        }
         //formulario 4
         function formulario4() {
             let opcion = 0;
+            let opcionEliminar = 0;
             let nombre = document.getElementById('dato4_1').value;
             let apellido = document.getElementById('dato4_2').value;
             let edad = document.getElementById('dato4_3').value;
@@ -173,40 +213,97 @@ alert(persona5Contiene);
             let patente = document.getElementById('dato4_5').value;
             let modelo = document.getElementById('dato4_6').value;
             let marca = document.getElementById('dato4_7').value;
+            let otro = null;
+
 
             let persona4 = {
                 nombre: nombre,
                 apellido: apellido,
                 edad: edad,
-                dni: patente,
+                dni: dni,
                 patente: patente,
                 modelo: modelo,
                 marca: marca,
                 mostrarConfirmacion: function () {
                     alert("Los datos han sido resividos correctamente")
-                    do{
+                    do {
                         opcion = Number(prompt('Desea agregar o eliminar algun dato?\nAgregar[1]\nEliminar[2]\nTerminar programa[3]'));
-                    }while(opcion < 1 || opcion > 3);
+                        if (opcion < 1 || opcion > 3) {
+                            alert('El parametro ingresado no es valido, vuelva a intentarlo.');
+                        }
+                        if (opcion == 1) {
+                            otro = prompt('Agrege el dato que concidere necesario: ');
+                            persona4.otro = otro;
+
+                        }
+                        if (opcion == 2) {
+                            do {
+                                opcionEliminar = Number(prompt('¿Qué Atributo quieres borrar?\n[1]Nombre    [2]Apellido\n[3]Edad    [4]DNI\n[5]Patente    [6]Modelo\n[7]Marca'));
+                                switch (opcionEliminar) {
+                                    case 1:
+                                        delete persona4.nombre;
+                                        nombre = "Dato Eliminado"
+                                        break;
+                                    case 2:
+                                        delete persona4.apellido;
+                                        apellido = "Dato Eliminado"
+                                        break;
+                                    case 3:
+                                        delete persona4.edad;
+                                        edad = "Dato Eliminado"
+                                        break;
+                                    case 4:
+                                        delete persona4.dni;
+                                        dni = "Dato Eliminado"
+                                        break;
+                                    case 5:
+                                        delete persona4.patente;
+                                        patente = "Dato Eliminado"
+                                        break;
+                                    case 6:
+                                        delete persona4.modelo;
+                                        modelo = "Dato Eliminado"
+                                        break;
+                                    case 7:
+                                        delete persona4.marca;
+                                        marca = "Dato Eliminado"
+                                        break;
+                                    default:
+                                        alert('El parametro ingresado no es valido');
+                                        break;
+
+                                }
+                                alert('Dato Eliminado Correctamente')
+
+                            } while (opcionEliminar < 1 || opcionEliminar > 7);
+                        }
+                    } while (opcion < 1 || opcion > 3);
+
+
                 },
                 rellenarDatos: function () {
-                    document.getElementById('devolucionTitulo').innerHTML = "Datos de " + nombre + " " + apellido + ": ";
-                    document.getElementById('devolucionNombre').innerHTML = 'Nombre: ' + nombre;
-                    document.getElementById('devolucionApellido').innerHTML = 'Apellido: ' + apellido;
-                    document.getElementById('devolucionEdad').innerHTML = 'Edad: ' + edad;
-                    document.getElementById('devolucionDni').innerHTML = 'DNI: ' + dni;
-                    document.getElementById('devolucionPatente').innerHTML = 'Número de patenten: ' + patente;
-                    document.getElementById('devolucionModelo').innerHTML = 'Modelo del vehiculo: ' + modelo;
-                    document.getElementById('devolucionMarca').innerHTML = 'Marca del vehiculo: ' + marca;
+                    if (opcion != 1) {
+                        alert("DATOS DE " + nombre + " " + apellido + "\nNombre: " + nombre + "\nApellido: " + apellido
+                            + '\nEdad: ' + edad + '\nDNI: ' + dni + '\nNúmero de patente: ' + patente + '\nModelo del vehiculo: '
+                            + modelo + '\nMarca del vehiculo: ' + marca)
+                        alert('Datos guardados')
+                    }
+                    if (opcion == 1) {
+                        alert("DATOS DE " + nombre + " " + apellido + "\nNombre: " + nombre + "\nApellido: " + apellido
+                            + '\nEdad: ' + edad + '\nDNI: ' + dni + '\nNúmero de patente: ' + patente + '\nModelo del vehiculo: '
+                            + modelo + '\nMarca del vehiculo: ' + marca + '\nDato agregado: ' + otro);
+                        alert('Datos guardados')
+                    }
+
 
                 }
             }
             persona4.mostrarConfirmacion();
             persona4.rellenarDatos();
+        }
 
-            
-    }
     </script>
-    
+
 </body>
 
 </html>
