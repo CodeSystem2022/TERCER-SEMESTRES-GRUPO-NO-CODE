@@ -20,7 +20,9 @@ El constructor puede tener parámetros que se utilizan para inicializar las prop
 Por lo tanto podremos asi crear objetos nuevos en este caso autos y finalmente, accedemos a las propiedades de los objetos utilizando la notación de punto y las imprimimos en la consola.
 
 # *5.3 Métodos en el constructor de Objetos*
-...
+Dentro del constructor podemos crear nuevos métodos que nos brindaran otras propiedades más a los objetos.
+En este caso creamos el nombre completo de la persona, para ello hacemos una función dentro del constructor y retornamos el nombre más apellido.
+Por último, llamamos a imprimir el objeto creado y el método para mostrar el nombre completo. 
 
 # *5.4 Distintas formas de iniciar Objetos*
 ...
