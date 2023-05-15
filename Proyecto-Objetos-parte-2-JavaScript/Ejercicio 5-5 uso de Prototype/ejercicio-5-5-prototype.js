@@ -2,7 +2,6 @@
 //Permite incluir en instancias propiedades que no posee 
 
 //Constructor
-
 function Perro(nombre , raza, edad){ 
     
     this.nombre = nombre;
