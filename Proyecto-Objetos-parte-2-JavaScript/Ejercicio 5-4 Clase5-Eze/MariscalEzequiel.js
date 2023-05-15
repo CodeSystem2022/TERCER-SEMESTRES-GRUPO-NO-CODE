@@ -1,6 +1,5 @@
 
 // Distintas formas de crear objetos - Mariscal Ezequiel
-
 /* 
 Ver el video 5.4 de la clase 5 y desarrollar un código simple aplicando lo enseñado. 
 Solo hacer las siguientes formas:
@@ -10,8 +9,6 @@ Caso Arreglo 1 y 2
 Caso Funciones 1 y 2
 
 */
-
-
 // caso boolean 1
 let existen8Dias = new existen8Dias(false); // Formal
 console.log("Existen 8 dias de las semana?: " + existen8Dias );
