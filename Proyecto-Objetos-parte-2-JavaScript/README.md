@@ -13,7 +13,11 @@ Los métodos set y get en JavaScript son utilizados para implementar propiedades
 La encapsulación y el uso de los métodos set y get ayudan a mantener un código más organizado, modular y fácil de mantener, al tiempo que mejoran la seguridad y la integridad de los datos en una aplicación.
 
 # *5.2 Constructores de Obejtos*
-...
+Un constructor de objetos en JavaScript es una función especial que se utiliza para crear objetos. Al llamar al constructor con la palabra clave "new", se crea un nuevo objeto y se devuelve una referencia a ese objeto.
+
+El constructor puede tener parámetros que se utilizan para inicializar las propiedades del objeto. Por ejemplo, si tenemos un constructor para crear objetos "Auto", podríamos tener parámetros para la marca el dominio, color o modelo del automóvil.
+
+Por lo tanto podremos asi crear objetos nuevos en este caso autos y finalmente, accedemos a las propiedades de los objetos utilizando la notación de punto y las imprimimos en la consola.
 
 # *5.3 Métodos en el constructor de Objetos*
 ...
