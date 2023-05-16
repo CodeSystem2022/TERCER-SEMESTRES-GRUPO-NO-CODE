@@ -25,7 +25,35 @@ En este caso creamos el nombre completo de la persona, para ello hacemos una fun
 Por último, llamamos a imprimir el objeto creado y el método para mostrar el nombre completo. 
 
 # *5.4 Distintas formas de iniciar Objetos*
-...
+// caso1
+let miObjeto = new Object(); // Esta es una opcion formal
+// caso2
+let miObjeto2 = {}; // Esta opciono es breve y recomendada
+
+// caso String 1
+let miCadena1 = new String('Hola'); // Sintaxis formal
+// caso String 2 
+let miCadena2 = 'Hola'; //Esta es la sintaxis simplificada y recomendada
+
+// caso con numeros 1
+let miNumero = new Number(1); // Es forma no recomendable
+// caso con numeros 2
+let miNumero2 = 1;
+
+// caso boolean 1
+let miBoolean1 = new Boolean(false); // Formal
+// caso boolean 2
+let miBoolean2 = false; // Sintaxis recomendada
+
+// caso Arreglos 1 
+let miArrreglo1 = new Array(); // Formal
+// caso Arreglos 2
+let miArreglo2 = []; // Sintaxis recomendada
+
+// caso function 1 
+let miFuncion1 = new function(){}; // Todo despues de new es considerado objeto
+// caso function 2
+let miFuncion2 = function(){}; // Notacion simplificada y recomendada
 
 # *5.5 Uso de Prototype*
 En JavaScript, prototype es una propiedad especial de los objetos que se utiliza para agregar propiedades y métodos a una clase. Cada objeto tiene un enlace interno a su prototipo, y si una propiedad o método no se encuentra en el objeto actual, JavaScript lo buscará en su prototipo.
