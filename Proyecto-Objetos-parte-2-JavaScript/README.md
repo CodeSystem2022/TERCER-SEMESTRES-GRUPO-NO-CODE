@@ -61,6 +61,10 @@ En JavaScript, prototype es una propiedad especial de los objetos que se utiliza
  
 
 # *5.6 Uso de Call*
-...
+En JavaScript, la función call() es un método que permite invocar una función utilizando un objeto como contexto o valor de this. Básicamente, call() te permite llamar a una función y establecer explícitamente el valor de this dentro del cuerpo de la función durante la ejecución.
+
+La sintaxis general para utilizar call() es la siguiente: funcion.call(objeto, parametro1, parametro2, ...), donde funcion es la función que deseas llamar y objeto es el objeto que se utilizará como contexto para la función. Los parámetros adicionales son los argumentos que se pasan a la función llamada.
+
+Cuando utilizas call(), estás cambiando temporalmente el contexto de this dentro de la función llamada. Esto puede ser útil en situaciones donde deseas utilizar métodos de un objeto en otro objeto sin tener que duplicar el código. Al llamar a una función con call(), puedes asignar temporalmente el objeto objetivo como el valor de this, lo que permite acceder a sus propiedades y métodos dentro de la función.
 
 # *5.7 Uso de Apply*
