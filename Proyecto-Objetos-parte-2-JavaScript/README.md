@@ -28,7 +28,9 @@ Por último, llamamos a imprimir el objeto creado y el método para mostrar el n
 ...
 
 # *5.5 Uso de Prototype*
-...
+En JavaScript, prototype es una propiedad especial de los objetos que se utiliza para agregar propiedades y métodos a una clase. Cada objeto tiene un enlace interno a su prototipo, y si una propiedad o método no se encuentra en el objeto actual, JavaScript lo buscará en su prototipo.
+ Se utiliza para agregar propiedades y métodos a una clase en JavaScript, lo que permite crear objetos con esas propiedades y métodos a través de la función constructora. Luego, esos objetos pueden acceder a las propiedades y métodos agregados a través del prototipo.
+ 
 
 # *5.6 Uso de Call*
 ...
