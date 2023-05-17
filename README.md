@@ -1,3 +1,22 @@
+## Integrantes:
+
+- *Dante Martinez*
+[URL Repositorio](URL del enlace)
+- *Abel Pierna*
+[URL Repositorio](URL del enlace)
+- *Andres Wincker*
+[URL Repositorio](URL del enlace)
+- *Jere Riquero*
+[URL Repositorio](URL del enlace)
+- *Dario Walter Carrizo*
+[URL Repositorio](URL del enlace)
+- *Ezequiel Mariscal*
+[URL JAVA](https://github.com/ezequielmariscal/Tecnicatura3Java)
+- *Franco Ariel*
+[URL Repositorio](URL del enlace)
+- *Lucas Salinas*
+[URL Repositorio](URL del enlace)
+
 
 # ***Aplicación del Metodo Scrum en Github***
 
