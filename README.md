@@ -2,7 +2,10 @@
 ## Integrantes y repositorios:
 
 - *Dante Martinez*
-[URL Repositorio](URL del enlace)
+[Repositorio Laboratorio III](https://github.com/mzadante/UTN-Tecnicatura-III-Lenguajes)
+   [Repositorio Java](https://github.com/mzadante/UTN-Tecnicatura-III-Lenguajes/tree/main/Tecnicatura3Java)
+   [Repositorio Python](https://github.com/mzadante/UTN-Tecnicatura-III-Lenguajes/tree/main/Tecnicatura3Py)
+   [Repositorio JavaScript](https://github.com/mzadante/UTN-Tecnicatura-III-Lenguajes/tree/main/Tecnicatura3Js)
 - *Abel Pierna*
 [URL Repositorio](URL del enlace)
 - *Andres Wincker*
