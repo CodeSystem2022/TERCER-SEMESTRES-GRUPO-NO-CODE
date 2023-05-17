@@ -11,9 +11,13 @@
 - *Dario Walter Carrizo*
 [URL Repositorio](URL del enlace)
 - *Ezequiel Mariscal*
+- 
 -[Repositorio Java](https://github.com/ezequielmariscal/Tecnicatura3Java)
+
 -[Repositorio Python](https://github.com/ezequielmariscal/Tecnicatura3Py)
+
 -[Repositorio Javascript](https://github.com/ezequielmariscal/Tecnicatura3Js)
+
 - *Franco Ariel*
 [URL Repositorio](URL del enlace)
 - *Lucas Salinas*
