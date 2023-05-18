@@ -10,11 +10,11 @@
 - [URL Repositorio](URL del enlace)
 - *Andres Wincker*
 
-[Repositorio JavaScript](https://github.com/andreswinck/tecnicaturaGit/tree/master/Tecnicatura3JS)
+   [Repositorio JavaScript](https://github.com/andreswinck/tecnicaturaGit/tree/master/Tecnicatura3JS)
 
-[Repositorio Java](https://github.com/andreswinck/tecnicaturaGit/tree/master/Tecnicatura3Java)
+   [Repositorio Java](https://github.com/andreswinck/tecnicaturaGit/tree/master/Tecnicatura3Java)
 
-[Repositorio Python](https://github.com/andreswinck/tecnicaturaGit/tree/master/Tecnicatura3Py)
+   [Repositorio Python](https://github.com/andreswinck/tecnicaturaGit/tree/master/Tecnicatura3Py)
 
 
 - *Jere Riquero*
