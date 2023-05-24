@@ -6,13 +6,26 @@ class LosSimpson{
         this.nombre = nombre;
         this.apellido = apellido;
       }
+/* Andres => Agrega getter y setter a clase los simpson */
+    get nombre(){
+        return this._nombre;
+    }
+    get apellido(){
+        return this._apellido;
+    }
+
+    set nombre(nombre){
+        this._nombre = nombre;
+    }
+    set apellido(apellido){
+        this._apellido = apellido;
+    }
 }
 // Ejemplo de uso
 const personaje = new LosSimpson("Homero", "Simpson");
 console.log(personaje.nombre);    // Imprime "Homero"
 console.log(personaje.apellido);  // Imprime "Simpson"
 
-/* Andres => Agrega getter y setter a clase los simpson */
 
 /* Lucas => Añade los 5 integrantes de la familia simpson, Agrega console.log para ver en pantalla */
 
