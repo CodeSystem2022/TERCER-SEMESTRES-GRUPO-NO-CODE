@@ -1,6 +1,16 @@
 /* Ezequiel => Añadir un diagrama con la clase los simpson con la clase hija mascota con getter,setter en draw.io */
 
 /* Dante => Crea una clase llamada los simpson, con nombre, apellido y su constructor */
+class LosSimpson{
+    constructor(nombre, apellido) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+      }
+}
+// Ejemplo de uso
+const personaje = new LosSimpson("Homero", "Simpson");
+console.log(personaje.nombre);    // Imprime "Homero"
+console.log(personaje.apellido);  // Imprime "Simpson"
 
 /* Andres => Agrega getter y setter a clase los simpson */
 

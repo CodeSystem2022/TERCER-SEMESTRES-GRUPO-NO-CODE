@@ -1,5 +1,10 @@
 # Constructor en JS
+## un constructor es: 
+En JavaScript, un constructor es una función especial que se utiliza para crear e inicializar un objeto dentro de una clase. Se utiliza la palabra clave constructor para definir el constructor en una clase.
 
+Cuando se crea una instancia (objeto) de una clase utilizando la palabra clave new, el constructor se ejecuta automáticamente y se encarga de configurar las propiedades y el estado inicial del objeto.
+
+El constructor puede aceptar parámetros que se utilizan para proporcionar valores iniciales a las propiedades del objeto. Estos parámetros se pasan al constructor cuando se crea una instancia de la clase.
 ## En JavaScript, un constructor es una función especial que se utiliza para crear e inicializar objetos. Los constructores se definen usando la sintaxis de función y se invocan utilizando el operador "new".
 
 # Metodo GET y SET
