@@ -2,7 +2,7 @@
 
 /* Dante => Crea una clase llamada los simpson, con nombre, apellido y su constructor */
 class LosSimpson{
-    constructor(nombre, apellido) {
+    constructor(nombre, apellido = "Simpson") {
         this.nombre = nombre;
         this.apellido = apellido;
       }
@@ -21,13 +21,26 @@ class LosSimpson{
         this._apellido = apellido;
     }
 }
-// Ejemplo de uso
-const personaje = new LosSimpson("Homero", "Simpson");
-console.log(personaje.nombre);    // Imprime "Homero"
-console.log(personaje.apellido);  // Imprime "Simpson"
-
-
 /* Lucas => Añade los 5 integrantes de la familia simpson, Agrega console.log para ver en pantalla */
+const personaje1 = new LosSimpson("Homero");
+console.log(personaje1.nombre);
+console.log(personaje1.apellido);
+
+const personaje2 = new LosSimpson("Marge");
+console.log(personaje2.nombre);
+console.log(personaje2.apellido);
+
+const personaje3 = new LosSimpson("Bart");
+console.log(personaje3.nombre);
+console.log(personaje3.apellido);
+
+const personaje4 = new LosSimpson("Lisa");
+console.log(personaje4.nombre);
+console.log(personaje4.apellido);
+
+const personaje5 = new LosSimpson("Maggie");
+console.log(personaje5.nombre);
+console.log(personaje5.apellido);
 
 /* Abel => Homero Simpson va a cruzar a mexico, Cambiale el nombre a Homero Sanchez. */
 
