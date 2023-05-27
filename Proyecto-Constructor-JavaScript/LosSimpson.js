@@ -43,6 +43,8 @@ console.log(personaje5.nombre);
 console.log(personaje5.apellido);
 
 /* Abel => Homero Simpson va a cruzar a mexico, Cambiale el nombre a Homero Sanchez. */
+personaje1.apellido = 'Sanchez';
+console.log('Ahora Homero se llama: ' + personaje1.nombre + ' ' + personaje1.apellido );
 
 /* Jere => Crea una clase hija de los simpson llamada mascota, con nombre, sin apellido y agregale el atributo raza */
 
