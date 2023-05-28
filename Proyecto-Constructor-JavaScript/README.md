@@ -31,9 +31,9 @@ El constructor puede aceptar parámetros que se utilizan para proporcionar valor
 ## Hosting de variables:
 
 
-### console.log(nombre); // undefined
+### console.log(nombre);  // undefined
 ### var nombre = 'Juan';
-### console.log(nombre); // Juan
+### console.log(nombre);  // Juan
 
 
 ## En este caso, la declaración de la variable nombre se mueve al principio del ámbito de alcance (ya sea el ámbito global o el ámbito de una función). Sin embargo, su asignación (nombre = 'Juan') se mantiene en su posición original. Durante la primera impresión, la variable nombre se declara pero aún no se ha asignado ningún valor, por lo que su valor es undefined. En la segunda impresión, después de la asignación, el valor de nombre es 'Juan'.
