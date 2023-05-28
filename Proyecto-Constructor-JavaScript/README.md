@@ -43,9 +43,9 @@ El constructor puede aceptar parámetros que se utilizan para proporcionar valor
 
 ### saludar(); // Hola
 
-### function saludar() {
-  ### console.log('Hola');
-### }
+###  function saludar() {
+  ###  console.log('Hola');
+###  }
 
 ## En este caso, la declaración de la función saludar se mueve al principio del ámbito de alcance. Por lo tanto, se puede llamar a la función antes de que se haya declarado formalmente en el código.
 
