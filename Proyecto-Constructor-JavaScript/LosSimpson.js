@@ -47,6 +47,18 @@ personaje1.apellido = 'Sanchez';
 console.log('Ahora Homero se llama: ' + personaje1.nombre + ' ' + personaje1.apellido );
 
 /* Jere => Crea una clase hija de los simpson llamada mascota, con nombre, sin apellido y agregale el atributo raza */
+class mascota extends LosSimpson{
+    constructor(nombre, raza){
+        super(nombre);
+        this.raza = raza;
+    }
+    get raza(){
+        return this._raza;
+    }
+    set raza(raza){
+        this._raza = raza;
+    }
+}
 
 /* Franco => Añade las 2 mascotas de los simpson AyudanteDeSanta y BolaDeNieve9 con sus respectivas razas. */
 
