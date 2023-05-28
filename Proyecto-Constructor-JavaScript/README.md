@@ -41,7 +41,7 @@ El constructor puede aceptar parámetros que se utilizan para proporcionar valor
 ## Hosting de funciones:
 
 
-### saludar(); // Hola
+### saludar();  // Hola
 
 ###  function saludar() {
   ###  console.log('Hola');
