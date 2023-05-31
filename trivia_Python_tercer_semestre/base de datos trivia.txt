@@ -1,0 +1,18 @@
+-- Crear la tabla "preguntas"
+CREATE TABLE preguntas (
+    id SERIAL PRIMARY KEY,
+    pregunta TEXT NOT NULL,
+    opcion1 TEXT NOT NULL,
+    opcion2 TEXT NOT NULL,
+    opcion3 TEXT NOT NULL,
+    respuesta_correcta INTEGER NOT NULL
+);
+
+-- Insertar algunas preguntas en la tabla
+INSERT INTO preguntas (pregunta, opcion1, opcion2, opcion3, respuesta_correcta)
+VALUES
+    ('¿Cuál es la capital de Francia?', 'a) París', 'b) Londres', 'c) Madrid', 0),
+    ('¿Quién escribió la obra "Don Quijote de la Mancha"?', 'a) Miguel de Cervantes', 'b) Gabriel García Márquez', 'c) Julio Cortázar', 0),
+    ('¿En qué año se llevó a cabo la Revolución Francesa?', 'a) 1789', 'b) 1812', 'c) 1901', 0),
+    -- Agrega más preguntas aquí
+    ;
