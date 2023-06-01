@@ -13,4 +13,4 @@ class Gato {
   const BolaDeNieve9 = new Gato("BolaDeNieve9", 4, "gris"); // argumentos del constructor 
   BolaDeNieve9.dormir();
   
-  // Dario Walter Carrizo </>
+  // Dario Walter Carrizo </>z
