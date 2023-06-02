@@ -1,17 +1,8 @@
 # Importar la librería psycopg2 para conectarse a PostgreSQL
-# import psycopg2
-# importo random para elegir pregunta random
-# import random
 import psycopg2
+# importo random para elegir pregunta random
+import random
 
-# def method_name():
-#    pass
-
-
-# method_name()
-
-
-# Conexión a la base de datos PostgreSQL
 
 conexion = psycopg2.connect(
    database="trivia_bd",
@@ -20,22 +11,20 @@ conexion = psycopg2.connect(
    host="127.0.0.1",
    port="5432"
 )
-print(conexion)
-print("Conexión exitosa a la base de datos")
 
-    # Creando un cursor para ejecutar las consultas
-
-cursor = conexion.cursor()
+# Creando un cursor para ejecutar las consultas y
 # creando una consulta para obtener las preguntas de la base de datos
-consulta = "SELECT * FROM preguntas"
-cursor.execute(consulta)
-obtener_preguntas= cursor.fetchall()
+try:
+    with conexion:
+        with conexion.cursor() as cursor:
+            consulta = "SELECT * FROM preguntas"
+            cursor.execute(consulta)
+            obtener_preguntas = cursor.fetchall()
 
-print(obtener_preguntas)
-
-# Cerrar la conexión y el cursor
-cursor.close()
-conexion.close()
+except Exception as e:
+    print(f'Ocurrió un error: {e}')
+finally:
+    conexion.close()
 
 # Obtener el nombre del jugador
 nombre_jugador = input("Ingrese su nombre: ")
@@ -52,12 +41,13 @@ for pregunta in obtener_preguntas:
     respuestas_correctas.append(pregunta[5])
 
 # Función para realizar la trivia de forma aleatoria
+
+
 def realizar_trivia():
     # Copiar las preguntas y respuestas para no modificar las originales
     preguntas_copia = preguntas[:]
     respuestas_copia = respuestas[:]
     respuestas_correctas_copia = respuestas_correctas[:]
-
     puntuacion = 0
 
     # Iterar hasta que se hayan realizado todas las preguntas
@@ -94,5 +84,3 @@ def realizar_trivia():
 
 # Llamar a la función para iniciar la trivia
 realizar_trivia()
-
-
