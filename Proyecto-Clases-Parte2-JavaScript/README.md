@@ -1,10 +1,10 @@
-#Clase 7: Clases en JS:
-##Herencia de métodos:
+# Clase 7: Clases en JS:
+## Herencia de métodos:
 
-##Sobreescritura:
+## Sobreescritura:
 
-##Clase Object:
+## Clase Object:
 
-##Método toString:
+## Método toString:
 
-##Polimorfismo:
+## Polimorfismo:
