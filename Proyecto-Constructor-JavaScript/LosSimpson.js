@@ -61,5 +61,11 @@ class mascota extends LosSimpson{
 }
 
 /* Franco => Añade las 2 mascotas de los simpson AyudanteDeSanta y BolaDeNieve9 con sus respectivas razas. */
+const mascota1 = new mascota("Ayudante de Santa","Perro");
+console.log(mascota1._nombre)
+console.log(mascota1._raza)
+const mascota2 = new mascota("Bola de Nieve9","Gato");
+console.log(mascota2._nombre)
+console.log(mascota2._raza)
 
 /* Dario => BolaDeNieve9 acaba de morir, Añade BolaDeNieve10 reemplazando a BolaDeNieve9 */

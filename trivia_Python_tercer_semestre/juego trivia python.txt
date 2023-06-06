@@ -1,0 +1,85 @@
+# Importar la librería psycopg2 para conectarse a PostgreSQL
+import psycopg2
+import random
+
+# Conexión a la base de datos PostgreSQL
+try:
+    conn = psycopg2.connect(
+        database="nombre_basedatos",
+        user="nombre_usuario",
+        password="contraseña",
+        host="localhost",
+        port="5432"
+    )
+    print("Conexión exitosa a la base de datos")
+except (Exception, psycopg2.Error) as error:
+    print("Error al conectarse a la base de datos:", error)
+
+# Crear un cursor para ejecutar las consultas
+cursor = conn.cursor()
+
+# Obtener el nombre del jugador
+nombre_jugador = input("Ingrese su nombre: ")
+
+# Consulta para obtener las preguntas de la base de datos
+consulta_preguntas = "SELECT pregunta, opcion1, opcion2, opcion3, respuesta_correcta FROM preguntas"
+cursor.execute(consulta_preguntas)
+preguntas_db = cursor.fetchall()
+
+# Cerrar la conexión y el cursor
+cursor.close()
+conn.close()
+
+# Almacenar las preguntas en listas separadas
+preguntas = []
+respuestas = []
+respuestas_correctas = []
+
+for pregunta in preguntas_db:
+    preguntas.append(pregunta[0])
+    respuestas.append([pregunta[1], pregunta[2], pregunta[3]])
+    respuestas_correctas.append(pregunta[4])
+
+# Función para realizar la trivia de forma aleatoria
+def realizar_trivia():
+    # Copiar las preguntas y respuestas para no modificar las originales
+    preguntas_copia = preguntas[:]
+    respuestas_copia = respuestas[:]
+    respuestas_correctas_copia = respuestas_correctas[:]
+
+    puntuacion = 0
+
+    # Iterar hasta que se hayan realizado todas las preguntas
+    while preguntas_copia:
+        # Obtener una pregunta aleatoria
+        indice_pregunta = random.randint(0, len(preguntas_copia) - 1)
+        pregunta = preguntas_copia[indice_pregunta]
+        opciones = respuestas_copia[indice_pregunta]
+        respuesta_correcta = respuestas_correctas_copia[indice_pregunta]
+
+        # Mostrar la pregunta al jugador
+        print(pregunta)
+        for opcion in opciones:
+            print(opcion)
+
+        # Obtener la respuesta del jugador
+        respuesta_jugador = input("Ingrese la opción correcta (a, b o c): ")
+
+        # Verificar si la respuesta es correcta
+        if respuesta_jugador.lower() == chr(97 + respuesta_correcta):
+            print("¡Respuesta correcta!")
+            puntuacion += 1
+        else:
+            print("Respuesta incorrecta.")
+
+        # Eliminar la pregunta realizada de las copias
+        del preguntas_copia[indice_pregunta]
+        del respuestas_copia[indice_pregunta]
+        del respuestas_correctas_copia[indice_pregunta]
+
+    # Mostrar la puntuación final al jugador
+    print("Trivia completada. Puntuación:", puntuacion)
+
+
+# Llamar a la función para iniciar la trivia
+realizar_trivia()
