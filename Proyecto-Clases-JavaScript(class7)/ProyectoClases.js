@@ -1,22 +1,25 @@
 // Tarea 1: Crear clase padre
-class Padre {
+//Creamos la clase padre Entre Ezequiel Mariscal y Dante Martinez
+//La misma posee un metodo constructor con dos variables, material y color
+//las mismas se le crean sus correspondientes metodos de set y get
+class Mueble {
     
-    constructor(nombre, apellido){
-        this._nombre = nombre;
-        this._apellido = apellido;
+    constructor(material, color){
+        this._material = material;
+        this._color = color;
     }
 
-    get nombre(){
-        return this._nombre;
+    get material(){
+        return this._material;
     }
-    set nombre(nombre){
-        this._nombre = nombre;
+    set material(material){
+        this._material = material;
     }
-     get apellido(){
-        return this._apellido;
+     get color(){
+        return this._color;
     }
-     set apellido(apellido){
-        this._apellido = apellido;
+     set color(color){
+        this._color = color;
     }
 
 }
