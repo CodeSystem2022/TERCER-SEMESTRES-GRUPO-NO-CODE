@@ -24,6 +24,24 @@ class Mueble {
 
 }
 
+//Tarea 2: Crear metodo toString e imprimir objetos
+//Agregar un método que retorne el material y el color del mueble. Lo llamaras “mostrarMueble”.
+//Crear el método “toString” de la clase padre para retornar el método “mostrarMueble”.
+//Crear 2 objetos de la clase padre e imprimir con el método “toString”.
+
+mostrarMueble(){
+  return this.material + ' ' +this.color; //Metodo que retorna material y color del mueble
+}
+toString(){
+  return this.mostrarMueble(); //Metodo toString utilizado para imprimir
+}
+
+//Objetos que se visualizaran con el metodo toString
+let objeto1 = new Mueble('Roble', 'Negro')
+console.log(objeto1.toString())
+let objeto2 = new Mueble('Arce', 'Marron Claro')
+console.log(objeto2.toString())
+
 //Tarea 3: Crear clase hija
 //Se crea la clase hija entre Dario Carrizo y Andrés Winckler
 //La misma posee un metodo constructor con cinco variables, material, color, tipo, uso y precio
