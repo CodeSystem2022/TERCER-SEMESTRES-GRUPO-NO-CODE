@@ -4,3 +4,6 @@
 <h3>Tarea 1: Crear clase padre</h3>
 Se Creara la clase padre Entre Ezequiel Mariscal y Dante Martinez, la misma posee un metodo constructor con dos variables, material y color, a estas mismas se le crean sus correspondientes metodos de setter y getter.
 
+<h3>Tarea 3: Crear clase Hija</h3>
+  Se Crea la clase hija Tipo de Mueble, entre Dario Carrizo y Andrés Winckler. con sus correspondientes métodos 
+  
