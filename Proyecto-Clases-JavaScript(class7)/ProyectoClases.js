@@ -24,7 +24,7 @@ class Mueble {
 
 }
 
-//Tarea 2: Crear clase hija
+//Tarea 3: Crear clase hija
 //Se crea la clase hija entre Dario Carrizo y Andrés Winckler
 //La misma posee un metodo constructor con cinco variables, material, color, tipo, uso y precio
 //las mismas se le crean sus correspondientes metodos de set y get
