@@ -11,5 +11,5 @@ Se Creara la clase padre Entre Ezequiel Mariscal y Dante Martinez, la misma pose
   Se Crea la clase hija Tipo de Mueble, entre Dario Carrizo y Andrés Winckler. con sus correspondientes métodos 
   
 <h3> Tarea 4: Sobreescribir el metodo "mostrarMueble" </h3>
-Lucas Salinas y Jeremias Riquero: Se sobreescribe la clase hija "mostrarMueble" agregando los parametros uso y precio aplicando el polimorfismo
+Lucas Salinas y Jeremias Riquero: Se sobreescribe la clase hija "mostrarMueble" agregando los parametros uso, tipo y precio aplicando el polimorfismo
     
