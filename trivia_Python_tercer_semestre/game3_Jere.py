@@ -30,7 +30,7 @@ finally:
 nombre_jugador = input("Ingrese su nombre: ")
 print(nombre_jugador)
 
-# Almacenar las preguntas
+# Almacenar las preguntas (Jeremias Riquero)
 
 preguntas = [pregunta[1] for pregunta in obtener_preguntas]
 respuestas = [[pregunta[2], pregunta[3], pregunta[4]] for pregunta in obtener_preguntas]
