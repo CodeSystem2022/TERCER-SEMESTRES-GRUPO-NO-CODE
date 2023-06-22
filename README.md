@@ -7,7 +7,10 @@
    -[Repositorio Python](https://github.com/mzadante/UTN-Tecnicatura-III-Lenguajes/tree/main/Tecnicatura3Py)
    -[Repositorio JavaScript](https://github.com/mzadante/UTN-Tecnicatura-III-Lenguajes/tree/main/Tecnicatura3Js)
 - *Abel Pierna*
-- [URL Repositorio](URL del enlace)
+  
+   - [Repositorio Python]((https://github.com/Abelino537/LaboratorioIII-Python)
+   - [Repositorio JavaScript](https://github.com/Abelino537/LaboratorioIII-JS)
+
 - *Andres Winckler*
 
    ->[Repositorio JavaScript](https://github.com/andreswinck/tecnicaturaGit/tree/master/Tecnicatura3JS)
