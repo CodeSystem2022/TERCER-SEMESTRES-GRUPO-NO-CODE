@@ -41,7 +41,13 @@
    -[Repositorio Javascript](https://github.com/ezequielmariscal/Tecnicatura3Js)
 
 - *Franco Ariel*
-[URL Repositorio](URL del enlace)
+
+-[Repositorio Java](https://github.com/Chorifrann/3er-semestre-java)
+
+-[Repositorio Python](https://github.com/Chorifrann/3er-semestre-python)
+
+-[Repositorio Javascript](https://github.com/Chorifrann/3er-semestre-javascript)
+
 - *Lucas Salinas*
 
    -[Repositorio Java](https://github.com/LucasSalinas/Javalll-TercerSemestre)
