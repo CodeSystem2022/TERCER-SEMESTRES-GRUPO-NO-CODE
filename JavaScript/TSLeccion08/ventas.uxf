@@ -1,0 +1,32 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>40</x><y>15</y><w>240</w><h>210</h></coordinates><panel_attributes>Orden
+--
+idOrden: number
+productos[]:Producto
+contadorProductosAgregados:number
+MAX_PRODUCTOS: number = 5
+--
+Orden()
+agregarProducto(producto)
+calcularTotal():number
+mostrarOrden()
+--
+Responsibilidades
+-- Crear objetos: Orden
+-- Administar los productos de una orden </panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>40</x><y>325</y><w>240</w><h>240</h></coordinates><panel_attributes>Producto
+--
+idProducto: number
+nombre: string
+precio: number
+contadorProductos:number
+--
+Producto()
+getIdProducto():number
+getNombre():string
+setNombre(nombre)
+getPrecio():number
+setPrecio(precio)
+toString():string
+--
+Responsibilidades
+-- Crear objetos de tipo producto</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>140</x><y>215</y><w>250</w><h>130</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;.
+&lt;&lt;Un producto se agraga a una orden&gt;&gt;</panel_attributes><additional_attributes>10;10;20;110</additional_attributes></element></diagram>
