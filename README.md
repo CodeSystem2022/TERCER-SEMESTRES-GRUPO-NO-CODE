@@ -43,8 +43,11 @@
 - *Franco Ariel*
 [URL Repositorio](URL del enlace)
 - *Lucas Salinas*
-[URL Repositorio](URL del enlace)
+   -[Repositorio Java](https://github.com/LucasSalinas/Javalll-TercerSemestre)
 
+   -[Repositorio Python](https://github.com/LucasSalinas/Pythonlll-TercerSemestre)
+
+   -[Repositorio Javascript](https://github.com/LucasSalinas/JavaScriptlll-TercerSemestre)
 
 # ***Aplicación del Metodo Scrum en Github***
 
