@@ -1,0 +1,35 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>240</x><y>0</y><w>210</w><h>250</h></coordinates><panel_attributes>&lt;&lt;Persona&gt;&gt;
+--
+_idPersona: number
+_nombre: String
+_apellido: String
+_edad number
+contadorPersonas
+--
+getidPersona(): number
+getnombre() String
+setnombre(String)
+getApellido(): String
+setApellido(String)
+getEdad(): number
+setEdad(String)
+toString() 
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>20</x><y>390</y><w>210</w><h>130</h></coordinates><panel_attributes>&lt;&lt;Empleado&gt;&gt;
+--
+_idEmpleado: Long
+_Sueldo: number
+--
+getEmpleado(): number
+getSueldo(): number
+setSueldo(number)
+toString()
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>440</x><y>390</y><w>210</w><h>130</h></coordinates><panel_attributes>&lt;&lt;Cliente&gt;&gt;
+--
+_idCliente: number
+_fechaRegistro: Date
+--
+getCliente
+getFechaRegistro(): Date
+setFechaRegistro(Date)
+toString()
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>530</x><y>310</y><w>30</w><h>100</h></coordinates><panel_attributes>lt=-</panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element><element><id>Relation</id><coordinates><x>90</x><y>310</y><w>30</w><h>100</h></coordinates><panel_attributes>lt=-</panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element><element><id>Relation</id><coordinates><x>90</x><y>300</y><w>260</w><h>40</h></coordinates><panel_attributes>Extends</panel_attributes><additional_attributes>240;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>320</x><y>300</y><w>240</w><h>40</h></coordinates><panel_attributes>Extends</panel_attributes><additional_attributes>220;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>330</x><y>250</y><w>30</w><h>90</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;10;10;70</additional_attributes></element></diagram>
