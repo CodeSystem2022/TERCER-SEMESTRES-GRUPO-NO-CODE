@@ -1,0 +1,46 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>70</x><y>50</y><w>210</w><h>240</h></coordinates><panel_attributes>conexion
+--
+-DATABASE: String
+-USERNAME: String
+-PASSWORD: String
+-DBPORT: String
+-HOST: String
+-conexion: connection
+cursor: Cursor
+--
++obtenerConexion(cls): Connection
++obtenerCursor(cls): Cursor
++cerrar(cls)
+--
+Responsabilidades:
+Administrar la conexion a la base 
+de datos</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>500</x><y>60</y><w>210</w><h>180</h></coordinates><panel_attributes>Persona
+--
+-id_persona: int
+-nombre:String
+-apellido:String
+-email:String
+--
++ __str__(): String
++metodo Get/Set de cada atributo
+--
+Responsabilidades:
+Crear objetos de la entidad 
+Persona
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>500</x><y>350</y><w>210</w><h>220</h></coordinates><panel_attributes>PersonaDao
+--
+-SELECCIONAR: String
+-INSERTAR: String
+-ACTUALIZAR: String
+-ELIMINAR: String
+--
++seleccionar(cls)
++insertar(cls, persona)
++actualizar(cls, persona)
++eliminar(cls, persona)
+--
+Responsabilidades:
+Realizar las operaciones sobre la 
+base de datos de la entidad 
+Persona
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>160</x><y>280</y><w>370</w><h>210</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>350;190;10;190;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>590</x><y>230</y><w>30</w><h>140</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;120;10;10</additional_attributes></element></diagram>
