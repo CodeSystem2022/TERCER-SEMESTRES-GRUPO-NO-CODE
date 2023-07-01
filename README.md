@@ -21,6 +21,7 @@
 
 
 - *Jere Riquero*
+  
    ->[Repositorio JavaScript](https://github.com/JereRiquero/JavaScript)
   
    ->[Repositorio Java](https://github.com/JereRiquero/Java)
@@ -28,14 +29,13 @@
    ->[Repositorio Python](https://github.com/JereRiquero/Python)
   
 - *Dario Walter Carrizo*
-- 
+ 
      -[Repositorio Java](https://github.com/dwc1970/Tercer-Semestre-23)
 
      -[Repositorio Python](https://github.com/dwc1970/Python-23)
 
      -[Repositorio Javascript](https://github.com/dwc1970/JAVASCRIPT-23)
   
-[URL Repositorio](URL del enlace)
 
 -  *Ezequiel Mariscal*
 
